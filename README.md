@@ -29,6 +29,10 @@ http://cts.nlm.nih.gov/fhir/Library/ecqm-fhir-update-2025
 
 > NOTE: The value sets in this repository are limited to expansions of 1000. To obtain the full expansions requires an NLM license and can be downloaded from the Value Set Authority Center downloads site: https://vsac.nlm.nih.gov/download/manifest?rel=20251117&res=dqm.vs.20251117.json
 
+## Setup
+
+Detailed steps for loading and testing measure content are available on the [Setup](SETUP.md) page.
+
 ## Repository Structure
 
 This repository is setup like any HL7 FHIR IG project but also includes the CQL files and test data which means the file structure will be as follows:

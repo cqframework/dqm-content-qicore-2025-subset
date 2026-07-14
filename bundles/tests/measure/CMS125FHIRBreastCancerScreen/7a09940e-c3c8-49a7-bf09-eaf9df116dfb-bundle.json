@@ -1,0 +1,168 @@
+﻿{
+    "resourceType":  "Bundle",
+    "id":  "7a09940e-c3c8-49a7-bf09-eaf9df116dfb",
+    "type":  "transaction",
+    "entry":  [
+                  {
+                      "resource":  {
+                                       "resourceType":  "Encounter",
+                                       "id":  "8d65e723-f14a-4a4c-85b1-5fcf1cfec7ca",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter"
+                                                                ]
+                                                },
+                                       "status":  "finished",
+                                       "class":  {
+                                                     "system":  "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                                     "code":  "AMB",
+                                                     "display":  "ambulatory"
+                                                 },
+                                       "type":  [
+                                                    {
+                                                        "coding":  [
+                                                                       {
+                                                                           "system":  "http://snomed.info/sct",
+                                                                           "code":  "185463005",
+                                                                           "display":  "Visit out of hours (procedure)"
+                                                                       }
+                                                                   ]
+                                                    }
+                                                ],
+                                       "subject":  {
+                                                       "reference":  "Patient/7a09940e-c3c8-49a7-bf09-eaf9df116dfb"
+                                                   },
+                                       "period":  {
+                                                      "start":  "2026-01-01T00:00:00.000+00:00",
+                                                      "end":  "2026-01-01T00:00:00.000+00:00"
+                                                  }
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Encounter/8d65e723-f14a-4a4c-85b1-5fcf1cfec7ca"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Observation",
+                                       "id":  "f67e4478-feff-4c56-9ee1-5be10eec3418",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment"
+                                                                ]
+                                                },
+                                       "status":  "final",
+                                       "category":  [
+                                                        {
+                                                            "coding":  [
+                                                                           {
+                                                                               "system":  "http://terminology.hl7.org/CodeSystem/observation-category",
+                                                                               "code":  "survey"
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ],
+                                       "code":  {
+                                                    "coding":  [
+                                                                   {
+                                                                       "system":  "http://loinc.org",
+                                                                       "code":  "71802-3",
+                                                                       "display":  "Housing status"
+                                                                   }
+                                                               ]
+                                                },
+                                       "subject":  {
+                                                       "reference":  "Patient/7a09940e-c3c8-49a7-bf09-eaf9df116dfb"
+                                                   },
+                                       "effectivePeriod":  {
+                                                               "start":  "2026-12-31T23:59:59.000+00:00",
+                                                               "end":  "2026-12-31T23:59:59.000+00:00"
+                                                           },
+                                       "valueCodeableConcept":  {
+                                                                    "coding":  [
+                                                                                   {
+                                                                                       "system":  "http://snomed.info/sct",
+                                                                                       "code":  "160734000",
+                                                                                       "display":  "Lives in nursing home (finding)"
+                                                                                   }
+                                                                               ]
+                                                                }
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Observation/f67e4478-feff-4c56-9ee1-5be10eec3418"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Patient",
+                                       "id":  "7a09940e-c3c8-49a7-bf09-eaf9df116dfb",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient"
+                                                                ]
+                                                },
+                                       "extension":  [
+                                                         {
+                                                             "url":  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+                                                             "extension":  [
+                                                                               {
+                                                                                   "url":  "ombCategory",
+                                                                                   "valueCoding":  {
+                                                                                                       "system":  "urn:oid:2.16.840.1.113883.6.238",
+                                                                                                       "code":  "2028-9",
+                                                                                                       "display":  "Asian"
+                                                                                                   }
+                                                                               },
+                                                                               {
+                                                                                   "url":  "text",
+                                                                                   "valueString":  "Asian"
+                                                                               }
+                                                                           ]
+                                                         },
+                                                         {
+                                                             "url":  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex",
+                                                             "valueCode":  "248152002"
+                                                         },
+                                                         {
+                                                             "url":  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+                                                             "extension":  [
+                                                                               {
+                                                                                   "url":  "ombCategory",
+                                                                                   "valueCoding":  {
+                                                                                                       "system":  "urn:oid:2.16.840.1.113883.6.238",
+                                                                                                       "code":  "2135-2",
+                                                                                                       "display":  "Hispanic or Latino"
+                                                                                                   }
+                                                                               },
+                                                                               {
+                                                                                   "url":  "text",
+                                                                                   "valueString":  "Hispanic or Latino"
+                                                                               }
+                                                                           ]
+                                                         }
+                                                     ],
+                                       "identifier":  [
+                                                          {
+                                                              "system":  "http://hospital.smarthealthit.org",
+                                                              "value":  "999999995"
+                                                          }
+                                                      ],
+                                       "name":  [
+                                                    {
+                                                        "family":  "Bertha",
+                                                        "given":  [
+                                                                      "Betty"
+                                                                  ]
+                                                    }
+                                                ],
+                                       "gender":  "female",
+                                       "birthDate":  "1959-12-31"
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Patient/7a09940e-c3c8-49a7-bf09-eaf9df116dfb"
+                                  }
+                  }
+              ]
+}

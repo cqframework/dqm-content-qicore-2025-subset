@@ -1,0 +1,337 @@
+﻿{
+    "resourceType":  "Bundle",
+    "id":  "1e5e387c-ffdd-4b16-9202-f64021d86459",
+    "type":  "transaction",
+    "entry":  [
+                  {
+                      "resource":  {
+                                       "resourceType":  "Encounter",
+                                       "id":  "58eec488-bcc3-4677-a07e-cd3b0b3de577",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter"
+                                                                ]
+                                                },
+                                       "status":  "finished",
+                                       "class":  {
+                                                     "system":  "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                                     "code":  "IMP",
+                                                     "display":  "inpatient encounter"
+                                                 },
+                                       "type":  [
+                                                    {
+                                                        "coding":  [
+                                                                       {
+                                                                           "system":  "http://snomed.info/sct",
+                                                                           "code":  "183452005"
+                                                                       }
+                                                                   ]
+                                                    }
+                                                ],
+                                       "subject":  {
+                                                       "reference":  "Patient/1e5e387c-ffdd-4b16-9202-f64021d86459"
+                                                   },
+                                       "period":  {
+                                                      "start":  "2026-02-01T08:00:00.000+00:00",
+                                                      "end":  "2026-02-05T08:15:00.000+00:00"
+                                                  }
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Encounter/58eec488-bcc3-4677-a07e-cd3b0b3de577"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Encounter",
+                                       "id":  "6adaed2a-6abb-49ce-9e3b-a0d76d4d216a",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter"
+                                                                ]
+                                                },
+                                       "status":  "finished",
+                                       "class":  {
+                                                     "system":  "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                                     "code":  "EMER",
+                                                     "display":  "emergency"
+                                                 },
+                                       "type":  [
+                                                    {
+                                                        "coding":  [
+                                                                       {
+                                                                           "system":  "http://snomed.info/sct",
+                                                                           "code":  "4525004"
+                                                                       }
+                                                                   ]
+                                                    }
+                                                ],
+                                       "subject":  {
+                                                       "reference":  "Patient/1e5e387c-ffdd-4b16-9202-f64021d86459"
+                                                   },
+                                       "period":  {
+                                                      "start":  "2026-02-01T07:00:00.000+00:00",
+                                                      "end":  "2026-02-01T07:59:00.000+00:00"
+                                                  }
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Encounter/6adaed2a-6abb-49ce-9e3b-a0d76d4d216a"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Observation",
+                                       "id":  "14196858-bbae-4fe9-bb90-3c898f3c4d25",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-heart-rate"
+                                                                ]
+                                                },
+                                       "status":  "final",
+                                       "category":  [
+                                                        {
+                                                            "coding":  [
+                                                                           {
+                                                                               "system":  "http://terminology.hl7.org/CodeSystem/observation-category",
+                                                                               "code":  "vital-signs",
+                                                                               "display":  "vital-signs",
+                                                                               "userSelected":  true
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ],
+                                       "code":  {
+                                                    "coding":  [
+                                                                   {
+                                                                       "system":  "http://loinc.org",
+                                                                       "version":  "2.73",
+                                                                       "code":  "8867-4",
+                                                                       "display":  "Heart Rate"
+                                                                   }
+                                                               ]
+                                                },
+                                       "subject":  {
+                                                       "reference":  "Patient/1e5e387c-ffdd-4b16-9202-f64021d86459"
+                                                   },
+                                       "effectiveDateTime":  "2026-01-31T07:00:00.000+00:00",
+                                       "valueQuantity":  {
+                                                             "value":  85,
+                                                             "unit":  "/min",
+                                                             "system":  "http://unitsofmeasure.org",
+                                                             "code":  "/min"
+                                                         }
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Observation/14196858-bbae-4fe9-bb90-3c898f3c4d25"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Observation",
+                                       "id":  "c1c8fef8-2806-4833-9de3-4b7c15fd1373",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-simple-observation"
+                                                                ]
+                                                },
+                                       "status":  "final",
+                                       "category":  [
+                                                        {
+                                                            "coding":  [
+                                                                           {
+                                                                               "system":  "http://terminology.hl7.org/CodeSystem/observation-category",
+                                                                               "code":  "exam",
+                                                                               "display":  "exam",
+                                                                               "userSelected":  true
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ],
+                                       "code":  {
+                                                    "coding":  [
+                                                                   {
+                                                                       "system":  "http://loinc.org",
+                                                                       "code":  "11884-4"
+                                                                   }
+                                                               ]
+                                                },
+                                       "subject":  {
+                                                       "reference":  "Patient/1e5e387c-ffdd-4b16-9202-f64021d86459"
+                                                   },
+                                       "effectiveDateTime":  "2026-02-01T08:00:00.000+00:00",
+                                       "valueQuantity":  {
+                                                             "value":  21,
+                                                             "system":  "http://unitsofmeasure.org",
+                                                             "code":  "wk"
+                                                         }
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Observation/c1c8fef8-2806-4833-9de3-4b7c15fd1373"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Observation",
+                                       "id":  "f78bc4a5-dccb-4efd-b4b5-1522151fce0a",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-simple-observation"
+                                                                ]
+                                                },
+                                       "status":  "final",
+                                       "category":  [
+                                                        {
+                                                            "coding":  [
+                                                                           {
+                                                                               "system":  "http://terminology.hl7.org/CodeSystem/observation-category",
+                                                                               "code":  "exam",
+                                                                               "display":  "exam",
+                                                                               "userSelected":  true
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ],
+                                       "code":  {
+                                                    "coding":  [
+                                                                   {
+                                                                       "system":  "http://loinc.org",
+                                                                       "code":  "93857-1"
+                                                                   }
+                                                               ]
+                                                },
+                                       "subject":  {
+                                                       "reference":  "Patient/1e5e387c-ffdd-4b16-9202-f64021d86459"
+                                                   },
+                                       "effectiveDateTime":  "2026-02-01T08:00:00.000+00:00",
+                                       "valueDateTime":  "2026-02-01T08:00:00.000+00:00"
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Observation/f78bc4a5-dccb-4efd-b4b5-1522151fce0a"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Patient",
+                                       "id":  "1e5e387c-ffdd-4b16-9202-f64021d86459",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient"
+                                                                ]
+                                                },
+                                       "text":  {
+                                                    "status":  "generated",
+                                                    "div":  "\u003cdiv xmlns=\"http://www.w3.org/1999/xhtml\"\u003e\u003cdiv class=\"hapiHeaderText\"\u003eRISKHR24hoursB4EDOTTriageEnc  \u003cb\u003eRISKPass \u003c/b\u003e\u003c/div\u003e\u003ctable class=\"hapiPropertyTable\"\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003eDate of birth\u003c/td\u003e\u003ctd\u003e\u003cspan\u003e01 February 2004\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/div\u003e"
+                                                },
+                                       "extension":  [
+                                                         {
+                                                             "url":  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+                                                             "extension":  [
+                                                                               {
+                                                                                   "url":  "ombCategory",
+                                                                                   "valueCoding":  {
+                                                                                                       "system":  "urn:oid:2.16.840.1.113883.6.238",
+                                                                                                       "code":  "1002-5",
+                                                                                                       "display":  "American Indian or Alaska Native",
+                                                                                                       "userSelected":  true
+                                                                                                   }
+                                                                               },
+                                                                               {
+                                                                                   "url":  "text",
+                                                                                   "valueString":  "American Indian or Alaska Native"
+                                                                               }
+                                                                           ]
+                                                         },
+                                                         {
+                                                             "url":  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+                                                             "extension":  [
+                                                                               {
+                                                                                   "url":  "ombCategory",
+                                                                                   "valueCoding":  {
+                                                                                                       "system":  "urn:oid:2.16.840.1.113883.6.238",
+                                                                                                       "code":  "2135-2",
+                                                                                                       "display":  "Hispanic or Latino",
+                                                                                                       "userSelected":  true
+                                                                                                   }
+                                                                               },
+                                                                               {
+                                                                                   "url":  "text",
+                                                                                   "valueString":  "Hispanic or Latino"
+                                                                               }
+                                                                           ]
+                                                         }
+                                                     ],
+                                       "identifier":  [
+                                                          {
+                                                              "type":  {
+                                                                           "coding":  [
+                                                                                          {
+                                                                                              "system":  "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                                                                              "code":  "MR"
+                                                                                          }
+                                                                                      ]
+                                                                       },
+                                                              "system":  "https://bonnie-fhir.healthit.gov/",
+                                                              "value":  "63598dd9c35f1c19df09adbd"
+                                                          }
+                                                      ],
+                                       "active":  true,
+                                       "name":  [
+                                                    {
+                                                        "use":  "usual",
+                                                        "family":  "RiskPass",
+                                                        "given":  [
+                                                                      "RISKHRRelDtTimeEQDelStartless1Min"
+                                                                  ]
+                                                    }
+                                                ],
+                                       "gender":  "female",
+                                       "birthDate":  "2005-02-01"
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Patient/1e5e387c-ffdd-4b16-9202-f64021d86459"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Procedure",
+                                       "id":  "8803b7aa-d83e-4ca0-8cb2-4cf4ccee8760",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-procedure"
+                                                                ]
+                                                },
+                                       "extension":  [
+                                                         {
+                                                             "url":  "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-recorded",
+                                                             "valueDateTime":  "2026-02-04T13:35:00.000+00:00"
+                                                         }
+                                                     ],
+                                       "status":  "completed",
+                                       "code":  {
+                                                    "coding":  [
+                                                                   {
+                                                                       "system":  "http://snomed.info/sct",
+                                                                       "code":  "10745001"
+                                                                   }
+                                                               ]
+                                                },
+                                       "subject":  {
+                                                       "reference":  "Patient/1e5e387c-ffdd-4b16-9202-f64021d86459"
+                                                   },
+                                       "performedPeriod":  {
+                                                               "start":  "2026-02-01T08:00:00.000+00:00",
+                                                               "end":  "2026-02-05T08:15:00.000+00:00"
+                                                           }
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Procedure/8803b7aa-d83e-4ca0-8cb2-4cf4ccee8760"
+                                  }
+                  }
+              ]
+}

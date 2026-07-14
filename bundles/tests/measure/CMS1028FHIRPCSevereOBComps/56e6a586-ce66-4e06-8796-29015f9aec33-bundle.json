@@ -1,0 +1,292 @@
+﻿{
+    "resourceType":  "Bundle",
+    "id":  "56e6a586-ce66-4e06-8796-29015f9aec33",
+    "type":  "transaction",
+    "entry":  [
+                  {
+                      "resource":  {
+                                       "resourceType":  "Coverage",
+                                       "id":  "0706ef09-fe44-403f-b1d0-ed36e38960e4",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage"
+                                                                ]
+                                                },
+                                       "status":  "active",
+                                       "subscriberId":  "523435",
+                                       "beneficiary":  {
+                                                           "reference":  "Patient/56e6a586-ce66-4e06-8796-29015f9aec33"
+                                                       },
+                                       "relationship":  {
+                                                            "coding":  [
+                                                                           {
+                                                                               "system":  "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
+                                                                               "code":  "self"
+                                                                           }
+                                                                       ]
+                                                        },
+                                       "payor":  [
+                                                     {
+                                                         "reference":  "Organization/d7fb85eb-c092-4892-bafa-05c03899efa0"
+                                                     }
+                                                 ]
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Coverage/0706ef09-fe44-403f-b1d0-ed36e38960e4"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Encounter",
+                                       "id":  "07d9bb5d-7c3e-402b-8b83-1ff07c9e6236",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter"
+                                                                ]
+                                                },
+                                       "status":  "finished",
+                                       "class":  {
+                                                     "system":  "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                                     "code":  "IMP",
+                                                     "display":  "inpatient encounter"
+                                                 },
+                                       "type":  [
+                                                    {
+                                                        "coding":  [
+                                                                       {
+                                                                           "system":  "http://snomed.info/sct",
+                                                                           "code":  "183452005"
+                                                                       }
+                                                                   ]
+                                                    }
+                                                ],
+                                       "subject":  {
+                                                       "reference":  "Patient/56e6a586-ce66-4e06-8796-29015f9aec33"
+                                                   },
+                                       "period":  {
+                                                      "start":  "2026-02-01T08:00:00.000+00:00",
+                                                      "end":  "2026-02-05T08:15:00.000+00:00"
+                                                  },
+                                       "reasonCode":  [
+                                                          {
+                                                              "coding":  [
+                                                                             {
+                                                                                 "system":  "http://snomed.info/sct",
+                                                                                 "code":  "169826009",
+                                                                                 "display":  "Single live birth from singleton pregnancy (finding)"
+                                                                             }
+                                                                         ]
+                                                          }
+                                                      ]
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Encounter/07d9bb5d-7c3e-402b-8b83-1ff07c9e6236"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Organization",
+                                       "id":  "d7fb85eb-c092-4892-bafa-05c03899efa0",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-organization"
+                                                                ]
+                                                },
+                                       "identifier":  [
+                                                          {
+                                                              "use":  "temp",
+                                                              "system":  "urn:oid:2.16.840.1.113883.4.4",
+                                                              "value":  "21-3259825"
+                                                          }
+                                                      ],
+                                       "active":  true,
+                                       "type":  [
+                                                    {
+                                                        "coding":  [
+                                                                       {
+                                                                           "system":  "http://terminology.hl7.org/CodeSystem/organization-type",
+                                                                           "code":  "pay",
+                                                                           "display":  "Payer"
+                                                                       }
+                                                                   ]
+                                                    }
+                                                ],
+                                       "name":  "Blue Cross Blue Shield of Texas",
+                                       "telecom":  [
+                                                       {
+                                                           "system":  "phone",
+                                                           "value":  "(+1) 972-766-6900"
+                                                       }
+                                                   ],
+                                       "address":  [
+                                                       {
+                                                           "use":  "billing",
+                                                           "type":  "postal",
+                                                           "line":  [
+                                                                        "P.O. Box 660044"
+                                                                    ],
+                                                           "city":  "Dallas",
+                                                           "state":  "TX",
+                                                           "postalCode":  "75266-0044",
+                                                           "country":  "USA"
+                                                       }
+                                                   ]
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Organization/d7fb85eb-c092-4892-bafa-05c03899efa0"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Patient",
+                                       "id":  "56e6a586-ce66-4e06-8796-29015f9aec33",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient"
+                                                                ]
+                                                },
+                                       "text":  {
+                                                    "status":  "generated",
+                                                    "div":  "\u003cdiv xmlns=\"http://www.w3.org/1999/xhtml\"\u003e\u003cdiv class=\"hapiHeaderText\"\u003eDelProcStartEncStartPlus1Min\u003cb\u003eIPPASS\u003c/b\u003e\u003c/div\u003e\u003ctable class=\"hapiPropertyTable\"\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003eDate of birth\u003c/td\u003e\u003ctd\u003e\u003cspan\u003e31 January 2004\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/div\u003e"
+                                                },
+                                       "extension":  [
+                                                         {
+                                                             "url":  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+                                                             "extension":  [
+                                                                               {
+                                                                                   "url":  "ombCategory",
+                                                                                   "valueCoding":  {
+                                                                                                       "system":  "urn:oid:2.16.840.1.113883.6.238",
+                                                                                                       "code":  "1002-5",
+                                                                                                       "display":  "American Indian or Alaska Native",
+                                                                                                       "userSelected":  true
+                                                                                                   }
+                                                                               },
+                                                                               {
+                                                                                   "url":  "text",
+                                                                                   "valueString":  "American Indian or Alaska Native"
+                                                                               }
+                                                                           ]
+                                                         },
+                                                         {
+                                                             "url":  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+                                                             "extension":  [
+                                                                               {
+                                                                                   "url":  "ombCategory",
+                                                                                   "valueCoding":  {
+                                                                                                       "system":  "urn:oid:2.16.840.1.113883.6.238",
+                                                                                                       "code":  "2135-2",
+                                                                                                       "display":  "Hispanic or Latino",
+                                                                                                       "userSelected":  true
+                                                                                                   }
+                                                                               },
+                                                                               {
+                                                                                   "url":  "text",
+                                                                                   "valueString":  "Hispanic or Latino"
+                                                                               }
+                                                                           ]
+                                                         }
+                                                     ],
+                                       "identifier":  [
+                                                          {
+                                                              "type":  {
+                                                                           "coding":  [
+                                                                                          {
+                                                                                              "system":  "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                                                                              "code":  "MR"
+                                                                                          }
+                                                                                      ]
+                                                                       },
+                                                              "system":  "https://bonnie-fhir.healthit.gov/",
+                                                              "value":  "633b3f9e0968f80122503cc4"
+                                                          }
+                                                      ],
+                                       "active":  true,
+                                       "name":  [
+                                                    {
+                                                        "use":  "usual",
+                                                        "family":  "IPPass",
+                                                        "given":  [
+                                                                      "DelProcStartEncStartPlus1Min"
+                                                                  ]
+                                                    }
+                                                ],
+                                       "gender":  "female",
+                                       "birthDate":  "2005-01-31"
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Patient/56e6a586-ce66-4e06-8796-29015f9aec33"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Practitioner",
+                                       "id":  "2fbc7451-9b2e-4883-9e63-b784c161ab84",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner"
+                                                                ]
+                                                },
+                                       "identifier":  [
+                                                          {
+                                                              "system":  "http://hl7.org/fhir/sid/us-npi",
+                                                              "value":  "9999999896"
+                                                          }
+                                                      ],
+                                       "name":  [
+                                                    {
+                                                        "family":  "Evil",
+                                                        "prefix":  [
+                                                                       "Dr"
+                                                                   ]
+                                                    }
+                                                ]
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Practitioner/2fbc7451-9b2e-4883-9e63-b784c161ab84"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Procedure",
+                                       "id":  "050d8a8d-3aa5-4014-9282-0f5df9a88480",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-procedure"
+                                                                ]
+                                                },
+                                       "extension":  [
+                                                         {
+                                                             "url":  "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-recorded",
+                                                             "valueDateTime":  "2014-04-05T13:35:00.000+00:00"
+                                                         }
+                                                     ],
+                                       "status":  "completed",
+                                       "code":  {
+                                                    "coding":  [
+                                                                   {
+                                                                       "system":  "http://snomed.info/sct",
+                                                                       "code":  "10745001"
+                                                                   }
+                                                               ]
+                                                },
+                                       "subject":  {
+                                                       "reference":  "Patient/56e6a586-ce66-4e06-8796-29015f9aec33"
+                                                   },
+                                       "performedPeriod":  {
+                                                               "start":  "2026-02-01T08:01:00.000+00:00",
+                                                               "end":  "2026-02-01T08:15:00.000+00:00"
+                                                           }
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Procedure/050d8a8d-3aa5-4014-9282-0f5df9a88480"
+                                  }
+                  }
+              ]
+}

@@ -1,0 +1,589 @@
+﻿{
+    "resourceType":  "Bundle",
+    "id":  "3023ca44-3a4f-4be3-931b-784e9c9c46e9",
+    "type":  "transaction",
+    "entry":  [
+                  {
+                      "resource":  {
+                                       "resourceType":  "Claim",
+                                       "id":  "6d7ef99c-347c-4fb9-88cf-3c870dfc665e",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-claim"
+                                                                ]
+                                                },
+                                       "status":  "active",
+                                       "type":  {
+                                                    "coding":  [
+                                                                   {
+                                                                       "system":  "http://terminology.hl7.org/CodeSystem/claim-type",
+                                                                       "code":  "institutional"
+                                                                   }
+                                                               ]
+                                                },
+                                       "use":  "claim",
+                                       "patient":  {
+                                                       "reference":  "Patient/3023ca44-3a4f-4be3-931b-784e9c9c46e9"
+                                                   },
+                                       "created":  "2026-12-01",
+                                       "provider":  {
+                                                        "reference":  "Practitioner/07cd847c-3b4b-4f1d-bd05-c66d6f14b961"
+                                                    },
+                                       "priority":  {
+                                                        "coding":  [
+                                                                       {
+                                                                           "system":  "http://terminology.hl7.org/CodeSystem/processpriority",
+                                                                           "code":  "normal"
+                                                                       }
+                                                                   ]
+                                                    },
+                                       "diagnosis":  [
+                                                         {
+                                                             "sequence":  1,
+                                                             "diagnosisCodeableConcept":  {
+                                                                                              "coding":  [
+                                                                                                             {
+                                                                                                                 "system":  "http://hl7.org/fhir/sid/icd-10-cm",
+                                                                                                                 "code":  "I63.00"
+                                                                                                             }
+                                                                                                         ]
+                                                                                          },
+                                                             "type":  [
+                                                                          {
+                                                                              "coding":  [
+                                                                                             {
+                                                                                                 "system":  "http://terminology.hl7.org/CodeSystem/ex-diagnosistype",
+                                                                                                 "code":  "principal"
+                                                                                             }
+                                                                                         ]
+                                                                          }
+                                                                      ]
+                                                         }
+                                                     ],
+                                       "insurance":  [
+                                                         {
+                                                             "sequence":  1,
+                                                             "focal":  true,
+                                                             "coverage":  {
+                                                                              "reference":  "Coverage/5fa041661c76ba66d9959367"
+                                                                          }
+                                                         }
+                                                     ],
+                                       "item":  [
+                                                    {
+                                                        "sequence":  1,
+                                                        "diagnosisSequence":  [
+                                                                                  1
+                                                                              ],
+                                                        "productOrService":  {
+                                                                                 "coding":  [
+                                                                                                {
+                                                                                                    "system":  "http://terminology.hl7.org/CodeSystem/ex-USCLS",
+                                                                                                    "code":  "99555"
+                                                                                                }
+                                                                                            ]
+                                                                             },
+                                                        "encounter":  [
+                                                                          {
+                                                                              "reference":  "Encounter/2ace4d69-6599-46e0-885d-bd900a630eec"
+                                                                          }
+                                                                      ]
+                                                    }
+                                                ]
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Claim/6d7ef99c-347c-4fb9-88cf-3c870dfc665e"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Condition",
+                                       "id":  "7eefe016-43a6-4d06-baa9-5b2415c9cb25",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns"
+                                                                ]
+                                                },
+                                       "clinicalStatus":  {
+                                                              "coding":  [
+                                                                             {
+                                                                                 "system":  "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                                                                                 "code":  "inactive"
+                                                                             }
+                                                                         ]
+                                                          },
+                                       "verificationStatus":  {
+                                                                  "coding":  [
+                                                                                 {
+                                                                                     "system":  "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                                                                                     "code":  "confirmed"
+                                                                                 }
+                                                                             ]
+                                                              },
+                                       "category":  [
+                                                        {
+                                                            "coding":  [
+                                                                           {
+                                                                               "system":  "http://terminology.hl7.org/CodeSystem/condition-category",
+                                                                               "code":  "problem-list-item"
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ],
+                                       "code":  {
+                                                    "coding":  [
+                                                                   {
+                                                                       "system":  "http://hl7.org/fhir/sid/icd-9-cm",
+                                                                       "code":  "427.31"
+                                                                   },
+                                                                   {
+                                                                       "system":  "http://hl7.org/fhir/sid/icd-10-cm",
+                                                                       "code":  "I48.0"
+                                                                   },
+                                                                   {
+                                                                       "system":  "http://snomed.info/sct",
+                                                                       "code":  "5370000"
+                                                                   }
+                                                               ]
+                                                },
+                                       "subject":  {
+                                                       "reference":  "Patient/3023ca44-3a4f-4be3-931b-784e9c9c46e9"
+                                                   },
+                                       "onsetDateTime":  "2026-10-01T09:00:00.000Z",
+                                       "abatementDateTime":  "2026-10-12T00:15:00.000Z"
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Condition/7eefe016-43a6-4d06-baa9-5b2415c9cb25"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Condition",
+                                       "id":  "e71d68cd-cbc6-4da7-9298-0bf7a2eba3b7",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis"
+                                                                ]
+                                                },
+                                       "clinicalStatus":  {
+                                                              "coding":  [
+                                                                             {
+                                                                                 "system":  "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                                                                                 "code":  "active"
+                                                                             }
+                                                                         ]
+                                                          },
+                                       "verificationStatus":  {
+                                                                  "coding":  [
+                                                                                 {
+                                                                                     "system":  "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                                                                                     "code":  "confirmed"
+                                                                                 }
+                                                                             ]
+                                                              },
+                                       "category":  [
+                                                        {
+                                                            "coding":  [
+                                                                           {
+                                                                               "system":  "http://terminology.hl7.org/CodeSystem/condition-category",
+                                                                               "code":  "encounter-diagnosis",
+                                                                               "display":  "Encounter Diagnosis"
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ],
+                                       "code":  {
+                                                    "coding":  [
+                                                                   {
+                                                                       "system":  "http://snomed.info/sct",
+                                                                       "version":  "2021-09",
+                                                                       "code":  "111297002",
+                                                                       "display":  "Nonparalytic stroke (disorder)",
+                                                                       "userSelected":  true
+                                                                   }
+                                                               ]
+                                                },
+                                       "subject":  {
+                                                       "reference":  "Patient/3023ca44-3a4f-4be3-931b-784e9c9c46e9"
+                                                   },
+                                       "recordedDate":  "2026-10-13T08:00:00.000Z"
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Condition/e71d68cd-cbc6-4da7-9298-0bf7a2eba3b7"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Coverage",
+                                       "id":  "bb7dcc2a-a4f2-4783-9ff2-4769d4e45aac",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage"
+                                                                ]
+                                                },
+                                       "status":  "active",
+                                       "subscriberId":  "523435",
+                                       "beneficiary":  {
+                                                           "reference":  "Patient/3023ca44-3a4f-4be3-931b-784e9c9c46e9"
+                                                       },
+                                       "relationship":  {
+                                                            "coding":  [
+                                                                           {
+                                                                               "system":  "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
+                                                                               "code":  "self"
+                                                                           }
+                                                                       ]
+                                                        },
+                                       "payor":  [
+                                                     {
+                                                         "reference":  "Organization/3c8ca47a-248b-411b-b4aa-9cd516f7a193"
+                                                     }
+                                                 ]
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Coverage/bb7dcc2a-a4f2-4783-9ff2-4769d4e45aac"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Encounter",
+                                       "id":  "168fbb57-6774-413a-bea2-9c9276d2128e",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter"
+                                                                ]
+                                                },
+                                       "status":  "finished",
+                                       "class":  {
+                                                     "system":  "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                                     "code":  "EMER",
+                                                     "display":  "emergency"
+                                                 },
+                                       "type":  [
+                                                    {
+                                                        "coding":  [
+                                                                       {
+                                                                           "system":  "http://snomed.info/sct",
+                                                                           "code":  "4525004"
+                                                                       }
+                                                                   ]
+                                                    }
+                                                ],
+                                       "subject":  {
+                                                       "reference":  "Patient/3023ca44-3a4f-4be3-931b-784e9c9c46e9"
+                                                   },
+                                       "period":  {
+                                                      "start":  "2026-09-30T06:59:00.000Z",
+                                                      "end":  "2026-09-30T07:00:00.000Z"
+                                                  },
+                                       "length":  {
+                                                      "value":  0,
+                                                      "unit":  "days"
+                                                  }
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Encounter/168fbb57-6774-413a-bea2-9c9276d2128e"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Encounter",
+                                       "id":  "2ace4d69-6599-46e0-885d-bd900a630eec",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter"
+                                                                ]
+                                                },
+                                       "status":  "finished",
+                                       "class":  {
+                                                     "system":  "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                                     "code":  "IMP",
+                                                     "display":  "inpatient encounter"
+                                                 },
+                                       "type":  [
+                                                    {
+                                                        "coding":  [
+                                                                       {
+                                                                           "system":  "http://snomed.info/sct",
+                                                                           "code":  "32485007"
+                                                                       }
+                                                                   ]
+                                                    }
+                                                ],
+                                       "subject":  {
+                                                       "reference":  "Patient/3023ca44-3a4f-4be3-931b-784e9c9c46e9"
+                                                   },
+                                       "period":  {
+                                                      "start":  "2026-09-30T09:06:00.000Z",
+                                                      "end":  "2026-10-12T00:15:00.000Z"
+                                                  },
+                                       "length":  {
+                                                      "value":  12,
+                                                      "unit":  "days"
+                                                  },
+                                       "reasonReference":  [
+                                                               {
+                                                                   "reference":  "Condition/7eefe016-43a6-4d06-baa9-5b2415c9cb25"
+                                                               }
+                                                           ],
+                                       "hospitalization":  {
+                                                               "dischargeDisposition":  {
+                                                                                            "coding":  [
+                                                                                                           {
+                                                                                                               "system":  "http://snomed.info/sct",
+                                                                                                               "code":  "10161009",
+                                                                                                               "display":  "Discharge To Home Or Police Custody"
+                                                                                                           }
+                                                                                                       ]
+                                                                                        }
+                                                           }
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Encounter/2ace4d69-6599-46e0-885d-bd900a630eec"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Encounter",
+                                       "id":  "3848779e-afd7-498a-bdd9-0299a79dadb9",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter"
+                                                                ]
+                                                },
+                                       "status":  "finished",
+                                       "class":  {
+                                                     "system":  "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                                     "code":  "OBSENC",
+                                                     "display":  "observation encounter"
+                                                 },
+                                       "type":  [
+                                                    {
+                                                        "coding":  [
+                                                                       {
+                                                                           "system":  "http://snomed.info/sct",
+                                                                           "code":  "448851000124103"
+                                                                       }
+                                                                   ]
+                                                    }
+                                                ],
+                                       "subject":  {
+                                                       "reference":  "Patient/3023ca44-3a4f-4be3-931b-784e9c9c46e9"
+                                                   },
+                                       "period":  {
+                                                      "start":  "2026-09-30T08:00:00.000Z",
+                                                      "end":  "2026-09-30T08:05:00.000Z"
+                                                  },
+                                       "length":  {
+                                                      "value":  0,
+                                                      "unit":  "days"
+                                                  }
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Encounter/3848779e-afd7-498a-bdd9-0299a79dadb9"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Organization",
+                                       "id":  "3c8ca47a-248b-411b-b4aa-9cd516f7a193",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-organization"
+                                                                ]
+                                                },
+                                       "identifier":  [
+                                                          {
+                                                              "use":  "temp",
+                                                              "system":  "urn:oid:2.16.840.1.113883.4.4",
+                                                              "value":  "21-3259825"
+                                                          }
+                                                      ],
+                                       "active":  true,
+                                       "type":  [
+                                                    {
+                                                        "coding":  [
+                                                                       {
+                                                                           "system":  "http://terminology.hl7.org/CodeSystem/organization-type",
+                                                                           "code":  "pay",
+                                                                           "display":  "Payer"
+                                                                       }
+                                                                   ]
+                                                    }
+                                                ],
+                                       "name":  "Blue Cross Blue Shield of Texas",
+                                       "telecom":  [
+                                                       {
+                                                           "system":  "phone",
+                                                           "value":  "(+1) 972-766-6900"
+                                                       }
+                                                   ],
+                                       "address":  [
+                                                       {
+                                                           "use":  "billing",
+                                                           "type":  "postal",
+                                                           "line":  [
+                                                                        "P.O. Box 660044"
+                                                                    ],
+                                                           "city":  "Dallas",
+                                                           "state":  "TX",
+                                                           "postalCode":  "75266-0044",
+                                                           "country":  "USA"
+                                                       }
+                                                   ]
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Organization/3c8ca47a-248b-411b-b4aa-9cd516f7a193"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Patient",
+                                       "id":  "3023ca44-3a4f-4be3-931b-784e9c9c46e9",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient"
+                                                                ]
+                                                },
+                                       "text":  {
+                                                    "status":  "generated",
+                                                    "div":  "\u003cdiv xmlns=\"http://www.w3.org/1999/xhtml\"\u003e\u003cdiv class=\"hapiHeaderText\"\u003eCMOdurObs_ED\u0026gt;1hrObs\u0026gt;1hrBFEnc \u003cb\u003eDENEXFAIL \u003c/b\u003e\u003c/div\u003e\u003ctable class=\"hapiPropertyTable\"\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003eIdentifier\u003c/td\u003e\u003ctd\u003e013c7df93f5b4b7bbcd2a75a8b429b2c\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eDate of birth\u003c/td\u003e\u003ctd\u003e\u003cspan\u003e18 September 1985\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/div\u003e"
+                                                },
+                                       "extension":  [
+                                                         {
+                                                             "url":  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+                                                             "extension":  [
+                                                                               {
+                                                                                   "url":  "ombCategory",
+                                                                                   "valueCoding":  {
+                                                                                                       "system":  "urn:oid:2.16.840.1.113883.6.238",
+                                                                                                       "code":  "1002-5",
+                                                                                                       "display":  "American Indian or Alaska Native",
+                                                                                                       "userSelected":  true
+                                                                                                   }
+                                                                               },
+                                                                               {
+                                                                                   "url":  "text",
+                                                                                   "valueString":  "American Indian or Alaska Native"
+                                                                               }
+                                                                           ]
+                                                         },
+                                                         {
+                                                             "url":  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+                                                             "extension":  [
+                                                                               {
+                                                                                   "url":  "ombCategory",
+                                                                                   "valueCoding":  {
+                                                                                                       "system":  "urn:oid:2.16.840.1.113883.6.238",
+                                                                                                       "code":  "2135-2",
+                                                                                                       "display":  "Hispanic or Latino",
+                                                                                                       "userSelected":  true
+                                                                                                   }
+                                                                               },
+                                                                               {
+                                                                                   "url":  "text",
+                                                                                   "valueString":  "Hispanic or Latino"
+                                                                               }
+                                                                           ]
+                                                         }
+                                                     ],
+                                       "identifier":  [
+                                                          {
+                                                              "type":  {
+                                                                           "coding":  [
+                                                                                          {
+                                                                                              "system":  "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                                                                              "code":  "MR"
+                                                                                          }
+                                                                                      ]
+                                                                       },
+                                                              "system":  "https://bonnie-fhir.healthit.gov/",
+                                                              "value":  "633c9d030968f8012250fc8a"
+                                                          }
+                                                      ],
+                                       "active":  true,
+                                       "name":  [
+                                                    {
+                                                        "use":  "usual",
+                                                        "family":  "DENEXFail",
+                                                        "given":  [
+                                                                      "CMOdurObs_ED\u003e1hrObs\u003e1hrBFEnc"
+                                                                  ]
+                                                    }
+                                                ],
+                                       "gender":  "female",
+                                       "birthDate":  "1986-09-18"
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Patient/3023ca44-3a4f-4be3-931b-784e9c9c46e9"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Practitioner",
+                                       "id":  "07cd847c-3b4b-4f1d-bd05-c66d6f14b961",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner"
+                                                                ]
+                                                },
+                                       "identifier":  [
+                                                          {
+                                                              "system":  "http://hl7.org/fhir/sid/us-npi",
+                                                              "value":  "9999999896"
+                                                          }
+                                                      ],
+                                       "name":  [
+                                                    {
+                                                        "family":  "Evil",
+                                                        "prefix":  [
+                                                                       "Dr"
+                                                                   ]
+                                                    }
+                                                ]
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Practitioner/07cd847c-3b4b-4f1d-bd05-c66d6f14b961"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "ServiceRequest",
+                                       "id":  "8e5900ed-505d-4075-832e-da0ef7857d3b",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-servicerequest"
+                                                                ]
+                                                },
+                                       "status":  "active",
+                                       "intent":  "order",
+                                       "code":  {
+                                                    "coding":  [
+                                                                   {
+                                                                       "system":  "http://snomed.info/sct",
+                                                                       "code":  "133918004"
+                                                                   }
+                                                               ]
+                                                },
+                                       "subject":  {
+                                                       "reference":  "Patient/3023ca44-3a4f-4be3-931b-784e9c9c46e9"
+                                                   },
+                                       "authoredOn":  "2026-09-30T08:01:00.000Z"
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "ServiceRequest/8e5900ed-505d-4075-832e-da0ef7857d3b"
+                                  }
+                  }
+              ]
+}

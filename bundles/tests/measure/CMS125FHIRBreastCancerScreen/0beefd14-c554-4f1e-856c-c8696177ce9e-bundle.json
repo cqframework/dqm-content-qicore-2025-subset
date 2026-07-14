@@ -1,0 +1,167 @@
+﻿{
+    "resourceType":  "Bundle",
+    "id":  "0beefd14-c554-4f1e-856c-c8696177ce9e",
+    "type":  "transaction",
+    "entry":  [
+                  {
+                      "resource":  {
+                                       "resourceType":  "Encounter",
+                                       "id":  "3d1e5140-9866-43fe-92c6-9c4632ddfe3a.1",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter"
+                                                                ]
+                                                },
+                                       "status":  "finished",
+                                       "class":  {
+                                                     "system":  "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                                     "code":  "AMB",
+                                                     "display":  "ambulatory"
+                                                 },
+                                       "type":  [
+                                                    {
+                                                        "coding":  [
+                                                                       {
+                                                                           "system":  "http://snomed.info/sct",
+                                                                           "code":  "183452005",
+                                                                           "display":  "Emergency hospital admission (procedure)"
+                                                                       }
+                                                                   ]
+                                                    }
+                                                ],
+                                       "subject":  {
+                                                       "reference":  "Patient/0beefd14-c554-4f1e-856c-c8696177ce9e"
+                                                   },
+                                       "period":  {
+                                                      "start":  "2026-01-01T00:00:00.000+00:00",
+                                                      "end":  "2026-01-01T00:00:00.000+00:00"
+                                                  },
+                                       "hospitalization":  {
+                                                               "dischargeDisposition":  {
+                                                                                            "coding":  [
+                                                                                                           {
+                                                                                                               "system":  "http://snomed.info/sct",
+                                                                                                               "code":  "428371000124100",
+                                                                                                               "display":  "Discharge to healthcare facility for hospice care (procedure)"
+                                                                                                           }
+                                                                                                       ]
+                                                                                        }
+                                                           }
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Encounter/3d1e5140-9866-43fe-92c6-9c4632ddfe3a.1"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Encounter",
+                                       "id":  "3d1e5140-9866-43fe-92c6-9c4632ddfe3a",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter"
+                                                                ]
+                                                },
+                                       "status":  "finished",
+                                       "class":  {
+                                                     "system":  "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                                     "code":  "AMB",
+                                                     "display":  "ambulatory"
+                                                 },
+                                       "type":  [
+                                                    {
+                                                        "coding":  [
+                                                                       {
+                                                                           "system":  "http://snomed.info/sct",
+                                                                           "code":  "185463005",
+                                                                           "display":  "Visit out of hours (procedure)"
+                                                                       }
+                                                                   ]
+                                                    }
+                                                ],
+                                       "subject":  {
+                                                       "reference":  "Patient/0beefd14-c554-4f1e-856c-c8696177ce9e"
+                                                   },
+                                       "period":  {
+                                                      "start":  "2026-01-01T00:00:00.000+00:00",
+                                                      "end":  "2026-01-01T00:00:00.000+00:00"
+                                                  }
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Encounter/3d1e5140-9866-43fe-92c6-9c4632ddfe3a"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Patient",
+                                       "id":  "0beefd14-c554-4f1e-856c-c8696177ce9e",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient"
+                                                                ]
+                                                },
+                                       "extension":  [
+                                                         {
+                                                             "url":  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+                                                             "extension":  [
+                                                                               {
+                                                                                   "url":  "ombCategory",
+                                                                                   "valueCoding":  {
+                                                                                                       "system":  "urn:oid:2.16.840.1.113883.6.238",
+                                                                                                       "code":  "2028-9",
+                                                                                                       "display":  "Asian"
+                                                                                                   }
+                                                                               },
+                                                                               {
+                                                                                   "url":  "text",
+                                                                                   "valueString":  "Asian"
+                                                                               }
+                                                                           ]
+                                                         },
+                                                         {
+                                                             "url":  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex",
+                                                             "valueCode":  "248152002"
+                                                         },
+                                                         {
+                                                             "url":  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+                                                             "extension":  [
+                                                                               {
+                                                                                   "url":  "ombCategory",
+                                                                                   "valueCoding":  {
+                                                                                                       "system":  "urn:oid:2.16.840.1.113883.6.238",
+                                                                                                       "code":  "2135-2",
+                                                                                                       "display":  "Hispanic or Latino"
+                                                                                                   }
+                                                                               },
+                                                                               {
+                                                                                   "url":  "text",
+                                                                                   "valueString":  "Hispanic or Latino"
+                                                                               }
+                                                                           ]
+                                                         }
+                                                     ],
+                                       "identifier":  [
+                                                          {
+                                                              "system":  "http://hospital.smarthealthit.org",
+                                                              "value":  "999999995"
+                                                          }
+                                                      ],
+                                       "name":  [
+                                                    {
+                                                        "family":  "Bertha",
+                                                        "given":  [
+                                                                      "Betty"
+                                                                  ]
+                                                    }
+                                                ],
+                                       "gender":  "female",
+                                       "birthDate":  "1974-12-31"
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Patient/0beefd14-c554-4f1e-856c-c8696177ce9e"
+                                  }
+                  }
+              ]
+}

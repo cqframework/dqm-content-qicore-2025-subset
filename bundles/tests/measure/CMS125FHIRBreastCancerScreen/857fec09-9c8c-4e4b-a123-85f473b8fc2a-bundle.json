@@ -1,0 +1,193 @@
+﻿{
+    "resourceType":  "Bundle",
+    "id":  "857fec09-9c8c-4e4b-a123-85f473b8fc2a",
+    "type":  "transaction",
+    "entry":  [
+                  {
+                      "resource":  {
+                                       "resourceType":  "Encounter",
+                                       "id":  "49aed36e-77db-48e3-a846-881329ffd12b",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter"
+                                                                ]
+                                                },
+                                       "status":  "finished",
+                                       "class":  {
+                                                     "system":  "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                                     "code":  "AMB",
+                                                     "display":  "ambulatory"
+                                                 },
+                                       "type":  [
+                                                    {
+                                                        "coding":  [
+                                                                       {
+                                                                           "system":  "http://snomed.info/sct",
+                                                                           "code":  "185463005",
+                                                                           "display":  "Visit out of hours (procedure)"
+                                                                       }
+                                                                   ]
+                                                    }
+                                                ],
+                                       "subject":  {
+                                                       "reference":  "Patient/857fec09-9c8c-4e4b-a123-85f473b8fc2a"
+                                                   },
+                                       "period":  {
+                                                      "start":  "2026-01-01T00:00:00.000+00:00",
+                                                      "end":  "2026-01-01T00:00:00.000+00:00"
+                                                  }
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Encounter/49aed36e-77db-48e3-a846-881329ffd12b"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Patient",
+                                       "id":  "857fec09-9c8c-4e4b-a123-85f473b8fc2a",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient"
+                                                                ]
+                                                },
+                                       "extension":  [
+                                                         {
+                                                             "url":  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+                                                             "extension":  [
+                                                                               {
+                                                                                   "url":  "ombCategory",
+                                                                                   "valueCoding":  {
+                                                                                                       "system":  "urn:oid:2.16.840.1.113883.6.238",
+                                                                                                       "code":  "2028-9",
+                                                                                                       "display":  "Asian"
+                                                                                                   }
+                                                                               },
+                                                                               {
+                                                                                   "url":  "text",
+                                                                                   "valueString":  "Asian"
+                                                                               }
+                                                                           ]
+                                                         },
+                                                         {
+                                                             "url":  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex",
+                                                             "valueCode":  "248152002"
+                                                         },
+                                                         {
+                                                             "url":  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+                                                             "extension":  [
+                                                                               {
+                                                                                   "url":  "ombCategory",
+                                                                                   "valueCoding":  {
+                                                                                                       "system":  "urn:oid:2.16.840.1.113883.6.238",
+                                                                                                       "code":  "2135-2",
+                                                                                                       "display":  "Hispanic or Latino"
+                                                                                                   }
+                                                                               },
+                                                                               {
+                                                                                   "url":  "text",
+                                                                                   "valueString":  "Hispanic or Latino"
+                                                                               }
+                                                                           ]
+                                                         }
+                                                     ],
+                                       "identifier":  [
+                                                          {
+                                                              "system":  "http://hospital.smarthealthit.org",
+                                                              "value":  "999999995"
+                                                          }
+                                                      ],
+                                       "name":  [
+                                                    {
+                                                        "family":  "Bertha",
+                                                        "given":  [
+                                                                      "Betty"
+                                                                  ]
+                                                    }
+                                                ],
+                                       "gender":  "female",
+                                       "birthDate":  "1974-12-31"
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Patient/857fec09-9c8c-4e4b-a123-85f473b8fc2a"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Procedure",
+                                       "id":  "a1b0fd66-17d0-4143-a4ac-21a92e8ef041.1",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-procedure"
+                                                                ]
+                                                },
+                                       "extension":  [
+                                                         {
+                                                             "url":  "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-recorded",
+                                                             "valueDateTime":  "2025-12-31T23:59:59.000+00:00"
+                                                         }
+                                                     ],
+                                       "status":  "completed",
+                                       "code":  {
+                                                    "coding":  [
+                                                                   {
+                                                                       "system":  "http://www.cms.gov/Medicare/Coding/ICD10",
+                                                                       "code":  "0HTU0ZZ",
+                                                                       "display":  "Resection of Left Breast, Open Approach"
+                                                                   }
+                                                               ]
+                                                },
+                                       "subject":  {
+                                                       "reference":  "Patient/857fec09-9c8c-4e4b-a123-85f473b8fc2a"
+                                                   },
+                                       "performedPeriod":  {
+                                                               "start":  "2026-12-31T23:59:59.000+00:00",
+                                                               "end":  "2026-12-31T23:59:59.000+00:00"
+                                                           }
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Procedure/a1b0fd66-17d0-4143-a4ac-21a92e8ef041.1"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Procedure",
+                                       "id":  "a1b0fd66-17d0-4143-a4ac-21a92e8ef041",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-procedure"
+                                                                ]
+                                                },
+                                       "extension":  [
+                                                         {
+                                                             "url":  "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-recorded",
+                                                             "valueDateTime":  "2025-12-31T23:59:59.000+00:00"
+                                                         }
+                                                     ],
+                                       "status":  "completed",
+                                       "code":  {
+                                                    "coding":  [
+                                                                   {
+                                                                       "system":  "http://www.cms.gov/Medicare/Coding/ICD10",
+                                                                       "code":  "0HTT0ZZ",
+                                                                       "display":  "Resection of Right Breast, Open Approach"
+                                                                   }
+                                                               ]
+                                                },
+                                       "subject":  {
+                                                       "reference":  "Patient/857fec09-9c8c-4e4b-a123-85f473b8fc2a"
+                                                   },
+                                       "performedPeriod":  {
+                                                               "start":  "2026-12-31T23:59:59.000+00:00",
+                                                               "end":  "2026-12-31T23:59:59.000+00:00"
+                                                           }
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Procedure/a1b0fd66-17d0-4143-a4ac-21a92e8ef041"
+                                  }
+                  }
+              ]
+}

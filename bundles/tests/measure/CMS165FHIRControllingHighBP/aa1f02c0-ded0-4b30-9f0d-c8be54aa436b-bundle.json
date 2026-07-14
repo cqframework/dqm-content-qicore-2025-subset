@@ -1,0 +1,211 @@
+﻿{
+    "resourceType":  "Bundle",
+    "id":  "aa1f02c0-ded0-4b30-9f0d-c8be54aa436b",
+    "type":  "transaction",
+    "entry":  [
+                  {
+                      "resource":  {
+                                       "resourceType":  "Condition",
+                                       "id":  "a2b1644b-a753-49f9-8619-f24aa32311ef",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns"
+                                                                ]
+                                                },
+                                       "clinicalStatus":  {
+                                                              "coding":  [
+                                                                             {
+                                                                                 "system":  "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                                                                                 "code":  "active"
+                                                                             }
+                                                                         ]
+                                                          },
+                                       "category":  [
+                                                        {
+                                                            "coding":  [
+                                                                           {
+                                                                               "system":  "http://terminology.hl7.org/CodeSystem/condition-category",
+                                                                               "code":  "problem-list-item",
+                                                                               "display":  "Problem List Item"
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ],
+                                       "code":  {
+                                                    "coding":  [
+                                                                   {
+                                                                       "system":  "http://snomed.info/sct",
+                                                                       "code":  "371125006",
+                                                                       "display":  "Labile essential hypertension (disorder)"
+                                                                   }
+                                                               ]
+                                                },
+                                       "subject":  {
+                                                       "reference":  "Patient/aa1f02c0-ded0-4b30-9f0d-c8be54aa436b"
+                                                   },
+                                       "onsetDateTime":  "2026-06-30T23:59:59.000+00:00"
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Condition/a2b1644b-a753-49f9-8619-f24aa32311ef"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Encounter",
+                                       "id":  "65cd3215-56d8-4763-8107-965b3d44ec45",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter"
+                                                                ]
+                                                },
+                                       "status":  "finished",
+                                       "class":  {
+                                                     "system":  "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                                     "code":  "AMB",
+                                                     "display":  "ambulatory"
+                                                 },
+                                       "type":  [
+                                                    {
+                                                        "coding":  [
+                                                                       {
+                                                                           "system":  "http://snomed.info/sct",
+                                                                           "code":  "3391000175108",
+                                                                           "display":  "Office visit for pediatric care and assessment (procedure)"
+                                                                       }
+                                                                   ]
+                                                    }
+                                                ],
+                                       "subject":  {
+                                                       "reference":  "Patient/aa1f02c0-ded0-4b30-9f0d-c8be54aa436b"
+                                                   },
+                                       "period":  {
+                                                      "start":  "2026-01-01T00:00:00.000+00:00",
+                                                      "end":  "2026-01-01T01:00:00.000+00:00"
+                                                  }
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Encounter/65cd3215-56d8-4763-8107-965b3d44ec45"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Observation",
+                                       "id":  "e70f37db-6d90-43c0-961d-72f978430a4e",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment"
+                                                                ]
+                                                },
+                                       "status":  "final",
+                                       "category":  [
+                                                        {
+                                                            "coding":  [
+                                                                           {
+                                                                               "system":  "http://terminology.hl7.org/CodeSystem/observation-category",
+                                                                               "code":  "survey"
+                                                                           }
+                                                                       ]
+                                                        }
+                                                    ],
+                                       "code":  {
+                                                    "coding":  [
+                                                                   {
+                                                                       "system":  "http://loinc.org",
+                                                                       "code":  "71007-9",
+                                                                       "display":  "Functional Assessment of Chronic Illness Therapy - Palliative Care Questionnaire (FACIT-Pal)"
+                                                                   }
+                                                               ]
+                                                },
+                                       "subject":  {
+                                                       "reference":  "Patient/aa1f02c0-ded0-4b30-9f0d-c8be54aa436b"
+                                                   },
+                                       "effectivePeriod":  {
+                                                               "start":  "2025-12-31T00:00:00.000+00:00",
+                                                               "end":  "2026-01-01T00:00:00.000+00:00"
+                                                           },
+                                       "valueCodeableConcept":  {
+                                                                    "coding":  [
+                                                                                   {
+                                                                                       "system":  "http://snomed.info/sct",
+                                                                                       "code":  "373066001",
+                                                                                       "display":  "Yes (qualifier value)"
+                                                                                   }
+                                                                               ]
+                                                                }
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Observation/e70f37db-6d90-43c0-961d-72f978430a4e"
+                                  }
+                  },
+                  {
+                      "resource":  {
+                                       "resourceType":  "Patient",
+                                       "id":  "aa1f02c0-ded0-4b30-9f0d-c8be54aa436b",
+                                       "meta":  {
+                                                    "profile":  [
+                                                                    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient"
+                                                                ]
+                                                },
+                                       "extension":  [
+                                                         {
+                                                             "url":  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+                                                             "extension":  [
+                                                                               {
+                                                                                   "url":  "ombCategory",
+                                                                                   "valueCoding":  {
+                                                                                                       "system":  "urn:oid:2.16.840.1.113883.6.238",
+                                                                                                       "code":  "2028-9",
+                                                                                                       "display":  "Asian"
+                                                                                                   }
+                                                                               },
+                                                                               {
+                                                                                   "url":  "text",
+                                                                                   "valueString":  "Asian"
+                                                                               }
+                                                                           ]
+                                                         },
+                                                         {
+                                                             "url":  "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+                                                             "extension":  [
+                                                                               {
+                                                                                   "url":  "ombCategory",
+                                                                                   "valueCoding":  {
+                                                                                                       "system":  "urn:oid:2.16.840.1.113883.6.238",
+                                                                                                       "code":  "2135-2",
+                                                                                                       "display":  "Hispanic or Latino"
+                                                                                                   }
+                                                                               },
+                                                                               {
+                                                                                   "url":  "text",
+                                                                                   "valueString":  "Hispanic or Latino"
+                                                                               }
+                                                                           ]
+                                                         }
+                                                     ],
+                                       "identifier":  [
+                                                          {
+                                                              "system":  "http://hospital.smarthealthit.org",
+                                                              "value":  "999999995"
+                                                          }
+                                                      ],
+                                       "name":  [
+                                                    {
+                                                        "family":  "DENEXPass",
+                                                        "given":  [
+                                                                      "PalliativeCareSurveyOverlapsB4MP"
+                                                                  ]
+                                                    }
+                                                ],
+                                       "gender":  "female",
+                                       "birthDate":  "2007-12-31"
+                                   },
+                      "request":  {
+                                      "method":  "PUT",
+                                      "url":  "Patient/aa1f02c0-ded0-4b30-9f0d-c8be54aa436b"
+                                  }
+                  }
+              ]
+}
