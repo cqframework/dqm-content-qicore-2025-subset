@@ -1,7 +1,7 @@
 # Loading and Evaluating the Test Measures
 
 This guide walks through standing up one (or all) of the measures in this repository
-on a FHIR server that supports the clinical-reasoning `Measure/$evaluate` operation
+on a FHIR server that supports the clinical-reasoning `Measure/$evaluate-measure` operation
 (e.g. a CQF-based server), and then running the bundled test cases through it.
 
 The end-to-end flow is:
@@ -17,7 +17,7 @@ All commands are PowerShell and are run from the repository root.
 
 ## Prerequisites
 
-- A running FHIR R4 server that supports `Measure/$evaluate`.
+- A running FHIR R4 server that supports `Measure/$evaluate-measure`.
 - The helper scripts in this repo: `put_valuesets.ps1` and `post_bundles.ps1`.
 - The generated bundles under `bundles/` (measure bundles ship in the repo; the
   per-test-case bundles under `bundles/tests/measure/` are produced by
@@ -122,8 +122,8 @@ Evaluating with the `Group` as the `subject` and `reportType=subject` produces a
 `Bundle`.
 
 ```powershell
-# NOTE: single-quoted template so PowerShell doesn't treat $evaluate as a variable
-$uri = '{0}/Measure/{1}/$evaluate?{2}&subject=Group/{1}&reportType=subject' -f $base, $measure, $period
+# NOTE: single-quoted template so PowerShell doesn't treat $evaluate-measure as a variable
+$uri = '{0}/Measure/{1}/$evaluate-measure?{2}&subject=Group/{1}&reportType=subject' -f $base, $measure, $period
 
 Invoke-RestMethod -Method Get -Uri $uri -Headers @{ Accept = 'application/fhir+json' } |
     ConvertTo-Json -Depth 64 | Set-Content "$measure-individual.json" -Encoding UTF8
@@ -132,7 +132,7 @@ Invoke-RestMethod -Method Get -Uri $uri -Headers @{ Accept = 'application/fhir+j
 The equivalent raw request:
 
 ```
-GET {base}/Measure/CMS71FHIRSTKAnticoagAFFlutter/$evaluate
+GET {base}/Measure/CMS71FHIRSTKAnticoagAFFlutter/$evaluate-measure
         ?periodStart=2026-01-01&periodEnd=2026-12-31
         &subject=Group/CMS71FHIRSTKAnticoagAFFlutter
         &reportType=subject
@@ -150,7 +150,7 @@ with population counts (initial-population, denominator, numerator, exclusions, 
 across all members of the group:
 
 ```powershell
-$uri = '{0}/Measure/{1}/$evaluate?{2}&subject=Group/{1}&reportType=population' -f $base, $measure, $period
+$uri = '{0}/Measure/{1}/$evaluate-measure?{2}&subject=Group/{1}&reportType=population' -f $base, $measure, $period
 
 Invoke-RestMethod -Method Get -Uri $uri -Headers @{ Accept = 'application/fhir+json' } |
     ConvertTo-Json -Depth 64 | Set-Content "$measure-summary.json" -Encoding UTF8
@@ -159,7 +159,7 @@ Invoke-RestMethod -Method Get -Uri $uri -Headers @{ Accept = 'application/fhir+j
 The equivalent raw request:
 
 ```
-GET {base}/Measure/CMS71FHIRSTKAnticoagAFFlutter/$evaluate
+GET {base}/Measure/CMS71FHIRSTKAnticoagAFFlutter/$evaluate-measure
         ?periodStart=2026-01-01&periodEnd=2026-12-31
         &subject=Group/CMS71FHIRSTKAnticoagAFFlutter
         &reportType=population
@@ -217,15 +217,15 @@ All measures use reporting period `2026-01-01` .. `2026-12-31`. The `Measure` id
 
 - **Order matters.** Terminology (step 1) and the measure (step 2) must be present
   before evaluation, and the `Group` (step 3) plus its patient data (step 4) must both
-  be loaded before `$evaluate` in steps 5–6.
+  be loaded before `$evaluate-measure` in steps 5–6.
 - **Idempotent.** Every load step uses PUT/`id`-based upsert, so re-running is safe.
-- **`$evaluate` escaping.** In PowerShell double-quoted strings `$evaluate` looks like
+- **`$evaluate-measure` escaping.** In PowerShell double-quoted strings `$evaluate-measure` looks like
   a variable. The examples above use single-quoted `-f` format templates to keep it
-  literal; if you build the URL another way, escape it as `` `$evaluate `` or use
+  literal; if you build the URL another way, escape it as `` `$evaluate-measure `` or use
   single quotes.
 - **Server variation.** Exact `reportType` support (`subject` / `subject-list` /
-  `population`) and whether `$evaluate` is invoked by instance (`Measure/{id}/$evaluate`)
-  or type level (`Measure/$evaluate?measure=<canonical>`) can vary by server and
+  `population`) and whether `$evaluate-measure` is invoked by instance (`Measure/{id}/$evaluate-measure`)
+  or type level (`Measure/$evaluate-measure?measure=<canonical>`) can vary by server and
   version. If instance-level evaluation isn't available, pass the canonical URL
   (`https://madie.cms.gov/Measure/<id>`) via a `measure` parameter to the type-level
   operation instead.
