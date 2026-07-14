@@ -1,0 +1,578 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.526.3.398-20250205",
+  "meta": {
+    "versionId": "29",
+    "lastUpdated": "2025-02-05T01:09:18.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "American Institutes for Research Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-02-05"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2025-02-05"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.398",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.526.3.398"
+  } ],
+  "version": "20250205",
+  "name": "ProstateCancerTreatment",
+  "title": "Prostate Cancer Treatment",
+  "status": "active",
+  "date": "2025-02-05T01:09:18-05:00",
+  "publisher": "American Institutes for Research Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts of procedures for prostate cancer treatments.),(Data Element Scope: This value set may use a model element related to Procedure.),(Inclusion Criteria: Includes concepts that represent a procedure for interstitial prostate brachytherapy, external beam radiotherapy to the prostate, and radical prostatectomy.),(Exclusion Criteria: No exclusions.)",
+  "compose": {
+    "include": [ {
+      "valueSet": [ "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.213" ]
+    }, {
+      "valueSet": [ "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.277" ]
+    }, {
+      "valueSet": [ "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.113" ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:616031e9-b2f8-4bb8-a598-c90377c30e2e",
+    "timestamp": "2025-08-28T17:08:01-04:00",
+    "total": 86,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "113120007",
+      "display": "Interstitial brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "169359004",
+      "display": "Internal radiotherapy - permanent seeds (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "176261008",
+      "display": "Radical prostatectomy without pelvic node excision (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "176262001",
+      "display": "Radical prostatectomy with pelvic node sampling (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "176263006",
+      "display": "Radical prostatectomy with pelvic lymphadenectomy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228677009",
+      "display": "Cesium 137 brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228681009",
+      "display": "Cobalt 60 brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228682002",
+      "display": "Cobalt 60 brachytherapy manual loading (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228684001",
+      "display": "Iridium 192 brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228688003",
+      "display": "Californium 252 brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228689006",
+      "display": "Gold 198 brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228690002",
+      "display": "Iodine 125 brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228691003",
+      "display": "Phosphorus 32 brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228692005",
+      "display": "Radon 222 brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228693000",
+      "display": "Ruthenium 106 brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228694006",
+      "display": "Strontium 90 brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228695007",
+      "display": "Tantalum 182 brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228696008",
+      "display": "Yttrium 90 brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228697004",
+      "display": "Yttrium 90 therapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228698009",
+      "display": "Iodine 131 therapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228699001",
+      "display": "Phosphorus 32 therapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228701001",
+      "display": "Strontium 89 therapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228702008",
+      "display": "Gold 198 therapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "24242005",
+      "display": "Cobalt-60 therapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "26294005",
+      "display": "Radical prostatectomy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "271291003",
+      "display": "Temporary implant radiotherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "28579000",
+      "display": "Radical retropubic prostatectomy with lymph node biopsy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "312243002",
+      "display": "Cesium 137 brachytherapy remote afterloading (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "312244008",
+      "display": "Cobalt 60 brachytherapy remote afterloading (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "36253005",
+      "display": "Suprapubic prostatectomy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "37851009",
+      "display": "Radical perineal prostatectomy with bilateral pelvic lymphadenectomy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "38915000",
+      "display": "Radionuclide therapy for gland ablation (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "394902000",
+      "display": "High dose brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "394918006",
+      "display": "Iodine seed radiotherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "399180008",
+      "display": "Interstitial radioactive colloid therapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "41371003",
+      "display": "Perineal prostatectomy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "41416003",
+      "display": "Radical retropubic prostatectomy with bilateral pelvic lymphadenectomy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "440093006",
+      "display": "Insertion of radioactive implant into interstitial tissue using ultrasound guidance (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "440094000",
+      "display": "Insertion of radioactive implant into interstitial tissue of prostate with transperineal insertion of catheter (procedure)"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "55810",
+      "display": "Prostatectomy, perineal radical"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "55812",
+      "display": "Prostatectomy, perineal radical; with lymph node biopsy(s) (limited pelvic lymphadenectomy)"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "55815",
+      "display": "Prostatectomy, perineal radical; with bilateral pelvic lymphadenectomy, including external iliac, hypogastric and obturator nodes"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "55840",
+      "display": "Prostatectomy, retropubic radical, with or without nerve sparing"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "55842",
+      "display": "Prostatectomy, retropubic radical, with or without nerve sparing; with lymph node biopsy(s) (limited pelvic lymphadenectomy)"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "55845",
+      "display": "Prostatectomy, retropubic radical, with or without nerve sparing; with bilateral pelvic lymphadenectomy, including external iliac, hypogastric, and obturator nodes"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "55866",
+      "display": "Laparoscopy, surgical prostatectomy, retropubic radical, including nerve sparing, includes robotic assistance, when performed"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "55875",
+      "display": "Transperineal placement of needles or catheters into prostate for interstitial radioelement application, with or without cystoscopy"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "55880",
+      "display": "Ablation of malignant prostate tissue, transrectal, with high intensity-focused ultrasound (HIFU), including ultrasound guidance"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "62867004",
+      "display": "External beam radiation therapy with radioactive cesium (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "65551008",
+      "display": "Radical retropubic prostatectomy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "67598001",
+      "display": "Retropubic prostatectomy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "72388004",
+      "display": "Radical perineal prostatectomy with lymph node biopsy (procedure)"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77373",
+      "display": "Stereotactic body radiation therapy, treatment delivery, per fraction to 1 or more lesions, including image guidance, entire course not to exceed 5 fractions"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77385",
+      "display": "Intensity modulated radiation treatment delivery (IMRT), includes guidance and tracking, when performed; simple"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77386",
+      "display": "Intensity modulated radiation treatment delivery (IMRT), includes guidance and tracking, when performed; complex"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77401",
+      "display": "Radiation treatment delivery, superficial and/or ortho voltage, per day"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77402",
+      "display": "Radiation treatment delivery, >=1 MeV; simple"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77407",
+      "display": "Radiation treatment delivery, >=1 MeV; intermediate"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77412",
+      "display": "Radiation treatment delivery, >=1 MeV; complex"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77423",
+      "display": "High energy neutron radiation treatment delivery, 1 or more isocenter(s) with coplanar or non-coplanar geometry with blocking and/or wedge, and/or compensator(s)"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77427",
+      "display": "Radiation treatment management, 5 treatments"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77435",
+      "display": "Stereotactic body radiation therapy, treatment management, per treatment course, to 1 or more lesions, including image guidance, entire course not to exceed 5 fractions"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77520",
+      "display": "Proton treatment delivery; simple, without compensation"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77522",
+      "display": "Proton treatment delivery; simple, with compensation"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77523",
+      "display": "Proton treatment delivery; intermediate"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77525",
+      "display": "Proton treatment delivery; complex"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "77613002",
+      "display": "External beam radiation therapy with iodine-125 (procedure)"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77772",
+      "display": "Remote afterloading high dose rate radionuclide interstitial or intracavitary brachytherapy, includes basic dosimetry, when performed; over 12 channels"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77778",
+      "display": "Interstitial radiation source application, complex, includes supervision, handling, loading of radiation source, when performed"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "84755001",
+      "display": "Radiation therapy treatment management (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "8782006",
+      "display": "Radical perineal prostatectomy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "90470006",
+      "display": "Prostatectomy (procedure)"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G6003",
+      "display": "Radiation treatment delivery, single treatment area,single port or parallel opposed ports, simple blocks or no blocks: up to 5 mev"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G6004",
+      "display": "Radiation treatment delivery, single treatment area,single port or parallel opposed ports, simple blocks or no blocks: 6-10 mev"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G6005",
+      "display": "Radiation treatment delivery, single treatment area,single port or parallel opposed ports, simple blocks or no blocks: 11-19 mev"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G6006",
+      "display": "Radiation treatment delivery, single treatment area,single port or parallel opposed ports, simple blocks or no blocks: 20 mev or greater"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G6007",
+      "display": "Radiation treatment delivery, 2 separate treatment areas, 3 or more ports on a single treatment area, use of multiple blocks: up to 5 mev"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G6008",
+      "display": "Radiation treatment delivery, 2 separate treatment areas, 3 or more ports on a single treatment area, use of multiple blocks: 6-10 mev"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G6009",
+      "display": "Radiation treatment delivery, 2 separate treatment areas, 3 or more ports on a single treatment area, use of multiple blocks: 11-19 mev"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G6010",
+      "display": "Radiation treatment delivery, 2 separate treatment areas, 3 or more ports on a single treatment area, use of multiple blocks: 20 mev or greater"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G6011",
+      "display": "Radiation treatment delivery,3 or more separate treatment areas, custom blocking, tangential ports, wedges, rotational beam, compensators, electron beam; up to 5 mev"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G6012",
+      "display": "Radiation treatment delivery,3 or more separate treatment areas, custom blocking, tangential ports, wedges, rotational beam, compensators, electron beam; 6-10 mev"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G6013",
+      "display": "Radiation treatment delivery,3 or more separate treatment areas, custom blocking, tangential ports, wedges, rotational beam, compensators, electron beam; 11-19 mev"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G6014",
+      "display": "Radiation treatment delivery,3 or more separate treatment areas, custom blocking, tangential ports, wedges, rotational beam, compensators, electron beam; 20 mev or greater"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G6015",
+      "display": "Intensity modulated treatment delivery, single or multiple fields/arcs,via narrow spatially and temporally modulated beams, binary, dynamic mlc, per treatment session"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G6016",
+      "display": "Compensator-based beam modulation treatment delivery of inverse planned treatment using 3 or more high resolution (milled or cast) compensator, convergent beam modulated fields, per treatment session"
+    } ]
+  }
+}

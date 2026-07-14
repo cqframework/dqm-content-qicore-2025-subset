@@ -1,0 +1,195 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1248.178-20230519",
+  "meta": {
+    "versionId": "9",
+    "lastUpdated": "2024-02-22T15:13:01.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "Mathematica PSI Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-02-03"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2023-05-19"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.178",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1248.178"
+  } ],
+  "version": "20230519",
+  "name": "Intubation",
+  "title": "Intubation",
+  "status": "active",
+  "date": "2023-05-19T01:00:43-04:00",
+  "publisher": "Mathematica PSI Steward",
+  "description": "SNOMEDCT",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for intubation),(Data Element Scope: This value set may use a model element related to Procedure),(Inclusion Criteria: Includes concepts that represent intubation),(Exclusion Criteria: N/A)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "112798008",
+        "display": "Insertion of endotracheal tube (procedure)"
+      }, {
+        "code": "16883004",
+        "display": "Endotracheal intubation, emergency procedure (procedure)"
+      }, {
+        "code": "182682004",
+        "display": "Emergency laryngeal intubation (procedure)"
+      }, {
+        "code": "232674004",
+        "display": "Orotracheal intubation (procedure)"
+      }, {
+        "code": "232675003",
+        "display": "Oral intubation awake (procedure)"
+      }, {
+        "code": "232677006",
+        "display": "Tracheal intubation using rigid bronchoscope (procedure)"
+      }, {
+        "code": "232678001",
+        "display": "Orotracheal fiberoptic intubation (procedure)"
+      }, {
+        "code": "232679009",
+        "display": "Nasotracheal intubation (procedure)"
+      }, {
+        "code": "232680007",
+        "display": "Nasal intubation awake (procedure)"
+      }, {
+        "code": "232682004",
+        "display": "Nasotracheal fiberoptic intubation (procedure)"
+      }, {
+        "code": "232685002",
+        "display": "Insertion of tracheostomy tube (procedure)"
+      }, {
+        "code": "232686001",
+        "display": "Insertion of tracheal T-tube (procedure)"
+      }, {
+        "code": "304341005",
+        "display": "Awake intubation (procedure)"
+      }, {
+        "code": "418613003",
+        "display": "Tracheal intubation through a laryngeal mask airway (procedure)"
+      }, {
+        "code": "429161001",
+        "display": "Insertion of endotracheal tube using laryngoscope (procedure)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:97203609-9608-492b-8b07-f76fb4eff820",
+    "timestamp": "2025-08-28T17:06:56-04:00",
+    "total": 15,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "112798008",
+      "display": "Insertion of endotracheal tube (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "16883004",
+      "display": "Endotracheal intubation, emergency procedure (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "182682004",
+      "display": "Emergency laryngeal intubation (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "232674004",
+      "display": "Orotracheal intubation (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "232675003",
+      "display": "Oral intubation awake (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "232677006",
+      "display": "Tracheal intubation using rigid bronchoscope (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "232678001",
+      "display": "Orotracheal fiberoptic intubation (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "232679009",
+      "display": "Nasotracheal intubation (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "232680007",
+      "display": "Nasal intubation awake (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "232682004",
+      "display": "Nasotracheal fiberoptic intubation (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "232685002",
+      "display": "Insertion of tracheostomy tube (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "232686001",
+      "display": "Insertion of tracheal T-tube (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "304341005",
+      "display": "Awake intubation (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "418613003",
+      "display": "Tracheal intubation through a laryngeal mask airway (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "429161001",
+      "display": "Insertion of endotracheal tube using laryngoscope (procedure)"
+    } ]
+  }
+}

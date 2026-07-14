@@ -1,0 +1,86 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.464.1003.198.11.1017-20240207",
+  "meta": {
+    "versionId": "36",
+    "lastUpdated": "2024-02-07T01:03:02.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "NCQA PHEMUR Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-03-10"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-02-07"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.198.11.1017",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.464.1003.198.11.1017"
+  } ],
+  "version": "20240207",
+  "name": "FlexibleSigmoidoscopy",
+  "title": "Flexible Sigmoidoscopy",
+  "status": "active",
+  "date": "2024-02-07T01:03:02-05:00",
+  "publisher": "NCQA PHEMUR",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for a flexible sigmoidoscopy.),(Data Element Scope: This value set may use a model element related to Procedure.),(Inclusion Criteria: Includes concepts that represent a flexible sigmoidoscopy.),(Exclusion Criteria: No exclusions.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "1217117008",
+        "display": "Endoscopic examination of lower bowel and sampling for bacterial overgrowth (procedure)"
+      }, {
+        "code": "396226005",
+        "display": "Flexible fiberoptic sigmoidoscopy with biopsy (procedure)"
+      }, {
+        "code": "44441009",
+        "display": "Flexible fiberoptic sigmoidoscopy (procedure)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:a20edbff-f67a-49a9-aefc-a6dc935ce551",
+    "timestamp": "2025-08-28T17:00:18-04:00",
+    "total": 3,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "1217117008",
+      "display": "Endoscopic examination of lower bowel and sampling for bacterial overgrowth (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "396226005",
+      "display": "Flexible fiberoptic sigmoidoscopy with biopsy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "44441009",
+      "display": "Flexible fiberoptic sigmoidoscopy (procedure)"
+    } ]
+  }
+}

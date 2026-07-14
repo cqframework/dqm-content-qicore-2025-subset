@@ -1,0 +1,83 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.526.3.401-20170504",
+  "meta": {
+    "versionId": "22",
+    "lastUpdated": "2024-08-09T12:30:41.000-04:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "American Institutes for Research Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-01-31"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2017-05-04"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.401",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.526.3.401"
+  } ],
+  "version": "20170504",
+  "name": "ProstateSpecificAntigenTest",
+  "title": "Prostate Specific Antigen Test",
+  "status": "active",
+  "experimental": false,
+  "date": "2022-03-03T18:46:01-05:00",
+  "publisher": "American Institutes for Research Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for laboratory tests measuring the prostate specific antigen (PSA).),(Data Element Scope: This value set may use a model element related to Laboratory Test.),(Inclusion Criteria: Includes concepts that represent a laboratory test for a prostate specific antigen (PSA).),(Exclusion Criteria: No exclusions.)",
+  "compose": {
+    "include": [ {
+      "valueSet": [ "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.215" ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:d283ffb0-2d7f-433b-a211-3d7283c646a7",
+    "timestamp": "2025-08-28T17:03:37-04:00",
+    "total": 4,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://loinc.org",
+      "inactive": false,
+      "version": "2.78",
+      "code": "19195-7",
+      "display": "Prostate specific Ag [Units/volume] in Serum or Plasma"
+    }, {
+      "system": "http://loinc.org",
+      "inactive": false,
+      "version": "2.78",
+      "code": "2857-1",
+      "display": "Prostate specific Ag [Mass/volume] in Serum or Plasma"
+    }, {
+      "system": "http://loinc.org",
+      "inactive": false,
+      "version": "2.78",
+      "code": "35741-8",
+      "display": "Prostate specific Ag [Mass/volume] in Serum or Plasma by Detection limit <= 0.01 ng/mL"
+    }, {
+      "system": "http://loinc.org",
+      "inactive": false,
+      "version": "2.78",
+      "code": "83112-3",
+      "display": "Prostate specific Ag [Mass/volume] in Serum or Plasma by Immunoassay"
+    } ]
+  }
+}

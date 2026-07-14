@@ -1,0 +1,77 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1108.84-20240208",
+  "meta": {
+    "versionId": "11",
+    "lastUpdated": "2024-08-09T14:14:21.000-04:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "American Institutes for Research Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-01-31"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-02-08"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1108.84",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1108.84"
+  } ],
+  "version": "20240208",
+  "name": "StatinAssociatedMuscleSymptoms",
+  "title": "Statin Associated Muscle Symptoms",
+  "status": "active",
+  "date": "2024-02-08T01:10:25-05:00",
+  "publisher": "American Institutes for Research Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for muscle symptoms related to statin therapy.),(Data Element Scope: This value set may use a model element in the QDM category of diagnosis.),(Inclusion Criteria: Includes concepts that describe muscle symptoms like myopathy, myositis or myalgia; the concept may or may not specify the cause being statin therapy.),(Exclusion Criteria: Excludes concepts that are not diagnoses or muscle symptoms that are noted to be related to another cause.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "16462851000119106",
+        "display": "Myalgia caused by statin (finding)"
+      }, {
+        "code": "240101000",
+        "display": "Drug-induced myopathy (disorder)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:ea9c5010-0b47-4e79-833e-44b768ca38a8",
+    "timestamp": "2025-08-28T16:57:59-04:00",
+    "total": 2,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "16462851000119106",
+      "display": "Myalgia caused by statin (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "240101000",
+      "display": "Drug-induced myopathy (disorder)"
+    } ]
+  }
+}

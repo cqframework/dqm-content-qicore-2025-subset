@@ -1,0 +1,78 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.464.1003.101.11.1065-20170504",
+  "meta": {
+    "versionId": "17",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "NCQA PHEMUR Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-03-10"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2017-05-04"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.11.1065",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.464.1003.101.11.1065"
+  } ],
+  "version": "20170504",
+  "name": "DischargeServicesNursingFacility",
+  "title": "Discharge Services Nursing Facility",
+  "status": "active",
+  "experimental": false,
+  "date": "2017-05-04T01:00:13-04:00",
+  "publisher": "NCQA PHEMUR",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for encounters for discharges from a nursing facility.),(Data Element Scope: This value set may use a model element related to Encounter.),(Inclusion Criteria: Includes concepts that represent an encounter for nursing facility discharge.),(Exclusion Criteria: Excludes concepts that represent an encounter for discharges from settings other than a nursing facility.)",
+  "compose": {
+    "include": [ {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "concept": [ {
+        "code": "99315",
+        "display": "Nursing facility discharge day management; 30 minutes or less"
+      }, {
+        "code": "99316",
+        "display": "Nursing facility discharge day management; more than 30 minutes"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:bfafebcc-204e-44fe-ae14-2c64816d5663",
+    "timestamp": "2025-08-28T17:01:52-04:00",
+    "total": 2,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "99315",
+      "display": "Nursing facility discharge management; 30 minutes or less total time on the date of the encounter"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "99316",
+      "display": "Nursing facility discharge management; more than 30 minutes total time on the date of the encounter"
+    } ]
+  }
+}

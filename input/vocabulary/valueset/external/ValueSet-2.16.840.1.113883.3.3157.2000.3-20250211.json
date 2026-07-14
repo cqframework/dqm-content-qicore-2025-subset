@@ -1,0 +1,135 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.3157.2000.3-20250211",
+  "meta": {
+    "versionId": "20",
+    "lastUpdated": "2025-02-11T01:03:34.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "Acumen OP Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-keyWord",
+    "valueString": "STEMI"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-04-16"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2025-02-11"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3157.2000.3",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.3157.2000.3"
+  } ],
+  "version": "20250211",
+  "name": "PercutaneousCoronaryInterventionCPT",
+  "title": "Percutaneous Coronary Intervention CPT",
+  "status": "active",
+  "date": "2025-02-11T01:03:34-05:00",
+  "publisher": "Acumen OP Steward",
+  "description": "This value set does not contain codes indicating an emergent PCI procedure.",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: This set of CPT codes is intended to capture a patient who undergoes a PCI procedure.),(Data Element Scope: The intent of this data element is to identify patients with a PCI procedure.),(Inclusion Criteria: Includes CPT codes that indicate PCI procedures.),(Exclusion Criteria: Excludes CPT codes that do not indicate PCI procedures.)",
+  "compose": {
+    "include": [ {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "concept": [ {
+        "code": "0913T",
+        "display": "Percutaneous transcatheter therapeutic drug delivery by intracoronary drug-delivery balloon (eg, drug-coated, drug-eluting), including mechanical dilation by nondrug-delivery balloon angioplasty, endoluminal imaging using intravascular ultrasound (IVUS) or optical coherence tomography (OCT) when performed, imaging supervision, interpretation, and report, single major coronary artery or branch"
+      }, {
+        "code": "0914T",
+        "display": "Percutaneous transcatheter therapeutic drug delivery by intracoronary drug-delivery balloon (eg, drug-coated, drug-eluting) performed on a separate target lesion from the target lesion treated with balloon angioplasty, coronary stent placement or coronary atherectomy, including mechanical dilation by nondrug-delivery balloon angioplasty, endoluminal imaging using intravascular ultrasound (IVUS) or optical coherence tomography (OCT) when performed, imaging supervision, interpretation, and report, single major coronary artery or branch (List separately in addition to code for percutaneous coronary stent or atherectomy intervention)"
+      }, {
+        "code": "92920",
+        "display": "Percutaneous transluminal coronary angioplasty; single major coronary artery or branch"
+      }, {
+        "code": "92924",
+        "display": "Percutaneous transluminal coronary atherectomy, with coronary angioplasty when performed; single major coronary artery or branch"
+      }, {
+        "code": "92928",
+        "display": "Percutaneous transcatheter placement of intracoronary stent(s), with coronary angioplasty when performed; single major coronary artery or branch"
+      }, {
+        "code": "92933",
+        "display": "Percutaneous transluminal coronary atherectomy, with intracoronary stent, with coronary angioplasty when performed; single major coronary artery or branch"
+      }, {
+        "code": "92937",
+        "display": "Percutaneous transluminal revascularization of or through coronary artery bypass graft (internal mammary, free arterial, venous), any combination of intracoronary stent, atherectomy and angioplasty, including distal protection when performed; single vessel"
+      }, {
+        "code": "92943",
+        "display": "Percutaneous transluminal revascularization of chronic total occlusion, coronary artery, coronary artery branch, or coronary artery bypass graft, any combination of intracoronary stent, atherectomy and angioplasty; single vessel"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:e78ac45b-2e74-407a-b6d1-caffb83fbb4d",
+    "timestamp": "2025-08-28T16:48:19-04:00",
+    "total": 8,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "0913T",
+      "display": "Percutaneous transcatheter therapeutic drug delivery by intracoronary drug-delivery balloon (eg, drug-coated, drug-eluting), including mechanical dilation by nondrug-delivery balloon angioplasty, endoluminal imaging using intravascular ultrasound (IVUS) or optical coherence tomography (OCT) when performed, imaging supervision, interpretation, and report, single major coronary artery or branch"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "0914T",
+      "display": "Percutaneous transcatheter therapeutic drug delivery by intracoronary drug-delivery balloon (eg, drug-coated, drug-eluting) performed on a separate target lesion from the target lesion treated with balloon angioplasty, coronary stent placement or coronary atherectomy, including mechanical dilation by nondrug-delivery balloon angioplasty, endoluminal imaging using intravascular ultrasound (IVUS) or optical coherence tomography (OCT) when performed, imaging supervision, interpretation, and report, single major coronary artery or branch (List separately in addition to code for percutaneous coronary stent or atherectomy intervention)"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "92920",
+      "display": "Percutaneous transluminal coronary angioplasty; single major coronary artery or branch"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "92924",
+      "display": "Percutaneous transluminal coronary atherectomy, with coronary angioplasty when performed; single major coronary artery or branch"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "92928",
+      "display": "Percutaneous transcatheter placement of intracoronary stent(s), with coronary angioplasty when performed; single major coronary artery or branch"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "92933",
+      "display": "Percutaneous transluminal coronary atherectomy, with intracoronary stent, with coronary angioplasty when performed; single major coronary artery or branch"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "92937",
+      "display": "Percutaneous transluminal revascularization of or through coronary artery bypass graft (internal mammary, free arterial, venous), any combination of intracoronary stent, atherectomy and angioplasty, including distal protection when performed; single vessel"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "92943",
+      "display": "Percutaneous transluminal revascularization of chronic total occlusion, coronary artery, coronary artery branch, or coronary artery bypass graft, any combination of intracoronary stent, atherectomy and angioplasty; single vessel"
+    } ]
+  }
+}

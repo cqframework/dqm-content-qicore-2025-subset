@@ -1,0 +1,88 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1248.86-20220719",
+  "meta": {
+    "versionId": "6",
+    "lastUpdated": "2024-02-22T14:54:22.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "Mathematica PSI Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-02-03"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2022-07-19"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.86",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1248.86"
+  } ],
+  "version": "20220719",
+  "name": "Intubation",
+  "title": "Intubation",
+  "status": "active",
+  "experimental": false,
+  "date": "2022-07-19T01:10:30-04:00",
+  "publisher": "Mathematica PSI Steward",
+  "description": "ICD10PCS codes are from PSI 11 Intubation procedure codes: (PR9604P)",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for intubation),(Data Element Scope: This value set may use a model element related to Procedure),(Inclusion Criteria: Includes concepts that represent intubation),(Exclusion Criteria: N/A)",
+  "compose": {
+    "include": [ {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "concept": [ {
+        "code": "0BH13EZ",
+        "display": "Insertion of Endotracheal Airway into Trachea, Percutaneous Approach"
+      }, {
+        "code": "0BH17EZ",
+        "display": "Insertion of Endotracheal Airway into Trachea, Via Natural or Artificial Opening"
+      }, {
+        "code": "0BH18EZ",
+        "display": "Insertion of Endotracheal Airway into Trachea, Via Natural or Artificial Opening Endoscopic"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:83d63583-aad7-466b-b6ab-f1e2b9883a41",
+    "timestamp": "2025-08-28T16:47:48-04:00",
+    "total": 3,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0BH13EZ",
+      "display": "Insertion of Endotracheal Airway into Trachea, Percutaneous Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0BH17EZ",
+      "display": "Insertion of Endotracheal Airway into Trachea, Via Natural or Artificial Opening"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0BH18EZ",
+      "display": "Insertion of Endotracheal Airway into Trachea, Via Natural or Artificial Opening Endoscopic"
+    } ]
+  }
+}

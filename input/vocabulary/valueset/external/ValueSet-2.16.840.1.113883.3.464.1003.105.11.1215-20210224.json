@@ -1,0 +1,78 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.464.1003.105.11.1215-20210224",
+  "meta": {
+    "versionId": "7",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "NCQA PHEMUR Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-02-04"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2021-02-24"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.105.11.1215",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.464.1003.105.11.1215"
+  } ],
+  "version": "20210224",
+  "name": "REM",
+  "title": "REM",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-02-24T01:00:19-05:00",
+  "publisher": "NCQA PHEMUR",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for a diagnosis of rapid eye movement (REM) sleep behavior disorder.),(Data Element Scope: This value set may use a model element related to Diagnosis.),(Inclusion Criteria: Includes concepts that represent a diagnosis of REM sleep behavior disorder.),(Exclusion Criteria: No exclusions.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "415238003",
+        "display": "Rapid eye movement sleep behavior disorder (disorder)"
+      }, {
+        "code": "69020003",
+        "display": "Abnormal rapid eye movement sleep (finding)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:167fa1b6-aa92-4e3a-a80b-13169a44afc2",
+    "timestamp": "2025-08-28T17:02:45-04:00",
+    "total": 2,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "415238003",
+      "display": "Rapid eye movement sleep behavior disorder (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "69020003",
+      "display": "Abnormal rapid eye movement sleep (finding)"
+    } ]
+  }
+}

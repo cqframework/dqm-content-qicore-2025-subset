@@ -1,0 +1,314 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.117.1.7.1.325-20250206",
+  "meta": {
+    "versionId": "40",
+    "lastUpdated": "2025-02-06T01:09:49.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "TJC EH Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-keyWord",
+    "valueString": "VTE-01,VTE-02"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-02-06"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2025-02-06"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.325",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.117.1.7.1.325"
+  } ],
+  "version": "20250206",
+  "name": "HipFractureSurgery",
+  "title": "Hip Fracture Surgery",
+  "status": "active",
+  "date": "2025-02-06T01:09:49-05:00",
+  "publisher": "TJC EH Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for procedures of hip fracture surgery.),(Data Element Scope: This value set may use a model element related to Procedure.),(Inclusion Criteria: Includes concepts that represent a procedure for hip fracture surgery.),(Exclusion Criteria: No exclusions.)",
+  "compose": {
+    "include": [ {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "concept": [ {
+        "code": "0SQ90ZZ",
+        "display": "Repair Right Hip Joint, Open Approach"
+      }, {
+        "code": "0SQ9XZZ",
+        "display": "Repair Right Hip Joint, External Approach"
+      }, {
+        "code": "0SQB0ZZ",
+        "display": "Repair Left Hip Joint, Open Approach"
+      }, {
+        "code": "0SQBXZZ",
+        "display": "Repair Left Hip Joint, External Approach"
+      }, {
+        "code": "0SS904Z",
+        "display": "Reposition Right Hip Joint with Internal Fixation Device, Open Approach"
+      }, {
+        "code": "0SS905Z",
+        "display": "Reposition Right Hip Joint with External Fixation Device, Open Approach"
+      }, {
+        "code": "0SS90ZZ",
+        "display": "Reposition Right Hip Joint, Open Approach"
+      }, {
+        "code": "0SS934Z",
+        "display": "Reposition Right Hip Joint with Internal Fixation Device, Percutaneous Approach"
+      }, {
+        "code": "0SS935Z",
+        "display": "Reposition Right Hip Joint with External Fixation Device, Percutaneous Approach"
+      }, {
+        "code": "0SS93ZZ",
+        "display": "Reposition Right Hip Joint, Percutaneous Approach"
+      }, {
+        "code": "0SS944Z",
+        "display": "Reposition Right Hip Joint with Internal Fixation Device, Percutaneous Endoscopic Approach"
+      }, {
+        "code": "0SS945Z",
+        "display": "Reposition Right Hip Joint with External Fixation Device, Percutaneous Endoscopic Approach"
+      }, {
+        "code": "0SS94ZZ",
+        "display": "Reposition Right Hip Joint, Percutaneous Endoscopic Approach"
+      }, {
+        "code": "0SS9X4Z",
+        "display": "Reposition Right Hip Joint with Internal Fixation Device, External Approach"
+      }, {
+        "code": "0SS9X5Z",
+        "display": "Reposition Right Hip Joint with External Fixation Device, External Approach"
+      }, {
+        "code": "0SS9XZZ",
+        "display": "Reposition Right Hip Joint, External Approach"
+      }, {
+        "code": "0SSB04Z",
+        "display": "Reposition Left Hip Joint with Internal Fixation Device, Open Approach"
+      }, {
+        "code": "0SSB05Z",
+        "display": "Reposition Left Hip Joint with External Fixation Device, Open Approach"
+      }, {
+        "code": "0SSB0ZZ",
+        "display": "Reposition Left Hip Joint, Open Approach"
+      }, {
+        "code": "0SSB34Z",
+        "display": "Reposition Left Hip Joint with Internal Fixation Device, Percutaneous Approach"
+      }, {
+        "code": "0SSB35Z",
+        "display": "Reposition Left Hip Joint with External Fixation Device, Percutaneous Approach"
+      }, {
+        "code": "0SSB3ZZ",
+        "display": "Reposition Left Hip Joint, Percutaneous Approach"
+      }, {
+        "code": "0SSB44Z",
+        "display": "Reposition Left Hip Joint with Internal Fixation Device, Percutaneous Endoscopic Approach"
+      }, {
+        "code": "0SSB45Z",
+        "display": "Reposition Left Hip Joint with External Fixation Device, Percutaneous Endoscopic Approach"
+      }, {
+        "code": "0SSB4ZZ",
+        "display": "Reposition Left Hip Joint, Percutaneous Endoscopic Approach"
+      }, {
+        "code": "0SSBX4Z",
+        "display": "Reposition Left Hip Joint with Internal Fixation Device, External Approach"
+      }, {
+        "code": "0SSBX5Z",
+        "display": "Reposition Left Hip Joint with External Fixation Device, External Approach"
+      }, {
+        "code": "0SSBXZZ",
+        "display": "Reposition Left Hip Joint, External Approach"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:6aef5e16-321f-4c63-b269-57353a29c0c8",
+    "timestamp": "2025-08-28T16:47:40-04:00",
+    "total": 28,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SQ90ZZ",
+      "display": "Repair Right Hip Joint, Open Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SQ9XZZ",
+      "display": "Repair Right Hip Joint, External Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SQB0ZZ",
+      "display": "Repair Left Hip Joint, Open Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SQBXZZ",
+      "display": "Repair Left Hip Joint, External Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SS904Z",
+      "display": "Reposition Right Hip Joint with Internal Fixation Device, Open Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SS905Z",
+      "display": "Reposition Right Hip Joint with External Fixation Device, Open Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SS90ZZ",
+      "display": "Reposition Right Hip Joint, Open Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SS934Z",
+      "display": "Reposition Right Hip Joint with Internal Fixation Device, Percutaneous Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SS935Z",
+      "display": "Reposition Right Hip Joint with External Fixation Device, Percutaneous Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SS93ZZ",
+      "display": "Reposition Right Hip Joint, Percutaneous Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SS944Z",
+      "display": "Reposition Right Hip Joint with Internal Fixation Device, Percutaneous Endoscopic Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SS945Z",
+      "display": "Reposition Right Hip Joint with External Fixation Device, Percutaneous Endoscopic Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SS94ZZ",
+      "display": "Reposition Right Hip Joint, Percutaneous Endoscopic Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SS9X4Z",
+      "display": "Reposition Right Hip Joint with Internal Fixation Device, External Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SS9X5Z",
+      "display": "Reposition Right Hip Joint with External Fixation Device, External Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SS9XZZ",
+      "display": "Reposition Right Hip Joint, External Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SSB04Z",
+      "display": "Reposition Left Hip Joint with Internal Fixation Device, Open Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SSB05Z",
+      "display": "Reposition Left Hip Joint with External Fixation Device, Open Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SSB0ZZ",
+      "display": "Reposition Left Hip Joint, Open Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SSB34Z",
+      "display": "Reposition Left Hip Joint with Internal Fixation Device, Percutaneous Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SSB35Z",
+      "display": "Reposition Left Hip Joint with External Fixation Device, Percutaneous Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SSB3ZZ",
+      "display": "Reposition Left Hip Joint, Percutaneous Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SSB44Z",
+      "display": "Reposition Left Hip Joint with Internal Fixation Device, Percutaneous Endoscopic Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SSB45Z",
+      "display": "Reposition Left Hip Joint with External Fixation Device, Percutaneous Endoscopic Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SSB4ZZ",
+      "display": "Reposition Left Hip Joint, Percutaneous Endoscopic Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SSBX4Z",
+      "display": "Reposition Left Hip Joint with Internal Fixation Device, External Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SSBX5Z",
+      "display": "Reposition Left Hip Joint with External Fixation Device, External Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0SSBXZZ",
+      "display": "Reposition Left Hip Joint, External Approach"
+    } ]
+  }
+}

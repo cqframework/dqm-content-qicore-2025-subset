@@ -1,0 +1,122 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1047.13-20250205",
+  "meta": {
+    "versionId": "21",
+    "lastUpdated": "2025-02-05T01:09:18.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "American Institutes for Research Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-05-12"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2025-02-05"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1047.13",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1047.13"
+  } ],
+  "version": "20250205",
+  "name": "Rhabdomyolysis",
+  "title": "Rhabdomyolysis",
+  "status": "active",
+  "date": "2025-02-05T01:09:18-05:00",
+  "publisher": "American Institutes for Research Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for diagnoses of rhabdomyolysis.),(Data Element Scope: This value set may use a model element related to Diagnosis.),(Inclusion Criteria: Includes concepts that represent a diagnosis of rhabdomyolysis.),(Exclusion Criteria: No exclusions.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "1148631003",
+        "display": "Paroxysmal rhabdomyolysis (disorder)"
+      }, {
+        "code": "23697004",
+        "display": "Crush syndrome (disorder)"
+      }, {
+        "code": "240125008",
+        "display": "Muscle crush syndrome (disorder)"
+      }, {
+        "code": "240131006",
+        "display": "Rhabdomyolysis (disorder)"
+      }, {
+        "code": "240132004",
+        "display": "Non-traumatic rhabdomyolysis (disorder)"
+      }, {
+        "code": "240133009",
+        "display": "Familial paroxysmal rhabdomyolysis (disorder)"
+      }, {
+        "code": "72960004",
+        "display": "Exertional rhabdomyolysis (disorder)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:422198be-60c5-4b69-b047-0eb37e528d89",
+    "timestamp": "2025-08-28T16:54:15-04:00",
+    "total": 7,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "1148631003",
+      "display": "Paroxysmal rhabdomyolysis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "23697004",
+      "display": "Crush syndrome (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "240125008",
+      "display": "Muscle crush syndrome (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "240131006",
+      "display": "Rhabdomyolysis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "240132004",
+      "display": "Non-traumatic rhabdomyolysis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "240133009",
+      "display": "Familial paroxysmal rhabdomyolysis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "72960004",
+      "display": "Exertional rhabdomyolysis (disorder)"
+    } ]
+  }
+}

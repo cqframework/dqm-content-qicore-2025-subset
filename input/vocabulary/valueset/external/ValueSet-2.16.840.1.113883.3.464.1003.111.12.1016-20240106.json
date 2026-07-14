@@ -1,0 +1,126 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.464.1003.111.12.1016-20240106",
+  "meta": {
+    "versionId": "15",
+    "lastUpdated": "2024-01-06T01:09:12.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "NCQA PHEMUR Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-03-10"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-01-06"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.111.12.1016",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.464.1003.111.12.1016"
+  } ],
+  "version": "20240106",
+  "name": "CongenitalOrAcquiredAbsenceOfCervix",
+  "title": "Congenital or Acquired Absence of Cervix",
+  "status": "active",
+  "date": "2024-01-06T01:09:12-05:00",
+  "publisher": "NCQA PHEMUR",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent diagnoses related to absence of a cervix.),(Data Element Scope: This value set may use a model element related to Diagnosis.),(Inclusion Criteria: Includes concepts that represent a diagnosis of an absence of cervix with or without remaining uterus, congenital or acquired absence of cervix, radical or total hysterectomy.),(Exclusion Criteria: Excludes concepts that represent a diagnosis of a partial hysterectomy, absence of uterus with remaining cervical stump.)",
+  "compose": {
+    "include": [ {
+      "valueSet": [ "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.112.11.1025" ]
+    }, {
+      "valueSet": [ "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.112.11.1024" ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:7d6aafe9-898f-47b0-bf01-98fe1731e120",
+    "timestamp": "2025-08-28T16:59:55-04:00",
+    "total": 11,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "10738891000119107",
+      "display": "History of total hysterectomy without abnormal cervical Papanicolaou smear (situation)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "248911005",
+      "display": "Uterine cervix absent (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "37687000",
+      "display": "Congenital absence of cervix (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "428078001",
+      "display": "History of total hysterectomy (situation)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "429290001",
+      "display": "History of radical hysterectomy (situation)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "429763009",
+      "display": "History of total hysterectomy with bilateral salpingo-oophorectomy (situation)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "473171009",
+      "display": "History of vaginal hysterectomy (situation)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "723171001",
+      "display": "Acquired absence of cervix and uterus (disorder)"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "inactive": false,
+      "version": "2025",
+      "code": "Q51.5",
+      "display": "Agenesis and aplasia of cervix"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "inactive": false,
+      "version": "2025",
+      "code": "Z90.710",
+      "display": "Acquired absence of both cervix and uterus"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "inactive": false,
+      "version": "2025",
+      "code": "Z90.712",
+      "display": "Acquired absence of cervix with remaining uterus"
+    } ]
+  }
+}

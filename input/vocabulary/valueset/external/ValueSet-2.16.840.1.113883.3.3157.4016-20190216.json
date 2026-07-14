@@ -1,0 +1,135 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.3157.4016-20190216",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2024-09-06T09:18:04.000-04:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "Acumen OP Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-keyWord",
+    "valueString": "STEMI"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-04-03"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2019-02-16"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3157.4016",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.3157.4016"
+  } ],
+  "version": "20190216",
+  "name": "STEMI",
+  "title": "STEMI",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-02-16T01:00:02-05:00",
+  "publisher": "Acumen OP Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for ST-segment elevation myocardial infarction (STEMI).),(Data Element Scope: This value set may use a model element related to Diagnosis.),(Inclusion Criteria: Includes SNOMEDCT codes associated with the diagnosis of STEMI.),(Exclusion Criteria: No exclusions.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "401303003",
+        "display": "Acute ST segment elevation myocardial infarction (disorder)"
+      }, {
+        "code": "703164000",
+        "display": "Acute ST segment elevation myocardial infarction of anterior wall (disorder)"
+      }, {
+        "code": "703165004",
+        "display": "Acute ST segment elevation myocardial infarction of anterior wall involving right ventricle (disorder)"
+      }, {
+        "code": "703209002",
+        "display": "Subsequent ST segment elevation myocardial infarction of inferior wall (disorder)"
+      }, {
+        "code": "703210007",
+        "display": "Subsequent ST segment elevation myocardial infarction of anterior wall (disorder)"
+      }, {
+        "code": "703211006",
+        "display": "Subsequent ST segment elevation myocardial infarction (disorder)"
+      }, {
+        "code": "703213009",
+        "display": "Acute ST segment elevation myocardial infarction of inferior wall (disorder)"
+      }, {
+        "code": "703253007",
+        "display": "Acute ST segment elevation myocardial infarction of inferior wall involving right ventricle (disorder)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:4a8000be-ecd0-45e5-9c5a-901090dac3ef",
+    "timestamp": "2025-08-28T16:59:36-04:00",
+    "total": 8,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "401303003",
+      "display": "Acute ST segment elevation myocardial infarction (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "703164000",
+      "display": "Acute ST segment elevation myocardial infarction of anterior wall (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "703165004",
+      "display": "Acute ST segment elevation myocardial infarction of anterior wall involving right ventricle (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "703209002",
+      "display": "Subsequent ST segment elevation myocardial infarction of inferior wall (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "703210007",
+      "display": "Subsequent ST segment elevation myocardial infarction of anterior wall (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "703211006",
+      "display": "Subsequent ST segment elevation myocardial infarction (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "703213009",
+      "display": "Acute ST segment elevation myocardial infarction of inferior wall (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "703253007",
+      "display": "Acute ST segment elevation myocardial infarction of inferior wall involving right ventricle (disorder)"
+    } ]
+  }
+}

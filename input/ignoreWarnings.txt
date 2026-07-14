@@ -1,0 +1,168 @@
+== Suppressed Messages ==
+
+# 2025.0.0:001 - The path-liquid-ig parameter is a temporary workaround for getting the IG to make use of liquid templates in the IG when the fhir template includes liquid templates for the same resources. See https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Errors.20in.20rendering.20Measures.20and.20PlanDefinitions/near/534068493
+ERROR: ImplementationGuide/cms.madie: ImplementationGuide.definition.extension[10].extension[0].value.ofType(string): The System URI could not be determined for the code 'path-liquid-ig' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.7.1'
+ERROR: ImplementationGuide/cms.madie: ImplementationGuide.definition.extension[10].extension[0].value.ofType(string): The value provided ('path-liquid-ig') was not found in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.7.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'path-liquid-ig' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.7.1'; The provided code '#path-liquid-ig' was not found in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.7.1')
+ERROR: ImplementationGuide/cms.madie: ImplementationGuide.definition.extension[42].extension[0].value.ofType(code): The System URI could not be determined for the code 'path-liquid-ig' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.7.1'
+ERROR: ImplementationGuide/cms.madie: ImplementationGuide.definition.extension[42].extension[0].value.ofType(code): The value provided ('path-liquid-ig') was not found in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.7.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'path-liquid-ig' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.7.1'; The provided code '#path-liquid-ig' was not found in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.7.1')
+
+# 2025.0.0:002 - The measures in this implementation guide are intentionally built against QI-Core 6.0.0, because it is based on US Core 6.1.0, and most US-based systems are expected to support this version of US Core.
+WARNING: ImplementationGuide/cms.madie: ImplementationGuide.dependsOn[3]: The ImplementationGuide uses package hl7.fhir.us.qicore#6.0.0 released on 2024-03-01, but the most recent appropriate version is 7.0.1. This reference is getting old and the more recent version should be considered
+
+# 2025.0.0:003 - Accepted pinned versions
+%Pinned the version of%
+
+# 2025.0.0:004 - Multiple slice matches are expected due to resources conforming to multiple profiles
+%This element does not match any known slice defined in the profile%
+
+# 2025.0.0:005 - CQF Tooling issue with model info dependency resolution in the CQL-to-ELM translator
+%A definition could not be found for Canonical URL 'http://hl7.org/fhir/Library/QICore-ModelInfo'
+
+# 2025.0.0:006 - These are valid identifier systems used by MADiE
+%No definition could be found for URL value 'https://madie.cms.gov/login'
+%No definition could be found for URL value 'https://madie.cms.gov/measure/shortName'
+%No definition could be found for URL value 'https://madie.cms.gov/measure/cmsId'
+%No definition could be found for URL value 'https://madie.cms.gov/measure/cbeId'
+
+# 2025.0.0:007 - MADiE export issue, the narratives being generated do not specify a lang or xml:lang tag
+%Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+
+# 2025.0.0:008 - Accepted references to draft code systems
+%Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/task-code|4.0.1
+%Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/medicationrequest-category|1.0.0
+
+# 2025.0.0:009 - MADiE export issue, Libraries that do not include XML ELM should not declare conformance to the ELM XML profile
+%Constraint failed: exl-1: 'ELM XML libraries must one (and only one) content element that starts with 'application/elm+xml' (content.where(contentType.startsWith('application/elm+xml')).count() = 1)'
+
+# 2025.0.0:010 - These extensions and elements contain less than symbols that are part of CQL, they are not HTML content and display correctly in the rendered content
+%The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+%The markdown contains content that appears to be an embedded HTML tag starting at '<p'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
+%The markdown contains content that appears to be an embedded HTML tag starting at '<b'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
+
+# 2025.0.0:011 - MADiE export issue, SupplementalDataGuidance is declared as markdown
+%The Profile 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-supplementalDataGuidance|2.0.0' definition allows for the type markdown but found type string
+
+# 2025.0.0:012 - MADiE export issue, Measure effective data requirements should be a canonical:
+%The Extension 'http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements' definition allows for the types [canonical] but found type Reference
+%This element is not allowed by the profile http://hl7.org/fhir/StructureDefinition/canonical|4.0.1
+
+# 2025.0.0:013 - MADiE export issue, most values have a newline character on the end
+%value should not start or finish with whitespace%
+
+# 2025.0.0:014 - Wrong display names in CumulativeMedicationDuration CQL source content:
+ERROR: Library/CumulativeMedicationDuration: Library.extension[14].value.ofType(Coding).display: Wrong Display Name 'MORN' for http://hl7.org/fhir/event-timing#MORN. Valid display is 'Morning' (for the language(s) 'en')
+ERROR: Library/CumulativeMedicationDuration: Library.extension[15].value.ofType(Coding).display: Wrong Display Name 'MORN.early' for http://hl7.org/fhir/event-timing#MORN.early. Valid display is 'Early Morning' (for the language(s) 'en')
+ERROR: Library/CumulativeMedicationDuration: Library.extension[16].value.ofType(Coding).display: Wrong Display Name 'MORN.late' for http://hl7.org/fhir/event-timing#MORN.late. Valid display is 'Late Morning' (for the language(s) 'en')
+ERROR: Library/CumulativeMedicationDuration: Library.extension[18].value.ofType(Coding).display: Wrong Display Name 'AFT' for http://hl7.org/fhir/event-timing#AFT. Valid display is 'Afternoon' (for the language(s) 'en')
+ERROR: Library/CumulativeMedicationDuration: Library.extension[19].value.ofType(Coding).display: Wrong Display Name 'AFT.early' for http://hl7.org/fhir/event-timing#AFT.early. Valid display is 'Early Afternoon' (for the language(s) 'en')
+ERROR: Library/CumulativeMedicationDuration: Library.extension[20].value.ofType(Coding).display: Wrong Display Name 'AFT.late' for http://hl7.org/fhir/event-timing#AFT.late. Valid display is 'Late Afternoon' (for the language(s) 'en')
+ERROR: Library/CumulativeMedicationDuration: Library.extension[21].value.ofType(Coding).display: Wrong Display Name 'EVE' for http://hl7.org/fhir/event-timing#EVE. Valid display is 'Evening' (for the language(s) 'en')
+ERROR: Library/CumulativeMedicationDuration: Library.extension[22].value.ofType(Coding).display: Wrong Display Name 'EVE.early' for http://hl7.org/fhir/event-timing#EVE.early. Valid display is 'Early Evening' (for the language(s) 'en')
+ERROR: Library/CumulativeMedicationDuration: Library.extension[23].value.ofType(Coding).display: Wrong Display Name 'EVE.late' for http://hl7.org/fhir/event-timing#EVE.late. Valid display is 'Late Evening' (for the language(s) 'en')
+ERROR: Library/CumulativeMedicationDuration: Library.extension[25].value.ofType(Coding).display: Wrong Display Name 'PHS' for http://hl7.org/fhir/event-timing#PHS. Valid display is 'After Sleep' (for the language(s) 'en')
+
+# 2025.0.0:015 - Wrong display names in QICoreCommon CQL source content:
+ERROR: Library/QICoreCommon: Library.extension[0].value.ofType(Coding).display: Wrong Display Name 'Birthdate' for http://loinc.org#21112-8. Valid display is one of 4 choices: 'Birth date' (en-US), 'Birth date' (en-US), 'Birth date' (en-US) or 'Birth date' (en-US) (for the language(s) 'en')
+ERROR: Library/QICoreCommon: Library.extension[2].value.ofType(Coding).display: Wrong Display Name 'ER' for http://terminology.hl7.org/CodeSystem/v3-RoleCode#ER. Valid display is 'Emergency room' (en) (for the language(s) 'en')
+ERROR: Library/QICoreCommon: Library.extension[3].value.ofType(Coding).display: Wrong Display Name 'ICU' for http://terminology.hl7.org/CodeSystem/v3-RoleCode#ICU. Valid display is 'Intensive care unit' (en) (for the language(s) 'en')
+ERROR: Library/QICoreCommon: Library.extension[5].value.ofType(Coding).display: Wrong Display Name 'Fulfill' for http://hl7.org/fhir/CodeSystem/task-code#fulfill. Valid display is 'Fulfill the focal request' (for the language(s) 'en')
+ERROR: Library/QICoreCommon: Library.extension[17].value.ofType(Coding).display: Wrong Display Name 'problem-list-item' for http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item. Valid display is 'Problem List Item' (for the language(s) 'en')
+ERROR: Library/QICoreCommon: Library.extension[18].value.ofType(Coding).display: Wrong Display Name 'encounter-diagnosis' for http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis. Valid display is 'Encounter Diagnosis' (for the language(s) 'en')
+ERROR: Library/QICoreCommon: Library.extension[19].value.ofType(Coding).display: Wrong Display Name 'health-concern' for http://hl7.org/fhir/us/core/CodeSystem/condition-category#health-concern. Valid display is 'Health Concern' (for the language(s) 'en')
+ERROR: Library/QICoreCommon: Library.extension[31].value.ofType(Coding).display: Wrong Display Name 'entered-in-error' for http://terminology.hl7.org/CodeSystem/condition-ver-status#entered-in-error. Valid display is 'Entered in Error' (for the language(s) 'en')
+ERROR: Library/QICoreCommon: Library.extension[32].value.ofType(Coding).display: Wrong Display Name 'allergy-active' for http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active. Valid display is 'Active' (for the language(s) 'en')
+ERROR: Library/QICoreCommon: Library.extension[33].value.ofType(Coding).display: Wrong Display Name 'allergy-inactive' for http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#inactive. Valid display is 'Inactive' (for the language(s) 'en')
+ERROR: Library/QICoreCommon: Library.extension[34].value.ofType(Coding).display: Wrong Display Name 'allergy-resolved' for http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#resolved. Valid display is 'Resolved' (for the language(s) 'en')
+ERROR: Library/QICoreCommon: Library.extension[35].value.ofType(Coding).display: Wrong Display Name 'allergy-unconfirmed' for http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#unconfirmed. Valid display is 'Unconfirmed' (for the language(s) 'en')
+ERROR: Library/QICoreCommon: Library.extension[36].value.ofType(Coding).display: Wrong Display Name 'allergy-confirmed' for http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed. Valid display is 'Confirmed' (for the language(s) 'en')
+ERROR: Library/QICoreCommon: Library.extension[37].value.ofType(Coding).display: Wrong Display Name 'allergy-refuted' for http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#refuted. Valid display is 'Refuted' (for the language(s) 'en')
+ERROR: Library/QICoreCommon: Library.extension[42].value.ofType(Coding).display: Wrong Display Name 'AD' for http://terminology.hl7.org/CodeSystem/diagnosis-role#AD. Valid display is 'Admission diagnosis' (for the language(s) 'en')
+ERROR: Library/QICoreCommon: Library.extension[43].value.ofType(Coding).display: Wrong Display Name 'DD' for http://terminology.hl7.org/CodeSystem/diagnosis-role#DD. Valid display is 'Discharge diagnosis' (for the language(s) 'en')
+ERROR: Library/QICoreCommon: Library.extension[44].value.ofType(Coding).display: Wrong Display Name 'CC' for http://terminology.hl7.org/CodeSystem/diagnosis-role#CC. Valid display is 'Chief complaint' (for the language(s) 'en')
+ERROR: Library/QICoreCommon: Library.extension[45].value.ofType(Coding).display: Wrong Display Name 'CM' for http://terminology.hl7.org/CodeSystem/diagnosis-role#CM. Valid display is 'Comorbidity diagnosis' (for the language(s) 'en')
+ERROR: Library/QICoreCommon: Library.extension[46].value.ofType(Coding).display: Wrong Display Name 'pre-op' for http://terminology.hl7.org/CodeSystem/diagnosis-role#pre-op. Valid display is 'pre-op diagnosis' (for the language(s) 'en')
+ERROR: Library/QICoreCommon: Library.extension[47].value.ofType(Coding).display: Wrong Display Name 'post-op' for http://terminology.hl7.org/CodeSystem/diagnosis-role#post-op. Valid display is 'post-op diagnosis' (for the language(s) 'en')
+ERROR: Library/QICoreCommon: Library.extension[49].value.ofType(Coding).display: Wrong Display Name 'social-history' for http://terminology.hl7.org/CodeSystem/observation-category#social-history. Valid display is 'Social History' (for the language(s) 'en')
+ERROR: Library/QICoreCommon: Library.extension[50].value.ofType(Coding).display: Wrong Display Name 'vital-signs' for http://terminology.hl7.org/CodeSystem/observation-category#vital-signs. Valid display is 'Vital Signs' (for the language(s) 'en')
+
+# 2025.0.0:016 - Valid links in narrative content, are narratives not allowed to link to external websites?
+%The link ' https://www.hrsa.gov/' for "Health Resources & Services Administration" cannot be resolved
+%The link 'www.aao.org' for "American Academy of Ophthalmology" cannot be resolved
+%The link 'www.aan.com' for "American Academy of Neurology" cannot be resolved
+%The link 'www.asco.org' for "American Society of Clinical Oncology" cannot be resolved
+%The link 'www.mncm.org' for "MN Community Measurement" cannot be resolved
+%The link 'www.cdc.gov/hiv/' for "Centers for Disease Control and Prevention (CDC)" cannot be resolved
+%The link 'www.oregonurology.com' for "Oregon Urology" cannot be resolved
+%The link 'www.kidney.org' for "National Kidney Foundation" cannot be resolved
+%The link 'www.eatrightpro.org' for "Academy of Nutrition and Dietetics" cannot be resolved
+
+# 2025.0.0:017 - These are due to the templates not being able to determine unique identifiers for function overloads in CQL. An issue has been logged to the CQL translator to address this (https://github.com/cqframework/clinical_quality_language/issues/1598)
+%The html source has duplicate anchor Ids:%
+%the resource contains more than one node for each of the following node ids and anchor names%
+%resolves to multiple targets%
+
+# 2025.0.0:018 - Wrong display names in CQL source content
+ERROR: Library/CMS1028FHIRPCSevereOBComps: Library.extension[2].value.ofType(Coding).display: Wrong Display Name 'POA-Y' for https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding#Y. There are no valid display names found for language(s) 'en'. Default display is 'null'
+ERROR: Library/CMS1028FHIRPCSevereOBComps: Library.extension[3].value.ofType(Coding).display: Wrong Display Name 'POA-1' for https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding#1. There are no valid display names found for language(s) 'en'. Default display is 'null'
+ERROR: Library/CMS1154ScreeningPrediabetesFHIR: Library.extension[7].value.ofType(Coding).display: Wrong Display Name 'entered-in-error' for http://terminology.hl7.org/CodeSystem/condition-ver-status#entered-in-error. Valid display is 'Entered in Error' (for the language(s) 'en')
+ERROR: Library/CMS1218FHIRHHRF: Library.extension[7].value.ofType(Coding).display: Wrong Display Name 'ER' for http://terminology.hl7.org/CodeSystem/v3-RoleCode#ER. Valid display is 'Emergency room' (en) (for the language(s) 'en')
+ERROR: Library/CMS138FHIRTobaccoScrnCessation: Library.extension[5].value.ofType(Coding).display: Wrong Display Name 'fulfill' for http://hl7.org/fhir/CodeSystem/task-code#fulfill. Valid display is 'Fulfill the focal request' (for the language(s) 'en')
+ERROR: Library/CMS142FHIRCommWithDrManagingDiab: Library.extension[1].value.ofType(Coding).display: Wrong Display Name 'AMB' for http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB. Valid display is 'ambulatory' (en) (for the language(s) 'en')
+ERROR: Library/CMS22FHIRPCSBPScreeningFollowUp: Library.dataRequirement[8].codeFilter[0].code[0].display: Wrong Display Name 'EKG 12 channel panel' for http://loinc.org#34534-8. Valid display is one of 3 choices: '12 lead EKG panel' (en-US), '12 lead EKG panel' (en-US) or '12 lead EKG Pnl' (en-US) (for the language(s) 'en')
+ERROR: Library/CMS22FHIRPCSBPScreeningFollowUp: Library.dataRequirement[32].codeFilter[0].code[0].display: Wrong Display Name 'EKG 12 channel panel' for http://loinc.org#34534-8. Valid display is one of 3 choices: '12 lead EKG panel' (en-US), '12 lead EKG panel' (en-US) or '12 lead EKG Pnl' (en-US) (for the language(s) 'en')
+ERROR: Library/CMS996FHIRAptTxforSTEMI: Library.extension[0].value.ofType(Coding).display: Wrong Display Name 'EMER' for http://terminology.hl7.org/CodeSystem/v3-ActCode#EMER. Valid display is 'emergency' (en) (for the language(s) 'en')
+ERROR: Library/CQMCommon: Library.extension[14].value.ofType(Coding).display: Wrong Display Name 'POA-Y' for https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding#Y. There are no valid display names found for language(s) 'en'. Default display is 'null'
+ERROR: Library/CQMCommon: Library.extension[15].value.ofType(Coding).display: Wrong Display Name 'POA-N' for https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding#N. There are no valid display names found for language(s) 'en'. Default display is 'null'
+ERROR: Library/CQMCommon: Library.extension[16].value.ofType(Coding).display: Wrong Display Name 'POA-W' for https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding#W. There are no valid display names found for language(s) 'en'. Default display is 'null'
+ERROR: Library/CQMCommon: Library.extension[17].value.ofType(Coding).display: Wrong Display Name 'POA-1' for https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding#1. There are no valid display names found for language(s) 'en'. Default display is 'null'
+ERROR: Library/CQMCommon: Library.extension[18].value.ofType(Coding).display: Wrong Display Name 'POA-U' for https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding#U. There are no valid display names found for language(s) 'en'. Default display is 'null'
+ERROR: Measure/CMS1154ScreeningPrediabetesFHIR: Measure.useContext[0].code.display: Wrong Display Name 'Venue' for http://terminology.hl7.org/CodeSystem/usage-context-type#venue. Valid display is 'Clinical Venue' (for the language(s) 'en-US')
+ERROR: Measure/CMSFHIR529HybridHospitalWideReadmission: Measure.group[0].extension[4].value.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'decrease' for http://terminology.hl7.org/CodeSystem/measure-improvement-notation#decrease. Valid display is 'Decreased score indicates improvement' (for the language(s) 'en-US')
+ERROR: Measure/CMS104FHIRSTKDCAntithrombotic: Measure.contained[0]/*Library/effective-data-requirements*/.extension[5].value.ofType(Coding).display: Wrong Display Name 'Fulfill' for http://hl7.org/fhir/CodeSystem/task-code#fulfill. Valid display is 'Fulfill the focal request' (for the language(s) 'en-US')
+ERROR: Measure/CMS108FHIRVTEProphylaxis: Measure.contained[0]/*Library/effective-data-requirements*/.extension[8].value.ofType(Coding).display: Wrong Display Name 'Fulfill' for http://hl7.org/fhir/CodeSystem/task-code#fulfill. Valid display is 'Fulfill the focal request' (for the language(s) 'en-US')
+ERROR: Measure/CMS135FHIRACEIorARBorARNIforHF: Measure.contained[0]/*Library/effective-data-requirements*/.extension[10].value.ofType(Coding).display: Wrong Display Name 'Fulfill' for http://hl7.org/fhir/CodeSystem/task-code#fulfill. Valid display is 'Fulfill the focal request' (for the language(s) 'en-US')
+ERROR: Measure/CMS144FHIRHFBetaBlockerForLVSD: Measure.contained[0]/*Library/effective-data-requirements*/.extension[10].value.ofType(Coding).display: Wrong Display Name 'Fulfill' for http://hl7.org/fhir/CodeSystem/task-code#fulfill. Valid display is 'Fulfill the focal request' (for the language(s) 'en-US')
+ERROR: Measure/CMS190FHIRVTEProphylaxisICU: Measure.contained[0]/*Library/effective-data-requirements*/.extension[8].value.ofType(Coding).display: Wrong Display Name 'Fulfill' for http://hl7.org/fhir/CodeSystem/task-code#fulfill. Valid display is 'Fulfill the focal request' (for the language(s) 'en-US')
+ERROR: Measure/CMS22FHIRPCSBPScreeningFollowUp: Measure.contained[0]/*Library/effective-data-requirements*/.extension[5].value.ofType(Coding).display: Wrong Display Name 'EKG 12 channel panel' for http://loinc.org#34534-8. Valid display is one of 3 choices: '12 lead EKG panel' (en-US), '12 lead EKG panel' (en-US) or '12 lead EKG Pnl' (en-US) (for the language(s) 'en-US')
+ERROR: Measure/CMS22FHIRPCSBPScreeningFollowUp: Measure.contained[0]/*Library/effective-data-requirements*/.dataRequirement[8].codeFilter[0].code[0].display: Wrong Display Name 'EKG 12 channel panel' for http://loinc.org#34534-8. Valid display is one of 3 choices: '12 lead EKG panel' (en-US), '12 lead EKG panel' (en-US) or '12 lead EKG Pnl' (en-US) (for the language(s) 'en-US')
+ERROR: Measure/CMS22FHIRPCSBPScreeningFollowUp: Measure.contained[0]/*Library/effective-data-requirements*/.dataRequirement[32].codeFilter[0].code[0].display: Wrong Display Name 'EKG 12 channel panel' for http://loinc.org#34534-8. Valid display is one of 3 choices: '12 lead EKG panel' (en-US), '12 lead EKG panel' (en-US) or '12 lead EKG Pnl' (en-US) (for the language(s) 'en-US')
+ERROR: Measure/CMS50FHIRReceiptofSpecialistReport: Measure.contained[0]/*Library/effective-data-requirements*/.extension[2].value.ofType(Coding).display: Wrong Display Name 'Fulfill' for http://hl7.org/fhir/CodeSystem/task-code#fulfill. Valid display is 'Fulfill the focal request' (for the language(s) 'en-US')
+ERROR: Measure/CMS50FHIRReceiptofSpecialistReport: Measure.contained[0]/*Library/effective-data-requirements*/.dataRequirement[3].codeFilter[0].code[0].display: Wrong Display Name 'Fulfill' for http://hl7.org/fhir/CodeSystem/task-code#fulfill. Valid display is 'Fulfill the focal request' (for the language(s) 'en-US')
+ERROR: Measure/CMS71FHIRSTKAnticoagAFFlutter: Measure.contained[0]/*Library/effective-data-requirements*/.extension[7].value.ofType(Coding).display: Wrong Display Name 'Fulfill' for http://hl7.org/fhir/CodeSystem/task-code#fulfill. Valid display is 'Fulfill the focal request' (for the language(s) 'en-US')
+ERROR: Measure/CMS72FHIRSTKAntithromboticDay2: Measure.contained[0]/*Library/effective-data-requirements*/.extension[5].value.ofType(Coding).display: Wrong Display Name 'Fulfill' for http://hl7.org/fhir/CodeSystem/task-code#fulfill. Valid display is 'Fulfill the focal request' (for the language(s) 'en-US')
+ERROR: Measure/CMSFHIR529HybridHospitalWideReadmission: Measure.contained[0]/*Library/effective-data-requirements*/.extension[0].value.ofType(Coding).display: Wrong Display Name 'Systolic BP' for http://loinc.org#8480-6. Valid display is one of 3 choices: 'Systolic blood pressure' (en-US), 'Systolic blood pressure' (en-US) or 'BP sys' (en-US) (for the language(s) 'en-US')
+ERROR: Measure/CMSFHIR529HybridHospitalWideReadmission: Measure.useContext[0].code.display: Wrong Display Name 'Venue' for http://terminology.hl7.org/CodeSystem/usage-context-type#venue. Valid display is 'Clinical Venue' (for the language(s) 'en-US')
+ERROR: Measure/CMSFHIR844HybridHospitalWideMortality: Measure.contained[0]/*Library/effective-data-requirements*/.extension[0].value.ofType(Coding).display: Wrong Display Name 'Systolic BP' for http://loinc.org#8480-6. Valid display is one of 3 choices: 'Systolic blood pressure' (en-US), 'Systolic blood pressure' (en-US) or 'BP sys' (en-US) (for the language(s) 'en-US')
+ERROR: Measure/CMSFHIR844HybridHospitalWideMortality: Measure.useContext[0].code.display: Wrong Display Name 'Venue' for http://terminology.hl7.org/CodeSystem/usage-context-type#venue. Valid display is 'Clinical Venue' (for the language(s) 'en-US')
+ERROR: Measure/CMSFHIR844HybridHospitalWideMortality: Measure.group[0].extension[4].value.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'decrease' for http://terminology.hl7.org/CodeSystem/measure-improvement-notation#decrease. Valid display is 'Decreased score indicates improvement' (for the language(s) 'en-US')
+
+# 2025.0.0:019 - Terminology issues under investigation
+%The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesn't provide any codes so the code cannot be validated
+%The definition for the Code System with URI 'http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets' doesn't provide any codes so the code cannot be validated
+%The code '169331000' is valid but is not active
+%Unknown code 'intermediate-outcome' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/measure-type' version '3.0.1'
+
+# 2025.0.0:020 - Rendering issues under investigation
+%Invalid element name inside a paragraph in the XHTML ('p')
+%Invalid element name inside a paragraph in the XHTML ('ul')
+%Found block structures inside a paragraph/text element%
+
+# 2025.0.0:021 - Known issue with MADiE export, the value of the rateAggregation extension is incorrect
+%The Extension 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-rateAggregation' definition allows for the types [string] but found type code
+
+# 2025.0.0:022 - Need to address these issues in the validator
+%Groups should have codes when there is more than one group
+%A measure group stratifier should have a code when there is more than one population
+%The expression language text/cql-identifier is not supported, so can't be validated
+
+# 2025.0.0:023 - Narrative elements not allowed under investigation
+ERROR: Measure/CMS1244FHIRECATHOQR: Measure.text.div: Constraint failed: txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes (htmlChecks())'
+ERROR: Measure/CMS1264FHIRECATREHQR: Measure.text.div: Constraint failed: txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes (htmlChecks())'
+ERROR: Measure/CMS135FHIRACEIorARBorARNIforHF: Measure.text.div: Constraint failed: txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes (htmlChecks())'
+ERROR: Measure/CMS144FHIRHFBetaBlockerForLVSD: Measure.text.div: Constraint failed: txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes (htmlChecks())'
+ERROR: Measure/CMS996FHIRAptTxforSTEMI: Measure.text.div: Constraint failed: txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes (htmlChecks())'
+
+# 2025.0.0:024 - Cohort issue under investigation
+ERROR: Measure/CMSFHIR529HybridHospitalWideReadmission: Measure: Constraint failed: cmp-4: 'Improvement notation must be specified for scoring types other than cohort ((scoring.exists() and (scoring.coding.code.contains('proportion') or scoring.coding.code.contains('ratio') or scoring.coding.code.contains('continuous-variable') or scoring.coding.code.contains('composite')) and improvementNotation.exists()) xor (group.exists() and group.select((extension('http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoring').exists() and (extension('http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoring').value.coding.code.contains('proportion') or extension('http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoring').value.coding.code.contains('ratio') or extension('http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoring').value.coding.code.contains('continuous-variable') or extension('http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoring').value.coding.code.contains('composite')) and  extension('http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-improvementNotation').exists())).allTrue()) xor (scoring.exists() and scoring.coding.code.contains('cohort')))'
+ERROR: Measure/CMSFHIR844HybridHospitalWideMortality: Measure: Constraint failed: cmp-4: 'Improvement notation must be specified for scoring types other than cohort ((scoring.exists() and (scoring.coding.code.contains('proportion') or scoring.coding.code.contains('ratio') or scoring.coding.code.contains('continuous-variable') or scoring.coding.code.contains('composite')) and improvementNotation.exists()) xor (group.exists() and group.select((extension('http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoring').exists() and (extension('http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoring').value.coding.code.contains('proportion') or extension('http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoring').value.coding.code.contains('ratio') or extension('http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoring').value.coding.code.contains('continuous-variable') or extension('http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoring').value.coding.code.contains('composite')) and  extension('http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-improvementNotation').exists())).allTrue()) xor (scoring.exists() and scoring.coding.code.contains('cohort')))'
+

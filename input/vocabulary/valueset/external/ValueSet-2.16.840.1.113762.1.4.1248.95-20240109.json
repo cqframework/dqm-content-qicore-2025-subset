@@ -1,0 +1,78 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1248.95-20240109",
+  "meta": {
+    "versionId": "11",
+    "lastUpdated": "2024-02-22T14:54:20.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "Mathematica PSI Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-01-31"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-01-09"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.95",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1248.95"
+  } ],
+  "version": "20240109",
+  "name": "CarbonDioxidePartialPressureInArterialBlood",
+  "title": "Carbon Dioxide Partial Pressure in Arterial Blood",
+  "status": "active",
+  "date": "2024-01-09T01:09:01-05:00",
+  "publisher": "Mathematica PSI Steward",
+  "description": "LOINC",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for carbon dioxide partial pressure in arterial blood),(Data Element Scope: This value set may use a model element related to Laboratory Test),(Inclusion Criteria: Includes concepts that represent tests for partial pressure of carbon dioxide in arterial blood),(Exclusion Criteria: Excludes concepts that represent tests for total pressure of carbon dioxide in arterial blood or tests for carbon dioxide in arterial cord blood)",
+  "compose": {
+    "include": [ {
+      "system": "http://loinc.org",
+      "concept": [ {
+        "code": "2019-8",
+        "display": "Carbon dioxide [Partial pressure] in Arterial blood"
+      }, {
+        "code": "32771-8",
+        "display": "Carbon dioxide [Partial pressure] adjusted to patient's actual temperature in Arterial blood"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:bf3b9271-f632-4515-92e3-845fc33799ff",
+    "timestamp": "2025-08-28T17:01:08-04:00",
+    "total": 2,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://loinc.org",
+      "inactive": false,
+      "version": "2.78",
+      "code": "2019-8",
+      "display": "Carbon dioxide [Partial pressure] in Arterial blood"
+    }, {
+      "system": "http://loinc.org",
+      "inactive": false,
+      "version": "2.78",
+      "code": "32771-8",
+      "display": "Carbon dioxide [Partial pressure] adjusted to patient's actual temperature in Arterial blood"
+    } ]
+  }
+}

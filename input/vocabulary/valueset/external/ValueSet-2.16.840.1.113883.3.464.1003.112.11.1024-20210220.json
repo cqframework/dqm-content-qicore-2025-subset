@@ -1,0 +1,87 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.464.1003.112.11.1024-20210220",
+  "meta": {
+    "versionId": "6",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "NCQA PHEMUR Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-03-10"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2021-02-20"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.112.11.1024",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.464.1003.112.11.1024"
+  } ],
+  "version": "20210220",
+  "name": "AbsenceOfCervix",
+  "title": "Absence of Cervix",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-02-20T01:02:00-05:00",
+  "publisher": "NCQA PHEMUR",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent diagnoses related to absence of a cervix.),(Data Element Scope: This value set may use a model element related to Diagnosis.),(Inclusion Criteria: Includes concepts that represent a diagnosis of an absence of cervix with or without remaining uterus, congenital or acquired absence of cervix, radical or total hysterectomy.),(Exclusion Criteria: Excludes concepts that represent a diagnosis of a partial hysterectomy, absence of uterus with remaining cervical stump.)",
+  "compose": {
+    "include": [ {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "concept": [ {
+        "code": "Q51.5",
+        "display": "Agenesis and aplasia of cervix"
+      }, {
+        "code": "Z90.710",
+        "display": "Acquired absence of both cervix and uterus"
+      }, {
+        "code": "Z90.712",
+        "display": "Acquired absence of cervix with remaining uterus"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:9ed7142c-1f2a-484f-a570-c7e012a4fb85",
+    "timestamp": "2025-08-28T16:58:57-04:00",
+    "total": 3,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "inactive": false,
+      "version": "2025",
+      "code": "Q51.5",
+      "display": "Agenesis and aplasia of cervix"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "inactive": false,
+      "version": "2025",
+      "code": "Z90.710",
+      "display": "Acquired absence of both cervix and uterus"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "inactive": false,
+      "version": "2025",
+      "code": "Z90.712",
+      "display": "Acquired absence of cervix with remaining uterus"
+    } ]
+  }
+}

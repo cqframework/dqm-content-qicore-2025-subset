@@ -1,0 +1,113 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.464.1003.196.11.1252-20240123",
+  "meta": {
+    "versionId": "32",
+    "lastUpdated": "2024-01-23T01:10:32.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "NCQA PHEMUR Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-03-10"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-01-23"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.196.11.1252",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.464.1003.196.11.1252"
+  } ],
+  "version": "20240123",
+  "name": "GuanfacineMedications",
+  "title": "Guanfacine Medications",
+  "status": "active",
+  "date": "2024-01-23T01:10:32-05:00",
+  "publisher": "NCQA PHEMUR",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for guanfacine medications.),(Data Element Scope: This value set may use a model element related to Medication.),(Inclusion Criteria: Includes concepts that represent generic, human use, prescribable guanfacine and guanfacine in combination with other medications.),(Exclusion Criteria: Excludes concepts that represent non-prescribable, branded drugs and excludes concepts that represent components or ingredients.)",
+  "compose": {
+    "include": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept": [ {
+        "code": "197745",
+        "display": "guanfacine 1 MG Oral Tablet"
+      }, {
+        "code": "197746",
+        "display": "guanfacine 2 MG Oral Tablet"
+      }, {
+        "code": "862006",
+        "display": "24 HR guanfacine 1 MG Extended Release Oral Tablet"
+      }, {
+        "code": "862013",
+        "display": "24 HR guanfacine 2 MG Extended Release Oral Tablet"
+      }, {
+        "code": "862019",
+        "display": "24 HR guanfacine 3 MG Extended Release Oral Tablet"
+      }, {
+        "code": "862025",
+        "display": "24 HR guanfacine 4 MG Extended Release Oral Tablet"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:f8351660-86a3-4ef7-b236-5c4407fc72d6",
+    "timestamp": "2025-08-28T16:52:55-04:00",
+    "total": 6,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "197745",
+      "display": "guanfacine 1 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "197746",
+      "display": "guanfacine 2 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "862006",
+      "display": "24 HR guanfacine 1 MG Extended Release Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "862013",
+      "display": "24 HR guanfacine 2 MG Extended Release Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "862019",
+      "display": "24 HR guanfacine 3 MG Extended Release Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "862025",
+      "display": "24 HR guanfacine 4 MG Extended Release Oral Tablet"
+    } ]
+  }
+}

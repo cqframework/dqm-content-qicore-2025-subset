@@ -1,0 +1,77 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.3157.1004.13-20240217",
+  "meta": {
+    "versionId": "39",
+    "lastUpdated": "2024-02-17T01:10:27.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "Mathematica EP"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-04-03"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-02-17"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3157.1004.13",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.3157.1004.13"
+  } ],
+  "version": "20240217",
+  "name": "Dihydrocodeine",
+  "title": "Dihydrocodeine",
+  "status": "active",
+  "date": "2024-02-17T01:10:27-05:00",
+  "publisher": "Mathematica",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: This set of semantic clinical drugs (SCD) and generic pack (GPCK) RxNorm codes aims to capture orders of the opioid medication dihydrocodeine.),(Data Element Scope: The intent of this data element is to identify patients who are prescribed dihydrocodeine.),(Inclusion Criteria: Include RxNorm SCD and GPCK type codes that identify dihydrocodeine medications.),(Exclusion Criteria: None.)",
+  "compose": {
+    "include": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept": [ {
+        "code": "1596108",
+        "display": "acetaminophen 320.5 MG / caffeine 30 MG / dihydrocodeine bitartrate 16 MG Oral Capsule"
+      }, {
+        "code": "1812164",
+        "display": "acetaminophen 325 MG / caffeine 30 MG / dihydrocodeine bitartrate 16 MG Oral Tablet"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:35b89b97-645f-4456-bd59-bffd6487ac9d",
+    "timestamp": "2025-08-28T16:54:26-04:00",
+    "total": 2,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "1596108",
+      "display": "acetaminophen 320.5 MG / caffeine 30 MG / dihydrocodeine bitartrate 16 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "1812164",
+      "display": "acetaminophen 325 MG / caffeine 30 MG / dihydrocodeine bitartrate 16 MG Oral Tablet"
+    } ]
+  }
+}

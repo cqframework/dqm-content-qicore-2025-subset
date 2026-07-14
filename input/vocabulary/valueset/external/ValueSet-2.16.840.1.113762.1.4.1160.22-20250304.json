@@ -1,0 +1,77 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1160.22-20250304",
+  "meta": {
+    "versionId": "14",
+    "lastUpdated": "2025-03-04T01:03:00.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "American Medical Association Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-03-04"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2025-03-04"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1160.22",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1160.22"
+  } ],
+  "version": "20250304",
+  "name": "OutpatientClinicalEncounters",
+  "title": "Outpatient Clinical Encounters",
+  "status": "active",
+  "date": "2025-03-04T01:03:00-05:00",
+  "publisher": "American Medical Association Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: Office visit outpatient encounters for diabetes screening),(Data Element Scope: Allowable outpatient encounters for diabetes screening),(Inclusion Criteria: Outpatient visits),(Exclusion Criteria: None)",
+  "compose": {
+    "include": [ {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "concept": [ {
+        "code": "G0463",
+        "display": "Hospital outpatient clinic visit for assessment and management of a patient"
+      }, {
+        "code": "T1015",
+        "display": "Clinic visit/encounter, all-inclusive"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:e245ee30-3a59-4383-b3eb-137f868114a8",
+    "timestamp": "2025-08-28T16:47:20-04:00",
+    "total": 2,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G0463",
+      "display": "Hospital outpatient clinic visit for assessment and management of a patient"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "T1015",
+      "display": "Clinic visit/encounter, all-inclusive"
+    } ]
+  }
+}

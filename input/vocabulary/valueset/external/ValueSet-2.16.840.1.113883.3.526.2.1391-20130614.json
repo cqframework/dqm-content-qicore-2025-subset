@@ -1,0 +1,69 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.526.2.1391-20130614",
+  "meta": {
+    "versionId": "3",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "AMA-PCPI Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2024-06-03"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2013-06-14"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.1391",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.526.2.1391"
+  } ],
+  "version": "20130614",
+  "name": "MacularEdemaFindingsAbsent",
+  "title": "Macular Edema Findings Absent",
+  "status": "retired",
+  "experimental": false,
+  "date": "2013-06-12T19:16:25-04:00",
+  "publisher": "AMA-PCPI",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: )",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "428341000124108",
+        "display": "Macular edema absent (situation)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:64c5ec9e-a9e0-4a67-a69f-9fe85fc97c4b",
+    "timestamp": "2025-08-28T16:55:00-04:00",
+    "total": 1,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "428341000124108",
+      "display": "Macular edema absent (situation)"
+    } ]
+  }
+}

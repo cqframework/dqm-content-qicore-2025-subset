@@ -1,0 +1,215 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1029.246-20240210",
+  "meta": {
+    "versionId": "26",
+    "lastUpdated": "2024-02-10T01:11:25.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "Joint Commission Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-keyWord",
+    "valueString": "PC-07"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-01-31"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-02-10"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.246",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1029.246"
+  } ],
+  "version": "20240210",
+  "name": "BloodTransfusion",
+  "title": "Blood Transfusion",
+  "status": "active",
+  "date": "2024-02-10T01:11:25-05:00",
+  "publisher": "Joint Commission",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts of procedures of blood transfusions.),(Data Element Scope: This value set may use a model element related to procedure.),(Inclusion Criteria: Includes concepts that represent procedures of a blood transfusion.),(Exclusion Criteria: No exclusions.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "11397000",
+        "display": "Autotransfusion of whole blood (procedure)"
+      }, {
+        "code": "116795008",
+        "display": "Transfusion of cryoprecipitate (procedure)"
+      }, {
+        "code": "116861002",
+        "display": "Transfusion of fresh frozen plasma (procedure)"
+      }, {
+        "code": "116863004",
+        "display": "Transfusion of red blood cells (procedure)"
+      }, {
+        "code": "117078000",
+        "display": "Transfusion of platelet concentrate (procedure)"
+      }, {
+        "code": "12719002",
+        "display": "Platelet transfusion (procedure)"
+      }, {
+        "code": "13569004",
+        "display": "Transfusion of plasma (procedure)"
+      }, {
+        "code": "180206004",
+        "display": "Intra-arterial blood transfusion (procedure)"
+      }, {
+        "code": "180207008",
+        "display": "Intravenous blood transfusion of packed cells (procedure)"
+      }, {
+        "code": "180208003",
+        "display": "Intravenous blood transfusion of platelets (procedure)"
+      }, {
+        "code": "225284006",
+        "display": "Transfusing whole blood under pressure (procedure)"
+      }, {
+        "code": "288170000",
+        "display": "Packed blood cell transfusion (procedure)"
+      }, {
+        "code": "33389009",
+        "display": "Transfusion of whole blood (procedure)"
+      }, {
+        "code": "425513008",
+        "display": "Transfusion of leucoreduced red blood cells (procedure)"
+      }, {
+        "code": "426290002",
+        "display": "Transfusion of washed red blood cells (procedure)"
+      }, {
+        "code": "54790000",
+        "display": "Transfusion of blood component (procedure)"
+      }, {
+        "code": "71493000",
+        "display": "Transfusion of packed red blood cells (procedure)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:9b79041a-8697-45bd-be0d-44f61f14bc22",
+    "timestamp": "2025-08-28T16:51:31-04:00",
+    "total": 17,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "11397000",
+      "display": "Autotransfusion of whole blood (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "116795008",
+      "display": "Transfusion of cryoprecipitate (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "116861002",
+      "display": "Transfusion of fresh frozen plasma (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "116863004",
+      "display": "Transfusion of red blood cells (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "117078000",
+      "display": "Transfusion of platelet concentrate (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "12719002",
+      "display": "Platelet transfusion (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "13569004",
+      "display": "Transfusion of plasma (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "180206004",
+      "display": "Intra-arterial blood transfusion (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "180207008",
+      "display": "Intravenous blood transfusion of packed cells (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "180208003",
+      "display": "Intravenous blood transfusion of platelets (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "225284006",
+      "display": "Transfusing whole blood under pressure (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "288170000",
+      "display": "Packed blood cell transfusion (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "33389009",
+      "display": "Transfusion of whole blood (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "425513008",
+      "display": "Transfusion of leucoreduced red blood cells (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "426290002",
+      "display": "Transfusion of washed red blood cells (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "54790000",
+      "display": "Transfusion of blood component (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "71493000",
+      "display": "Transfusion of packed red blood cells (procedure)"
+    } ]
+  }
+}

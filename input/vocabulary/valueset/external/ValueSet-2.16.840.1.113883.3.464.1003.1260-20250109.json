@@ -1,0 +1,86 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.464.1003.1260-20250109",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2025-06-11T12:49:34.000-04:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "NCQA PHEMUR Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-01-09"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2025-01-09"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1260",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.464.1003.1260"
+  } ],
+  "version": "20250109",
+  "name": "Viloxazine",
+  "title": "Viloxazine",
+  "status": "active",
+  "date": "2025-01-09T01:02:58-05:00",
+  "publisher": "NCQA PHEMUR",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for Viloxazine medications.),(Data Element Scope: This value set may use a model element related to Medication.),(Inclusion Criteria: Includes concepts that represent generic, human use and prescribable medications.),(Exclusion Criteria: Excludes concepts that represent non-prescribable or branded drugs and excludes concepts that represent components or ingredients.)",
+  "compose": {
+    "include": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept": [ {
+        "code": "2536548",
+        "display": "24 HR viloxazine 100 MG Extended Release Oral Capsule"
+      }, {
+        "code": "2536750",
+        "display": "24 HR viloxazine 150 MG Extended Release Oral Capsule"
+      }, {
+        "code": "2536756",
+        "display": "24 HR viloxazine 200 MG Extended Release Oral Capsule"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:ed15f156-51c1-4b70-8cc7-955834ef954c",
+    "timestamp": "2025-08-28T17:00:26-04:00",
+    "total": 3,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "2536548",
+      "display": "24 HR viloxazine 100 MG Extended Release Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "2536750",
+      "display": "24 HR viloxazine 150 MG Extended Release Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "2536756",
+      "display": "24 HR viloxazine 200 MG Extended Release Oral Capsule"
+    } ]
+  }
+}

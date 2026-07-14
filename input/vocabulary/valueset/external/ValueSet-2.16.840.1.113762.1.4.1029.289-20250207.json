@@ -1,0 +1,89 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1029.289-20250207",
+  "meta": {
+    "versionId": "23",
+    "lastUpdated": "2025-02-07T01:09:20.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "Joint Commission Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-keyWord",
+    "valueString": "PC-07"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-02-07"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2025-02-07"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.289",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1029.289"
+  } ],
+  "version": "20250207",
+  "name": "MorbidOrSevereObesity",
+  "title": "Morbid or Severe Obesity",
+  "status": "active",
+  "date": "2025-02-07T01:09:20-05:00",
+  "publisher": "Joint Commission",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to group diagnoses of morbid obesity.),(Data Element Scope: This value set may use a model element related to diagnosis.),(Inclusion Criteria: Includes concepts that identify a diagnosis of morbid obesity.),(Exclusion Criteria: Excludes concepts that identify a diagnosis of a body mass index less than 40.)",
+  "compose": {
+    "include": [ {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "concept": [ {
+        "code": "E66.01",
+        "display": "Morbid (severe) obesity due to excess calories"
+      }, {
+        "code": "E66.2",
+        "display": "Morbid (severe) obesity with alveolar hypoventilation"
+      }, {
+        "code": "E66.813",
+        "display": "Obesity, class 3"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:546b7046-3805-499f-8c2b-23590251d019",
+    "timestamp": "2025-08-28T16:59:16-04:00",
+    "total": 3,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "inactive": false,
+      "version": "2025",
+      "code": "E66.01",
+      "display": "Morbid (severe) obesity due to excess calories"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "inactive": false,
+      "version": "2025",
+      "code": "E66.2",
+      "display": "Morbid (severe) obesity with alveolar hypoventilation"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "inactive": false,
+      "version": "2025",
+      "code": "E66.813",
+      "display": "Obesity, class 3"
+    } ]
+  }
+}

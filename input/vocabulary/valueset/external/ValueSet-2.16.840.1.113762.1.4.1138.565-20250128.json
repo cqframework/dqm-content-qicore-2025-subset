@@ -1,0 +1,186 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1138.565-20250128",
+  "meta": {
+    "versionId": "18",
+    "lastUpdated": "2025-01-28T01:07:06.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "American Institutes for Research Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-01-28"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2025-01-28"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1138.565",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1138.565"
+  } ],
+  "version": "20250128",
+  "name": "CABGOrPCIProcedure",
+  "title": "CABG or PCI Procedure",
+  "status": "active",
+  "date": "2025-01-28T01:07:06-05:00",
+  "publisher": "American Institutes for Research Steward",
+  "description": "Mathematica assumed stewardship on 2/15/23 from Change Healthcare.",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: CABG, PCI Procedure),(Data Element Scope: CABG, PCI Procedure),(Inclusion Criteria: ),(Exclusion Criteria: None)",
+  "compose": {
+    "include": [ {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "concept": [ {
+        "code": "C9600",
+        "display": "Percutaneous transcatheter placement of drug eluting intracoronary stent(s), with coronary angioplasty when performed; single major coronary artery or branch"
+      }, {
+        "code": "C9601",
+        "display": "Percutaneous transcatheter placement of drug-eluting intracoronary stent(s), with coronary angioplasty when performed; each additional branch of a major coronary artery (list separately in addition to code for primary procedure)"
+      }, {
+        "code": "C9602",
+        "display": "Percutaneous transluminal coronary atherectomy, with drug eluting intracoronary stent, with coronary angioplasty when performed; single major coronary artery or branch"
+      }, {
+        "code": "C9603",
+        "display": "Percutaneous transluminal coronary atherectomy, with drug-eluting intracoronary stent, with coronary angioplasty when performed; each additional branch of a major coronary artery (list separately in addition to code for primary procedure)"
+      }, {
+        "code": "C9604",
+        "display": "Percutaneous transluminal revascularization of or through coronary artery bypass graft (internal mammary, free arterial, venous), any combination of drug-eluting intracoronary stent, atherectomy and angioplasty, including distal protection when performed; single vessel"
+      }, {
+        "code": "C9605",
+        "display": "Percutaneous transluminal revascularization of or through coronary artery bypass graft (internal mammary, free arterial, venous), any combination of drug-eluting intracoronary stent, atherectomy and angioplasty, including distal protection when performed; each additional branch subtended by the bypass graft (list separately in addition to code for primary procedure)"
+      }, {
+        "code": "C9606",
+        "display": "Percutaneous transluminal revascularization of acute total/subtotal occlusion during acute myocardial infarction, coronary artery or coronary artery bypass graft, any combination of drug-eluting intracoronary stent, atherectomy and angioplasty, including aspiration thrombectomy when performed, single vessel"
+      }, {
+        "code": "C9607",
+        "display": "Percutaneous transluminal revascularization of chronic total occlusion, coronary artery, coronary artery branch, or coronary artery bypass graft, any combination of drug-eluting intracoronary stent, atherectomy and angioplasty; single vessel"
+      }, {
+        "code": "C9608",
+        "display": "Percutaneous transluminal revascularization of chronic total occlusion, coronary artery, coronary artery branch, or coronary artery bypass graft, any combination of drug-eluting intracoronary stent, atherectomy and angioplasty; each additional coronary artery, coronary artery branch, or bypass graft (list separately in addition to code for primary procedure)"
+      }, {
+        "code": "S2205",
+        "display": "Minimally invasive direct coronary artery bypass surgery involving mini-thoracotomy or mini-sternotomy surgery, performed under direct vision; using arterial graft(s), single coronary arterial graft"
+      }, {
+        "code": "S2206",
+        "display": "Minimally invasive direct coronary artery bypass surgery involving mini-thoracotomy or mini-sternotomy surgery, performed under direct vision; using arterial graft(s), two coronary arterial grafts"
+      }, {
+        "code": "S2207",
+        "display": "Minimally invasive direct coronary artery bypass surgery involving mini-thoracotomy or mini-sternotomy surgery, performed under direct vision; using venous graft only, single coronary venous graft"
+      }, {
+        "code": "S2208",
+        "display": "Minimally invasive direct coronary artery bypass surgery involving mini-thoracotomy or mini-sternotomy surgery, performed under direct vision; using single arterial and venous graft(s), single venous graft"
+      }, {
+        "code": "S2209",
+        "display": "Minimally invasive direct coronary artery bypass surgery involving mini-thoracotomy or mini-sternotomy surgery, performed under direct vision; using two arterial grafts and single venous graft"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:e552c1a1-e940-41c7-820a-6afc0761be2a",
+    "timestamp": "2025-08-28T16:52:30-04:00",
+    "total": 14,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "C9600",
+      "display": "Percutaneous transcatheter placement of drug eluting intracoronary stent(s), with coronary angioplasty when performed; single major coronary artery or branch"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "C9601",
+      "display": "Percutaneous transcatheter placement of drug-eluting intracoronary stent(s), with coronary angioplasty when performed; each additional branch of a major coronary artery (list separately in addition to code for primary procedure)"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "C9602",
+      "display": "Percutaneous transluminal coronary atherectomy, with drug eluting intracoronary stent, with coronary angioplasty when performed; single major coronary artery or branch"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "C9603",
+      "display": "Percutaneous transluminal coronary atherectomy, with drug-eluting intracoronary stent, with coronary angioplasty when performed; each additional branch of a major coronary artery (list separately in addition to code for primary procedure)"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "C9604",
+      "display": "Percutaneous transluminal revascularization of or through coronary artery bypass graft (internal mammary, free arterial, venous), any combination of drug-eluting intracoronary stent, atherectomy and angioplasty, including distal protection when performed; single vessel"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "C9605",
+      "display": "Percutaneous transluminal revascularization of or through coronary artery bypass graft (internal mammary, free arterial, venous), any combination of drug-eluting intracoronary stent, atherectomy and angioplasty, including distal protection when performed; each additional branch subtended by the bypass graft (list separately in addition to code for primary procedure)"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "C9606",
+      "display": "Percutaneous transluminal revascularization of acute total/subtotal occlusion during acute myocardial infarction, coronary artery or coronary artery bypass graft, any combination of drug-eluting intracoronary stent, atherectomy and angioplasty, including aspiration thrombectomy when performed, single vessel"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "C9607",
+      "display": "Percutaneous transluminal revascularization of chronic total occlusion, coronary artery, coronary artery branch, or coronary artery bypass graft, any combination of drug-eluting intracoronary stent, atherectomy and angioplasty; single vessel"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "C9608",
+      "display": "Percutaneous transluminal revascularization of chronic total occlusion, coronary artery, coronary artery branch, or coronary artery bypass graft, any combination of drug-eluting intracoronary stent, atherectomy and angioplasty; each additional coronary artery, coronary artery branch, or bypass graft (list separately in addition to code for primary procedure)"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "S2205",
+      "display": "Minimally invasive direct coronary artery bypass surgery involving mini-thoracotomy or mini-sternotomy surgery, performed under direct vision; using arterial graft(s), single coronary arterial graft"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "S2206",
+      "display": "Minimally invasive direct coronary artery bypass surgery involving mini-thoracotomy or mini-sternotomy surgery, performed under direct vision; using arterial graft(s), two coronary arterial grafts"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "S2207",
+      "display": "Minimally invasive direct coronary artery bypass surgery involving mini-thoracotomy or mini-sternotomy surgery, performed under direct vision; using venous graft only, single coronary venous graft"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "S2208",
+      "display": "Minimally invasive direct coronary artery bypass surgery involving mini-thoracotomy or mini-sternotomy surgery, performed under direct vision; using single arterial and venous graft(s), single venous graft"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "S2209",
+      "display": "Minimally invasive direct coronary artery bypass surgery involving mini-thoracotomy or mini-sternotomy surgery, performed under direct vision; using two arterial grafts and single venous graft"
+    } ]
+  }
+}

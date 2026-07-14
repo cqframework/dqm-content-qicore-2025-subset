@@ -1,0 +1,97 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1111.169-20210223",
+  "meta": {
+    "versionId": "9",
+    "lastUpdated": "2025-02-03T12:27:04.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "Mathematica EP"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-04-03"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2021-02-23"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.169",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1111.169"
+  } ],
+  "version": "20210223",
+  "name": "Sufentanil",
+  "title": "Sufentanil",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-02-23T01:04:40-05:00",
+  "publisher": "Mathematica",
+  "description": "This value set includes semantic clinical drugs (SCD) and generic pack (GPCK) RxNorm codes.",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to group sufentanil medications.),(Data Element Scope: This value set may use a model element related to Medication.),(Inclusion Criteria: Includes concepts that identify medications of sufentanil.),(Exclusion Criteria: Excludes concepts that represent schedule  or V,  unscheduled, nonprescribable, non-human, and inactive sufentanil medications.)",
+  "compose": {
+    "include": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept": [ {
+        "code": "1809097",
+        "display": "1 ML sufentanil 0.05 MG/ML Injection"
+      }, {
+        "code": "1809102",
+        "display": "2 ML sufentanil 0.05 MG/ML Injection"
+      }, {
+        "code": "1809104",
+        "display": "5 ML sufentanil 0.05 MG/ML Injection"
+      }, {
+        "code": "2103192",
+        "display": "sufentanil 0.03 MG Sublingual Tablet"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:2defd438-6ff1-4452-b1a9-3cca80aaa635",
+    "timestamp": "2025-08-28T16:57:31-04:00",
+    "total": 4,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "1809097",
+      "display": "1 ML sufentanil 0.05 MG/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "1809102",
+      "display": "2 ML sufentanil 0.05 MG/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "1809104",
+      "display": "5 ML sufentanil 0.05 MG/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "2103192",
+      "display": "sufentanil 0.03 MG Sublingual Tablet"
+    } ]
+  }
+}

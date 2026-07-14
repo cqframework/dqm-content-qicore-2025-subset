@@ -1,0 +1,76 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1045.99-20210611",
+  "meta": {
+    "versionId": "31",
+    "lastUpdated": "2024-12-02T08:10:20.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "TJC EH Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-keyWord",
+    "valueString": "PC-02"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-01-28"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2021-06-11"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1045.99",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1045.99"
+  } ],
+  "version": "20210611",
+  "name": "DeliveryOfSingleton",
+  "title": "Delivery of Singleton",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-06-11T01:01:24-04:00",
+  "publisher": "TJC EH Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to group diagnoses of a delivery of a single live born newborn.),(Data Element Scope: This value set may use a model element related to diagnosis.),(Inclusion Criteria: Includes concepts that identify a diagnosis of a delivery of a single live born newborn.),(Exclusion Criteria: No exclusions.)",
+  "compose": {
+    "include": [ {
+      "valueSet": [ "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1045.173" ]
+    }, {
+      "valueSet": [ "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1045.98" ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:5c401972-2fc6-426c-9234-b649d83e7d38",
+    "timestamp": "2025-08-28T16:49:30-04:00",
+    "total": 2,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "169826009",
+      "display": "Single live birth (finding)"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "inactive": false,
+      "version": "2025",
+      "code": "Z37.0",
+      "display": "Single live birth"
+    } ]
+  }
+}

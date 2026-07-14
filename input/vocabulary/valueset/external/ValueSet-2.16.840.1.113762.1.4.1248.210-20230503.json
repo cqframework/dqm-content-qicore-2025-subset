@@ -1,0 +1,113 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1248.210-20230503",
+  "meta": {
+    "versionId": "6",
+    "lastUpdated": "2024-02-22T15:12:56.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "Mathematica PSI Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-02-03"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2023-05-03"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.210",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1248.210"
+  } ],
+  "version": "20230503",
+  "name": "ContinuousAndBilevelPositiveAirwayPressure",
+  "title": "Continuous and Bilevel Positive Airway Pressure",
+  "status": "active",
+  "date": "2023-05-03T01:08:17-04:00",
+  "publisher": "Mathematica PSI Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this ICD10PCS value set is to represent concepts for Continuous Positive Airway Pressure (CPAP) and and Bilevel Positive Airway Pressure (BPAP) procedures),(Data Element Scope: This value set may use a model element related to Procedure),(Inclusion Criteria: Includes concepts that represent Continuous Positive Airway Pressure (CPAP) and and Bilevel Positive Airway Pressure (BPAP) procedures),(Exclusion Criteria: N/A)",
+  "compose": {
+    "include": [ {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "concept": [ {
+        "code": "5A09357",
+        "display": "Assistance with Respiratory Ventilation, Less than 24 Consecutive Hours, Continuous Positive Airway Pressure"
+      }, {
+        "code": "5A09358",
+        "display": "Assistance with Respiratory Ventilation, Less than 24 Consecutive Hours, Intermittent Positive Airway Pressure"
+      }, {
+        "code": "5A09457",
+        "display": "Assistance with Respiratory Ventilation, 24-96 Consecutive Hours, Continuous Positive Airway Pressure"
+      }, {
+        "code": "5A09458",
+        "display": "Assistance with Respiratory Ventilation, 24-96 Consecutive Hours, Intermittent Positive Airway Pressure"
+      }, {
+        "code": "5A09557",
+        "display": "Assistance with Respiratory Ventilation, Greater than 96 Consecutive Hours, Continuous Positive Airway Pressure"
+      }, {
+        "code": "5A09558",
+        "display": "Assistance with Respiratory Ventilation, Greater than 96 Consecutive Hours, Intermittent Positive Airway Pressure"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:e4e182ac-fce0-4b78-a88d-2ea3cf22a07a",
+    "timestamp": "2025-08-28T16:50:06-04:00",
+    "total": 6,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "5A09357",
+      "display": "Assistance with Respiratory Ventilation, Less than 24 Consecutive Hours, Continuous Positive Airway Pressure"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "5A09358",
+      "display": "Assistance with Respiratory Ventilation, Less than 24 Consecutive Hours, Intermittent Positive Airway Pressure"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "5A09457",
+      "display": "Assistance with Respiratory Ventilation, 24-96 Consecutive Hours, Continuous Positive Airway Pressure"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "5A09458",
+      "display": "Assistance with Respiratory Ventilation, 24-96 Consecutive Hours, Intermittent Positive Airway Pressure"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "5A09557",
+      "display": "Assistance with Respiratory Ventilation, Greater than 96 Consecutive Hours, Continuous Positive Airway Pressure"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "5A09558",
+      "display": "Assistance with Respiratory Ventilation, Greater than 96 Consecutive Hours, Intermittent Positive Airway Pressure"
+    } ]
+  }
+}

@@ -1,0 +1,31 @@
+@ECHO OFF
+SET tooling_jar=tooling-cli-3.9.1.jar
+SET input_cache_path=%~dp0input-cache
+SET ig_ini_path=%~dp0ig.ini
+
+ECHO Checking internet connection...
+PING tx.fhir.org -n 1 -w 1000 | FINDSTR TTL && GOTO isonline
+ECHO We're offline...
+SET fsoption=-fs=https://connectathon-fhir.lantanagroup.com/fhir/
+GOTO igpublish
+
+:isonline
+ECHO We're online, setting publish to local sandbox FHIR server
+SET fsoption=
+
+:igpublish
+
+SET JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
+
+IF EXIST "%input_cache_path%\%tooling_jar%" (
+	ECHO running: JAVA -jar "%input_cache_path%\%tooling_jar%" -RefreshIG -ini="%ig_ini_path%" -t -d -p %fsoption%
+	JAVA -jar "%input_cache_path%\%tooling_jar%" -RefreshIG -ini="%ig_ini_path%" -t -d -p %fsoption%
+) ELSE If exist "..\%tooling_jar%" (
+	ECHO running: JAVA -jar "..\%tooling_jar%" -RefreshIG -ini="%ig_ini_path%" -t -d -p %fsoption%
+	JAVA -jar "..\%tooling_jar%" -RefreshIG -ini="%ig_ini_path%" -t -d -p %fsoption%
+) ELSE (
+	ECHO IG Refresh NOT FOUND in input-cache or parent folder.  Please run _updateCQFTooling.  Aborting...
+)
+
+REM Use `_refresh > _refresh.log 2>&1` to pipe the output to a file named _refresh.log
+REM PAUSE

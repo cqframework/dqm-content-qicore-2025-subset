@@ -1,0 +1,77 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.464.1003.1155-20231117",
+  "meta": {
+    "versionId": "10",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "NCQA PHEMUR Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-03-10"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2023-11-17"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1155",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.464.1003.1155"
+  } ],
+  "version": "20231117",
+  "name": "SubstanceUseDisorderShortActingMedicationAdministration",
+  "title": "Substance Use Disorder Short Acting Medication Administration",
+  "status": "active",
+  "date": "2023-11-17T01:08:59-05:00",
+  "publisher": "NCQA PHEMUR",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this Grouping value set is to represent concepts for short acting substance use disorder medication assisted treatment, usually administered as part of an opioid treatment program.),(Data Element Scope: This value set may use a model element related to Intervention.),(Inclusion Criteria: Includes interventions where a short acting substance use disorder treatment medication is administered (oral and sublingual naltrexone, buprenorphine and buprenorphine).),(Exclusion Criteria: Excludes administration of long acting substance use disorder treatment medications (implants, injections).)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "1254709001",
+        "display": "Referral to substance use disorder treatment program (procedure)"
+      }, {
+        "code": "310653000",
+        "display": "Drug addiction therapy using methadone (regime/therapy)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:03f80d89-90ab-4627-b793-d4223187c04d",
+    "timestamp": "2025-08-28T17:05:28-04:00",
+    "total": 2,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "1254709001",
+      "display": "Referral to substance use disorder treatment program (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "310653000",
+      "display": "Drug addiction therapy using methadone (regime/therapy)"
+    } ]
+  }
+}

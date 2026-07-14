@@ -1,0 +1,96 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.526.2.1779-20210219",
+  "meta": {
+    "versionId": "12",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "Mathematica EP"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-04-03"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2021-02-19"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.1779",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.526.2.1779"
+  } ],
+  "version": "20210219",
+  "name": "GroupPsychotherapy",
+  "title": "Group Psychotherapy",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-02-19T01:00:28-05:00",
+  "publisher": "Mathematica",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for group psychotherapy.),(Data Element Scope: This value set may use a model element related to Encounter or Procedure.),(Inclusion Criteria: Includes concepts that represent group psychotherapy.),(Exclusion Criteria: Excludes concepts that represent family psychotherapy or individual psychotherapy.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "1555005",
+        "display": "Brief group psychotherapy (regime/therapy)"
+      }, {
+        "code": "27591006",
+        "display": "Group analytical psychotherapy (regime/therapy)"
+      }, {
+        "code": "28868002",
+        "display": "Interactive group medical psychotherapy (regime/therapy)"
+      }, {
+        "code": "76168009",
+        "display": "Group psychotherapy (regime/therapy)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:61210e8a-8949-4d4c-8e75-ca727d2212fa",
+    "timestamp": "2025-08-28T16:58:14-04:00",
+    "total": 4,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "1555005",
+      "display": "Brief group psychotherapy (regime/therapy)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "27591006",
+      "display": "Group analytical psychotherapy (regime/therapy)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "28868002",
+      "display": "Interactive group medical psychotherapy (regime/therapy)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "76168009",
+      "display": "Group psychotherapy (regime/therapy)"
+    } ]
+  }
+}

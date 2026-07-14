@@ -1,0 +1,77 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1095.101-20241004",
+  "meta": {
+    "versionId": "11",
+    "lastUpdated": "2024-10-04T01:00:44.000-04:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "AND Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-01-24"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-10-04"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1095.101",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1095.101"
+  } ],
+  "version": "20241004",
+  "name": "HospiceStatus",
+  "title": "Hospice Status",
+  "status": "active",
+  "date": "2024-10-04T01:00:44-04:00",
+  "publisher": "AND Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: This set of values indicates that a patient received hospice care.),(Data Element Scope: This set of values indicates that a patient received hospice care.),(Inclusion Criteria: Terms related to patients receiving hospice care),(Exclusion Criteria: Terms other than those related to patients receiving hospice care.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "182964004",
+        "display": "Terminal care (regime/therapy)"
+      }, {
+        "code": "385763009",
+        "display": "Hospice care (regime/therapy)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:c2828dfe-77d7-449a-8601-7cfbed761497",
+    "timestamp": "2025-08-28T16:48:59-04:00",
+    "total": 2,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "182964004",
+      "display": "Terminal care (regime/therapy)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "385763009",
+      "display": "Hospice care (regime/therapy)"
+    } ]
+  }
+}

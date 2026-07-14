@@ -1,0 +1,64 @@
+{
+    "expected_results": {
+        "some_measure:0e463fc3-d1bf-4e19-882b-fad6342aa668:Group_1": {
+            "Initial Population": 0,
+            "Denominator": 0,
+            "Denominator Exceptions": 0,
+            "Denominator Exclusions": 0,
+            "Numerator": 0
+        },
+        "some_measure:0e463fc3-d1bf-4e19-882b-fad6342aa668:Group_2": {
+            "Initial Population": 0,
+            "Denominator": 0,
+            "Denominator Exceptions": 0,
+            "Denominator Exclusions": 0,
+            "Numerator": 0
+        },
+        "some_measure:12786a64-c20e-4542-a4c0-bf3129d6a9e0:Group_1": {
+            "Initial Population": 1,
+            "Denominator": 1,
+            "Denominator Exceptions": 0,
+            "Denominator Exclusions": 0,
+            "Numerator": 1
+        },
+        "some_measure:12786a64-c20e-4542-a4c0-bf3129d6a9e0:Group_2": {
+            "Initial Population": 0,
+            "Denominator": 0,
+            "Denominator Exceptions": 0,
+            "Denominator Exclusions": 0,
+            "Numerator": 1
+        },
+        "some_measure:15ad723f-b561-4cdd-9a11-7e6619780459:Group_1": {
+            "Initial Population": 0,
+            "Denominator": 0,
+            "Denominator Exceptions": 1,
+            "Denominator Exclusions": 0,
+            "Numerator": 0
+        },
+        "some_measure:15ad723f-b561-4cdd-9a11-7e6619780459:Group_2": {
+            "Initial Population": 1,
+            "Denominator": 1,
+            "Denominator Exceptions": 1,
+            "Denominator Exclusions": 0,
+            "Numerator": 0
+        }
+    },
+    "all_measure_criteria": {
+        "some_measure": {
+            "Group_1": {
+                "Initial Population 1": "Initial Population",
+                "Denominator 1": "Denominator",
+                "Denominator Exceptions": "Denominator Exceptions",
+                "Denominator Exclusions": "Denominator Exclusions",
+                "Numerator": "Numerator"
+            },
+            "Group_2": {
+                "Initial Population 2": "Initial Population",
+                "Denominator 2": "Denominator",
+                "Denominator Exceptions": "Denominator Exceptions",
+                "Denominator Exclusions": "Denominator Exclusions",
+                "Numerator": "Numerator"
+            }
+        }
+    }
+}

@@ -1,0 +1,212 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1047.69-20250205",
+  "meta": {
+    "versionId": "19",
+    "lastUpdated": "2025-02-05T01:09:18.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "American Institutes for Research Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-05-12"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2025-02-05"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1047.69",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1047.69"
+  } ],
+  "version": "20250205",
+  "name": "StableAndUnstableAngina",
+  "title": "Stable and Unstable Angina",
+  "status": "active",
+  "date": "2025-02-05T01:09:18-05:00",
+  "publisher": "American Institutes for Research Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for diagnoses of angina.),(Data Element Scope: This value set may use a model element related to Diagnosis.),(Inclusion Criteria: Includes concepts that represent a diagnosis of angina, including: stable and unstable angina, pre and post infarction angina, angina decubitus, intermediate coronary syndrome, other unspecified angina or sequelae of myocardial infarction, and other forms of angina pectoris.),(Exclusion Criteria: No exclusions.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "15960061000119102",
+        "display": "Unstable angina co-occurrent and due to coronary arteriosclerosis (disorder)"
+      }, {
+        "code": "15960101000119104",
+        "display": "Angina due to coronary arteriosclerosis in artery of transplanted heart (disorder)"
+      }, {
+        "code": "15960141000119102",
+        "display": "Angina co-occurrent and due to coronary arteriosclerosis (disorder)"
+      }, {
+        "code": "15960341000119104",
+        "display": "Unstable angina due to arteriosclerosis of coronary artery bypass graft of transplanted heart (disorder)"
+      }, {
+        "code": "15960461000119105",
+        "display": "Unstable angina due to arteriosclerosis of autologous arterial coronary artery bypass graft (disorder)"
+      }, {
+        "code": "15960541000119107",
+        "display": "Unstable angina due to arteriosclerosis of autologous vein coronary artery bypass graft (disorder)"
+      }, {
+        "code": "15960701000119100",
+        "display": "Angina due to arteriosclerosis of coronary artery bypass graft of transplanted heart (disorder)"
+      }, {
+        "code": "15960741000119103",
+        "display": "Preinfarction syndrome due to arteriosclerosis of nonautologous biological coronary artery bypass graft (disorder)"
+      }, {
+        "code": "16754391000119100",
+        "display": "Stable angina due to coronary arteriosclerosis (disorder)"
+      }, {
+        "code": "19057007",
+        "display": "Status anginosus (disorder)"
+      }, {
+        "code": "194828000",
+        "display": "Angina (disorder)"
+      }, {
+        "code": "21470009",
+        "display": "Syncope anginosa (disorder)"
+      }, {
+        "code": "233819005",
+        "display": "Stable angina (disorder)"
+      }, {
+        "code": "233821000",
+        "display": "New onset angina (disorder)"
+      }, {
+        "code": "314116003",
+        "display": "Post infarct angina (disorder)"
+      }, {
+        "code": "4557003",
+        "display": "Preinfarction syndrome (disorder)"
+      }, {
+        "code": "59021001",
+        "display": "Angina decubitus (disorder)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:a0aafff4-fb43-42c6-90d5-e4ac1059ca3f",
+    "timestamp": "2025-08-28T17:06:18-04:00",
+    "total": 17,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "15960061000119102",
+      "display": "Unstable angina co-occurrent and due to coronary arteriosclerosis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "15960101000119104",
+      "display": "Angina due to coronary arteriosclerosis in artery of transplanted heart (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "15960141000119102",
+      "display": "Angina co-occurrent and due to coronary arteriosclerosis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "15960341000119104",
+      "display": "Unstable angina due to arteriosclerosis of coronary artery bypass graft of transplanted heart (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "15960461000119105",
+      "display": "Unstable angina due to arteriosclerosis of autologous arterial coronary artery bypass graft (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "15960541000119107",
+      "display": "Unstable angina due to arteriosclerosis of autologous vein coronary artery bypass graft (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "15960701000119100",
+      "display": "Angina due to arteriosclerosis of coronary artery bypass graft of transplanted heart (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "15960741000119103",
+      "display": "Preinfarction syndrome due to arteriosclerosis of nonautologous biological coronary artery bypass graft (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "16754391000119100",
+      "display": "Stable angina due to coronary arteriosclerosis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "19057007",
+      "display": "Status anginosus (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "194828000",
+      "display": "Angina (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "21470009",
+      "display": "Syncope anginosa (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "233819005",
+      "display": "Stable angina (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "233821000",
+      "display": "New onset angina (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "314116003",
+      "display": "Post infarct angina (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "4557003",
+      "display": "Preinfarction syndrome (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "59021001",
+      "display": "Angina decubitus (disorder)"
+    } ]
+  }
+}

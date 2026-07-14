@@ -1,0 +1,383 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1160.21-20250304",
+  "meta": {
+    "versionId": "22",
+    "lastUpdated": "2025-03-04T01:03:00.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "American Medical Association Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-03-04"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2025-03-04"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1160.21",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1160.21"
+  } ],
+  "version": "20250304",
+  "name": "OutpatientClinicalEncounters",
+  "title": "Outpatient Clinical Encounters",
+  "status": "active",
+  "date": "2025-03-04T01:03:00-05:00",
+  "publisher": "American Medical Association Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: Office visit outpatient encounters for diabetes screening),(Data Element Scope: Allowable outpatient encounters for diabetes screening),(Inclusion Criteria: Outpatient visits and telehealth services),(Exclusion Criteria: None)",
+  "compose": {
+    "include": [ {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "concept": [ {
+        "code": "98000",
+        "display": "Synchronous audio-video visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using total time on the date of the encounter for code selection, 15 minutes must be met or exceeded."
+      }, {
+        "code": "98001",
+        "display": "Synchronous audio-video visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and low medical decision making. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
+      }, {
+        "code": "98002",
+        "display": "Synchronous audio-video visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and moderate medical decision making. When using total time on the date of the encounter for code selection, 45 minutes must be met or exceeded."
+      }, {
+        "code": "98003",
+        "display": "Synchronous audio-video visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and high medical decision making. When using total time on the date of the encounter for code selection, 60 minutes must be met or exceeded."
+      }, {
+        "code": "98004",
+        "display": "Synchronous audio-video visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using total time on the date of the encounter for code selection, 10 minutes must be met or exceeded."
+      }, {
+        "code": "98005",
+        "display": "Synchronous audio-video visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and low medical decision making. When using total time on the date of the encounter for code selection, 20 minutes must be met or exceeded."
+      }, {
+        "code": "98006",
+        "display": "Synchronous audio-video visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and moderate medical decision making. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
+      }, {
+        "code": "98007",
+        "display": "Synchronous audio-video visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and high medical decision making. When using total time on the date of the encounter for code selection, 40 minutes must be met or exceeded."
+      }, {
+        "code": "98008",
+        "display": "Synchronous audio-only visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination, straightforward medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 15 minutes must be met or exceeded."
+      }, {
+        "code": "98009",
+        "display": "Synchronous audio-only visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination, low medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
+      }, {
+        "code": "98010",
+        "display": "Synchronous audio-only visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination, moderate medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 45 minutes must be met or exceeded."
+      }, {
+        "code": "98011",
+        "display": "Synchronous audio-only visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination, high medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 60 minutes must be met or exceeded."
+      }, {
+        "code": "98012",
+        "display": "Synchronous audio-only visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination, straightforward medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 10 minutes must be exceeded."
+      }, {
+        "code": "98013",
+        "display": "Synchronous audio-only visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination, low medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 20 minutes must be met or exceeded."
+      }, {
+        "code": "98014",
+        "display": "Synchronous audio-only visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination, moderate medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
+      }, {
+        "code": "98015",
+        "display": "Synchronous audio-only visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination, high medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 40 minutes must be met or exceeded."
+      }, {
+        "code": "99202",
+        "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using total time on the date of the encounter for code selection, 15 minutes must be met or exceeded."
+      }, {
+        "code": "99203",
+        "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
+      }, {
+        "code": "99204",
+        "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and moderate level of medical decision making. When using total time on the date of the encounter for code selection, 45 minutes must be met or exceeded."
+      }, {
+        "code": "99205",
+        "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using total time on the date of the encounter for code selection, 60 minutes must be met or exceeded."
+      }, {
+        "code": "99212",
+        "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using total time on the date of the encounter for code selection, 10 minutes must be met or exceeded."
+      }, {
+        "code": "99213",
+        "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using total time on the date of the encounter for code selection, 20 minutes must be met or exceeded."
+      }, {
+        "code": "99214",
+        "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and moderate level of medical decision making. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
+      }, {
+        "code": "99215",
+        "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using total time on the date of the encounter for code selection, 40 minutes must be met or exceeded."
+      }, {
+        "code": "99242",
+        "display": "Office or other outpatient consultation for a new or established patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using total time on the date of the encounter for code selection, 20 minutes must be met or exceeded."
+      }, {
+        "code": "99243",
+        "display": "Office or other outpatient consultation for a new or established patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
+      }, {
+        "code": "99244",
+        "display": "Office or other outpatient consultation for a new or established patient, which requires a medically appropriate history and/or examination and moderate level of medical decision making. When using total time on the date of the encounter for code selection, 40 minutes must be met or exceeded."
+      }, {
+        "code": "99245",
+        "display": "Office or other outpatient consultation for a new or established patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using total time on the date of the encounter for code selection, 55 minutes must be met or exceeded."
+      }, {
+        "code": "99341",
+        "display": "Home or residence visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using total time on the date of the encounter for code selection, 15 minutes must be met or exceeded."
+      }, {
+        "code": "99342",
+        "display": "Home or residence visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
+      }, {
+        "code": "99344",
+        "display": "Home or residence visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and moderate level of medical decision making. When using total time on the date of the encounter for code selection, 60 minutes must be met or exceeded."
+      }, {
+        "code": "99345",
+        "display": "Home or residence visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using total time on the date of the encounter for code selection, 75 minutes must be met or exceeded."
+      }, {
+        "code": "99347",
+        "display": "Home or residence visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using total time on the date of the encounter for code selection, 20 minutes must be met or exceeded."
+      }, {
+        "code": "99348",
+        "display": "Home or residence visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
+      }, {
+        "code": "99349",
+        "display": "Home or residence visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and moderate level of medical decision making. When using total time on the date of the encounter for code selection, 40 minutes must be met or exceeded."
+      }, {
+        "code": "99350",
+        "display": "Home or residence visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using total time on the date of the encounter for code selection, 60 minutes must be met or exceeded."
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:27876ed5-5220-4903-8760-1b2c168f5aa3",
+    "timestamp": "2025-08-28T17:05:34-04:00",
+    "total": 36,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "98000",
+      "display": "Synchronous audio-video visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using total time on the date of the encounter for code selection, 15 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "98001",
+      "display": "Synchronous audio-video visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and low medical decision making. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "98002",
+      "display": "Synchronous audio-video visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and moderate medical decision making. When using total time on the date of the encounter for code selection, 45 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "98003",
+      "display": "Synchronous audio-video visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and high medical decision making. When using total time on the date of the encounter for code selection, 60 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "98004",
+      "display": "Synchronous audio-video visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using total time on the date of the encounter for code selection, 10 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "98005",
+      "display": "Synchronous audio-video visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and low medical decision making. When using total time on the date of the encounter for code selection, 20 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "98006",
+      "display": "Synchronous audio-video visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and moderate medical decision making. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "98007",
+      "display": "Synchronous audio-video visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and high medical decision making. When using total time on the date of the encounter for code selection, 40 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "98008",
+      "display": "Synchronous audio-only visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination, straightforward medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 15 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "98009",
+      "display": "Synchronous audio-only visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination, low medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "98010",
+      "display": "Synchronous audio-only visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination, moderate medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 45 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "98011",
+      "display": "Synchronous audio-only visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination, high medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 60 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "98012",
+      "display": "Synchronous audio-only visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination, straightforward medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 10 minutes must be exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "98013",
+      "display": "Synchronous audio-only visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination, low medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 20 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "98014",
+      "display": "Synchronous audio-only visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination, moderate medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "98015",
+      "display": "Synchronous audio-only visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination, high medical decision making, and more than 10 minutes of medical discussion. When using total time on the date of the encounter for code selection, 40 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "99202",
+      "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using total time on the date of the encounter for code selection, 15 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "99203",
+      "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "99204",
+      "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and moderate level of medical decision making. When using total time on the date of the encounter for code selection, 45 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "99205",
+      "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using total time on the date of the encounter for code selection, 60 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "99212",
+      "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using total time on the date of the encounter for code selection, 10 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "99213",
+      "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using total time on the date of the encounter for code selection, 20 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "99214",
+      "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and moderate level of medical decision making. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "99215",
+      "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using total time on the date of the encounter for code selection, 40 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "99242",
+      "display": "Office or other outpatient consultation for a new or established patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using total time on the date of the encounter for code selection, 20 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "99243",
+      "display": "Office or other outpatient consultation for a new or established patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "99244",
+      "display": "Office or other outpatient consultation for a new or established patient, which requires a medically appropriate history and/or examination and moderate level of medical decision making. When using total time on the date of the encounter for code selection, 40 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "99245",
+      "display": "Office or other outpatient consultation for a new or established patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using total time on the date of the encounter for code selection, 55 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "99341",
+      "display": "Home or residence visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using total time on the date of the encounter for code selection, 15 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "99342",
+      "display": "Home or residence visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "99344",
+      "display": "Home or residence visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and moderate level of medical decision making. When using total time on the date of the encounter for code selection, 60 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "99345",
+      "display": "Home or residence visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using total time on the date of the encounter for code selection, 75 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "99347",
+      "display": "Home or residence visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using total time on the date of the encounter for code selection, 20 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "99348",
+      "display": "Home or residence visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using total time on the date of the encounter for code selection, 30 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "99349",
+      "display": "Home or residence visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and moderate level of medical decision making. When using total time on the date of the encounter for code selection, 40 minutes must be met or exceeded."
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "99350",
+      "display": "Home or residence visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using total time on the date of the encounter for code selection, 60 minutes must be met or exceeded."
+    } ]
+  }
+}

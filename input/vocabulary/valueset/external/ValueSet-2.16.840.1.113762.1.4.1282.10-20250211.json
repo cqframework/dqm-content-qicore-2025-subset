@@ -1,0 +1,89 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1282.10-20250211",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2025-02-11T01:03:34.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "Acumen OP Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-keyWord",
+    "valueString": "STEMI"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-04-16"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2025-02-11"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1282.10",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1282.10"
+  } ],
+  "version": "20250211",
+  "name": "EndotrachealIntubation",
+  "title": "Endotracheal Intubation",
+  "status": "active",
+  "date": "2025-02-11T01:03:34-05:00",
+  "publisher": "Acumen OP Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: This value set contains concepts that represent procedures used to define endotracheal intubation.),(Data Element Scope: This value set may use the Quality Data Model (QDM) category related to Procedure. The intent of this data element is to identify patients who received endotracheal intubation as a medical procedure.),(Inclusion Criteria: Include codes that describe the insertion of an endotracheal airway (intubation) into the trachea.),(Exclusion Criteria: Exclude codes that describe intubation via tracheotomy or cricothyrotomy.)",
+  "compose": {
+    "include": [ {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "concept": [ {
+        "code": "31500",
+        "display": "Intubation, endotracheal, emergency procedure"
+      }, {
+        "code": "94002",
+        "display": "Ventilation assist and management, initiation of pressure or volume preset ventilators for assisted or controlled breathing; hospital inpatient/observation, initial day"
+      }, {
+        "code": "94003",
+        "display": "Ventilation assist and management, initiation of pressure or volume preset ventilators for assisted or controlled breathing; hospital inpatient/observation, each subsequent day"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:486ad177-e3c8-47f6-8a94-d7578c44c7dd",
+    "timestamp": "2025-08-28T16:53:42-04:00",
+    "total": 3,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "31500",
+      "display": "Intubation, endotracheal, emergency procedure"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "94002",
+      "display": "Ventilation assist and management, initiation of pressure or volume preset ventilators for assisted or controlled breathing; hospital inpatient/observation, initial day"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "94003",
+      "display": "Ventilation assist and management, initiation of pressure or volume preset ventilators for assisted or controlled breathing; hospital inpatient/observation, each subsequent day"
+    } ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1110.66-20220212",
+  "meta": {
+    "versionId": "6",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "TJC EH Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-keyWord",
+    "valueString": "VTE-01,VTE-02"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-02-03"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2022-02-12"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1110.66",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1110.66"
+  } ],
+  "version": "20220212",
+  "name": "ApplicationOfGraduatedCompressionStockings",
+  "title": "Application of Graduated Compression Stockings",
+  "status": "active",
+  "experimental": false,
+  "date": "2022-02-12T01:02:18-05:00",
+  "publisher": "TJC EH Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to identify concepts of the procedure for the application of graduated compression stockings (GCS) for venous thromboembolism (VTE) prophylaxis.),(Data Element Scope: This value set may use a model element related to procedure.),(Inclusion Criteria: Includes concepts that represent the procedure of the application of a device used for venous thromboembolism (VTE) prophylaxis.),(Exclusion Criteria: No exclusions.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "229511001",
+        "display": "Application of graduated compression garment (procedure)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:66044b41-15a1-4a59-acfc-edf577cf4785",
+    "timestamp": "2025-08-28T16:57:47-04:00",
+    "total": 1,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "229511001",
+      "display": "Application of graduated compression garment (procedure)"
+    } ]
+  }
+}

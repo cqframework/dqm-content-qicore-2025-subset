@@ -1,0 +1,31 @@
+{
+    "measure_data": {
+        "id": "simple_mapping",
+        "group": [
+            {
+                "id": "Group_1",
+                "population": [
+                    {
+                        "code": { "coding": [{ "display": "Initial Population" }]},
+                        "criteria": {"expression":"Initial Population"}
+                    },
+                    {
+                        "code": { "coding": [{ "display": "Denominator" }]},
+                        "criteria": {"expression":"Denominator"}
+                    },
+                    {
+                        "code": { "coding": [{ "display": "Numerator" }]},
+                        "criteria": {"expression":"Numerator"}
+                    }
+                ]
+            }
+        ]
+    },
+    "expected_results": {
+        "Group_1": {
+            "Initial Population": "Initial Population",
+            "Denominator": "Denominator",
+            "Numerator": "Numerator"
+        }
+    }
+}

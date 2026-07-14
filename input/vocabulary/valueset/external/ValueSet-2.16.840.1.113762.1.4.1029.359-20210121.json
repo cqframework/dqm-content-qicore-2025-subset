@@ -1,0 +1,88 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1029.359-20210121",
+  "meta": {
+    "versionId": "6",
+    "lastUpdated": "2024-03-22T12:20:04.000-04:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "Joint Commission Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-keyWord",
+    "valueString": "PC-07"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-01-31"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2021-01-21"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.359",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1029.359"
+  } ],
+  "version": "20210121",
+  "name": "Tracheostomy",
+  "title": "Tracheostomy",
+  "status": "active",
+  "experimental": false,
+  "date": "2022-03-07T11:14:02-05:00",
+  "publisher": "Joint Commission",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent a grouping of procedures for tracheostomy.),(Data Element Scope: This value set may use a model element related to procedure.),(Inclusion Criteria: Includes concepts that represent procedures of a tracheostomy.),(Exclusion Criteria: No exclusions.)",
+  "compose": {
+    "include": [ {
+      "valueSet": [ "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.251" ]
+    }, {
+      "valueSet": [ "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.252" ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:bb2c0372-517d-4627-82ee-47d2a878b20c",
+    "timestamp": "2025-08-28T16:53:15-04:00",
+    "total": 4,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0B110F4",
+      "display": "Bypass Trachea to Cutaneous with Tracheostomy Device, Open Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0B113F4",
+      "display": "Bypass Trachea to Cutaneous with Tracheostomy Device, Percutaneous Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0B114F4",
+      "display": "Bypass Trachea to Cutaneous with Tracheostomy Device, Percutaneous Endoscopic Approach"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "43988005",
+      "display": "Temporary tracheostomy (procedure)"
+    } ]
+  }
+}

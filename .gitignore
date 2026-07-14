@@ -1,0 +1,14 @@
+/output
+/temp
+/template
+/input-cache/publisher.jar
+/input/vocabulary/.DS_Store
+.DS_Store
+/input-cache/tooling-cli-3.4.0.jar
+/input-cache/validator_cli.jar
+/input-cache/*.jar
+/bundles/mat-tests
+/input/tests/results
+__pycache__
+script_env
+*__MACOSX

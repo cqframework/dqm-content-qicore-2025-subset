@@ -1,0 +1,60 @@
+CQL: /Users/raleigh.thompson/Projects/smile/standards/dqm/_repo/dqm-content-qicore-2025/input/cql
+Terminology: /Users/raleigh.thompson/Projects/smile/standards/dqm/_repo/dqm-content-qicore-2025/input/vocabulary/valueset
+Test cases:
+0e463fc3-d1bf-4e19-882b-fad6342aa668 - /dqm-content-qicore-2025/input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/0e463fc3-d1bf-4e19-882b-fad6342aa668
+12786a64-c20e-4542-a4c0-bf3129d6a9e0 - /dqm-content-qicore-2025/input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/12786a64-c20e-4542-a4c0-bf3129d6a9e0
+15ad723f-b561-4cdd-9a11-7e6619780459 - /dqm-content-qicore-2025/input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/15ad723f-b561-4cdd-9a11-7e6619780459
+
+Denominator 1=false
+Denominator 2=false
+Denominator Exceptions=false
+Denominator Exclusions=false
+Initial Population 1=false
+Initial Population 2=false
+Numerator=false
+Patient=Patient(id=0e463fc3-d1bf-4e19-882b-fad6342aa668)
+Patient Age 12 Years or Older at Start of Measurement Period=null
+SDE Ethnicity=Tuple {
+  codes: [Code { code: 2135-2, system: urn:oid:2.16.840.1.113883.6.238, version: null, display: Hispanic or Latino }]
+  display: Hispanic or Latino
+}
+
+Denominator 1=true
+Denominator 2=false
+Denominator Exceptions=false
+Denominator Exclusions=false
+Initial Population 1=true
+Initial Population 2=false
+Numerator=true
+Patient=Patient(id=12786a64-c20e-4542-a4c0-bf3129d6a9e0)
+Patient Age 12 Years or Older at Start of Measurement Period=null
+SDE Ethnicity=Tuple {
+  codes: [Code { code: 2135-2, system: urn:oid:2.16.840.1.113883.6.238, version: null, display: Hispanic or Latino }]
+  display: Hispanic or Latino
+}
+
+Denominator 1=false
+Denominator 2=true
+Denominator Exceptions=true
+Denominator Exclusions=false
+Initial Population 1=false
+Initial Population 2=true
+Numerator=false
+Patient=Patient(id=15ad723f-b561-4cdd-9a11-7e6619780459)
+Patient Age 12 Years or Older at Start of Measurement Period=null
+SDE Ethnicity=Tuple {
+  codes: [Code { code: 2135-2, system: urn:oid:2.16.840.1.113883.6.238, version: null, display: Hispanic or Latino }]
+  display: Hispanic or Latino
+}
+
+
+Evaluation logs:
+9423 [pool-2-thread-1] INFO  ca.uhn.fhir.util.VersionUtil HAPI FHIR version 8.2.0 - Rev 8a44e1058f 
+9425 [pool-2-thread-1] INFO  ca.uhn.fhir.context.FhirContext Creating new FHIR context for FHIR version [R4] 
+9457 [pool-2-thread-1] INFO  o.c.fhir.npm.NpmPackageManager Loading core FHIR version hl7.fhir.r4.core 
+9767 [pool-2-thread-1] INFO  o.c.fhir.npm.NpmPackageManager Loading package: hl7.terminology.r4 
+9828 [pool-2-thread-1] INFO  o.c.fhir.npm.NpmPackageManager Loading package: hl7.fhir.uv.extensions.r4#5.2.0 
+9941 [pool-2-thread-1] INFO  o.c.fhir.npm.NpmPackageManager Loading package: hl7.fhir.us.cqfmeasures 
+9955 [pool-2-thread-1] INFO  o.c.fhir.npm.NpmPackageManager Loading package: hl7.terminology.r4#6.0.2 
+
+elapsed: 13.521 seconds

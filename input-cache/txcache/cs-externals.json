@@ -1,0 +1,10 @@
+{
+  "http://unstats.un.org/unsd/methods/m49/m49.htm" : null,
+  "urn:ietf:bcp:13|null" : null,
+  "urn:ietf:bcp:13" : null,
+  "http://hl7.org/fhir/us/core/CodeSystem/condition-category" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "cs-ee9dae6a-db29-46c2-9da4-962c04874288.json"
+  },
+  "http://snomed.info/sct|http://snomed.info/sct/731000124108" : null
+}

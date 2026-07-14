@@ -1,0 +1,69 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.464.1003.198.11.1144-20190315",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "NCQA PHEMUR Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-02-04"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2019-03-15"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.198.11.1144",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.464.1003.198.11.1144"
+  } ],
+  "version": "20190315",
+  "name": "UnilateralMastectomyLeft",
+  "title": "Unilateral Mastectomy Left",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-03-15T01:00:14-04:00",
+  "publisher": "NCQA PHEMUR",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for unilateral mastectomy of the left breast.),(Data Element Scope: This value set may use a model element related to Procedure.),(Inclusion Criteria: Includes concepts that represent a procedure for a unilateral mastectomy of the left breast.),(Exclusion Criteria: Excludes concepts that represent procedures for right or bilateral, or unspecified mastectomy.)",
+  "compose": {
+    "include": [ {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "concept": [ {
+        "code": "0HTU0ZZ",
+        "display": "Resection of Left Breast, Open Approach"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:45a475c8-711b-463f-ba68-6cbb4df85680",
+    "timestamp": "2025-08-28T17:04:13-04:00",
+    "total": 1,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "0HTU0ZZ",
+      "display": "Resection of Left Breast, Open Approach"
+    } ]
+  }
+}

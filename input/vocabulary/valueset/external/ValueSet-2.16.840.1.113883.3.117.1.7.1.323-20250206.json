@@ -1,0 +1,161 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.117.1.7.1.323-20250206",
+  "meta": {
+    "versionId": "35",
+    "lastUpdated": "2025-02-06T01:09:49.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "TJC EH Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-keyWord",
+    "valueString": "VTE-01,VTE-02"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-02-06"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2025-02-06"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.323",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.117.1.7.1.323"
+  } ],
+  "version": "20250206",
+  "name": "HipFractureSurgery",
+  "title": "Hip Fracture Surgery",
+  "status": "active",
+  "date": "2025-02-06T01:09:49-05:00",
+  "publisher": "TJC EH Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for procedures of hip fracture surgery.),(Data Element Scope: This value set may use a model element related to Procedure.),(Inclusion Criteria: Includes concepts that represent a procedure for hip fracture surgery.),(Exclusion Criteria: No exclusions.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "119614000",
+        "display": "Hip joint reconstruction (procedure)"
+      }, {
+        "code": "16174006",
+        "display": "Acetabuloplasty with use of methyl methacrylate (procedure)"
+      }, {
+        "code": "239499008",
+        "display": "Excision arthroplasty of joint of hip (procedure)"
+      }, {
+        "code": "239500004",
+        "display": "Interposition arthroplasty of the hip (procedure)"
+      }, {
+        "code": "32972004",
+        "display": "Acetabuloplasty, Whitman type procedure (procedure)"
+      }, {
+        "code": "44167006",
+        "display": "Shelf operation, arthroplasty of hip (procedure)"
+      }, {
+        "code": "47458005",
+        "display": "Repair of hip joint (procedure)"
+      }, {
+        "code": "61509005",
+        "display": "Acetabuloplasty, Colonna type procedure (procedure)"
+      }, {
+        "code": "73764009",
+        "display": "Repair of acetabulum (procedure)"
+      }, {
+        "code": "83381006",
+        "display": "Arthroplasty of hip with bone graft (procedure)"
+      }, {
+        "code": "87618002",
+        "display": "Acetabuloplasty with resection of femoral head (procedure)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:6ba508eb-90d8-40f5-97e5-3506c3030f02",
+    "timestamp": "2025-08-28T17:01:03-04:00",
+    "total": 11,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "119614000",
+      "display": "Hip joint reconstruction (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "16174006",
+      "display": "Acetabuloplasty with use of methyl methacrylate (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "239499008",
+      "display": "Excision arthroplasty of joint of hip (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "239500004",
+      "display": "Interposition arthroplasty of the hip (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "32972004",
+      "display": "Acetabuloplasty, Whitman type procedure (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "44167006",
+      "display": "Shelf operation, arthroplasty of hip (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "47458005",
+      "display": "Repair of hip joint (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "61509005",
+      "display": "Acetabuloplasty, Colonna type procedure (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "73764009",
+      "display": "Repair of acetabulum (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "83381006",
+      "display": "Arthroplasty of hip with bone graft (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "87618002",
+      "display": "Acetabuloplasty with resection of femoral head (procedure)"
+    } ]
+  }
+}

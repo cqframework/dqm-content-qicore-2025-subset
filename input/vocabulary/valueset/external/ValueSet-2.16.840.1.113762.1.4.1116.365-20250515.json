@@ -1,0 +1,195 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1116.365-20250515",
+  "meta": {
+    "versionId": "23",
+    "lastUpdated": "2025-05-15T01:03:40.000-04:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "CancerLinQ Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-05-15"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2025-05-15"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1116.365",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1116.365"
+  } ],
+  "version": "20250515",
+  "name": "HospiceCareReferralOrAdmission",
+  "title": "Hospice Care Referral or Admission",
+  "status": "active",
+  "date": "2025-05-15T01:03:40-04:00",
+  "publisher": "CancerLinQ Steward",
+  "description": "This value set is used in: CMS 506.",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for an encounter of hospice care.),(Data Element Scope: This value set may use a model element related to Intervention or Encounter.),(Inclusion Criteria: Includes concepts that represent an intervention of or encounter for hospice care.),(Exclusion Criteria: No exclusions.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "183919006",
+        "display": "Urgent admission to hospice (procedure)"
+      }, {
+        "code": "183920000",
+        "display": "Routine admission to hospice (procedure)"
+      }, {
+        "code": "183921001",
+        "display": "Admission to hospice for respite (procedure)"
+      }, {
+        "code": "1891000124102",
+        "display": "Transition from acute care to hospice (finding)"
+      }, {
+        "code": "1921000124108",
+        "display": "Transition from home-health care to hospice (finding)"
+      }, {
+        "code": "1951000124104",
+        "display": "Transition from long-term care to hospice (finding)"
+      }, {
+        "code": "305336008",
+        "display": "Admission to hospice (procedure)"
+      }, {
+        "code": "306205009",
+        "display": "Referral to hospice (procedure)"
+      }, {
+        "code": "385765002",
+        "display": "Hospice care management (procedure)"
+      }, {
+        "code": "428361000124107",
+        "display": "Discharge to home for hospice care (procedure)"
+      }, {
+        "code": "428371000124100",
+        "display": "Discharge to healthcare facility for hospice care (procedure)"
+      }, {
+        "code": "444933003",
+        "display": "Home hospice service (qualifier value)"
+      }, {
+        "code": "448451000124101",
+        "display": "Transition from self-care to hospice (finding)"
+      }, {
+        "code": "452531000124108",
+        "display": "Transition of care from emergency department to hospice (finding)"
+      }, {
+        "code": "719414000",
+        "display": "Referral to hospice at home service (procedure)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:a93d51b8-2608-4fbf-ab1a-0f6cdd464824",
+    "timestamp": "2025-08-28T16:59:02-04:00",
+    "total": 15,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "183919006",
+      "display": "Urgent admission to hospice (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "183920000",
+      "display": "Routine admission to hospice (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "183921001",
+      "display": "Admission to hospice for respite (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "1891000124102",
+      "display": "Transition from acute care to hospice (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "1921000124108",
+      "display": "Transition from home-health care to hospice (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "1951000124104",
+      "display": "Transition from long-term care to hospice (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "305336008",
+      "display": "Admission to hospice (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "306205009",
+      "display": "Referral to hospice (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "385765002",
+      "display": "Hospice care management (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "428361000124107",
+      "display": "Discharge to home for hospice care (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "428371000124100",
+      "display": "Discharge to healthcare facility for hospice care (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "444933003",
+      "display": "Home hospice service (qualifier value)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "448451000124101",
+      "display": "Transition from self-care to hospice (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "452531000124108",
+      "display": "Transition of care from emergency department to hospice (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "719414000",
+      "display": "Referral to hospice at home service (procedure)"
+    } ]
+  }
+}

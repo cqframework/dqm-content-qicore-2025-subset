@@ -1,0 +1,158 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1248.219-20250212",
+  "meta": {
+    "versionId": "12",
+    "lastUpdated": "2025-02-12T01:07:44.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "Mathematica PSI Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-02-12"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2025-02-12"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.219",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1248.219"
+  } ],
+  "version": "20250212",
+  "name": "HemoglobinLabTest",
+  "title": "Hemoglobin lab test",
+  "status": "active",
+  "date": "2025-02-12T01:07:44-05:00",
+  "publisher": "Mathematica PSI Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for hemoglobin blood tests),(Data Element Scope: This value set may use a model element related to Laboratory Test),(Inclusion Criteria: Includes concepts to represent hemoglobin blood tests),(Exclusion Criteria: N/A)",
+  "compose": {
+    "include": [ {
+      "system": "http://loinc.org",
+      "concept": [ {
+        "code": "20509-6",
+        "display": "Hemoglobin [Mass/volume] in Blood by calculation"
+      }, {
+        "code": "24360-0",
+        "display": "Hemoglobin and Hematocrit panel - Blood"
+      }, {
+        "code": "30313-1",
+        "display": "Hemoglobin [Mass/volume] in Arterial blood"
+      }, {
+        "code": "30350-3",
+        "display": "Hemoglobin [Mass/volume] in Venous blood"
+      }, {
+        "code": "30351-1",
+        "display": "Hemoglobin [Mass/volume] in Mixed venous blood"
+      }, {
+        "code": "30352-9",
+        "display": "Hemoglobin [Mass/volume] in Capillary blood"
+      }, {
+        "code": "59260-0",
+        "display": "Hemoglobin [Moles/volume] in Blood"
+      }, {
+        "code": "718-7",
+        "display": "Hemoglobin [Mass/volume] in Blood"
+      }, {
+        "code": "75928-2",
+        "display": "Hemoglobin [Moles/volume] in Arterial blood"
+      }, {
+        "code": "93846-4",
+        "display": "Hemoglobin [Moles/volume] in Venous blood"
+      }, {
+        "code": "97550-8",
+        "display": "Hemoglobin [Mass/volume] in Central venous blood by calculation"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:90506a18-2c59-42aa-95f0-d78990b01997",
+    "timestamp": "2025-08-28T16:56:31-04:00",
+    "total": 11,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://loinc.org",
+      "inactive": false,
+      "version": "2.78",
+      "code": "20509-6",
+      "display": "Hemoglobin [Mass/volume] in Blood by calculation"
+    }, {
+      "system": "http://loinc.org",
+      "inactive": false,
+      "version": "2.78",
+      "code": "24360-0",
+      "display": "Hemoglobin and Hematocrit panel - Blood"
+    }, {
+      "system": "http://loinc.org",
+      "inactive": false,
+      "version": "2.78",
+      "code": "30313-1",
+      "display": "Hemoglobin [Mass/volume] in Arterial blood"
+    }, {
+      "system": "http://loinc.org",
+      "inactive": false,
+      "version": "2.78",
+      "code": "30350-3",
+      "display": "Hemoglobin [Mass/volume] in Venous blood"
+    }, {
+      "system": "http://loinc.org",
+      "inactive": false,
+      "version": "2.78",
+      "code": "30351-1",
+      "display": "Hemoglobin [Mass/volume] in Mixed venous blood"
+    }, {
+      "system": "http://loinc.org",
+      "inactive": false,
+      "version": "2.78",
+      "code": "30352-9",
+      "display": "Hemoglobin [Mass/volume] in Capillary blood"
+    }, {
+      "system": "http://loinc.org",
+      "inactive": false,
+      "version": "2.78",
+      "code": "59260-0",
+      "display": "Hemoglobin [Moles/volume] in Blood"
+    }, {
+      "system": "http://loinc.org",
+      "inactive": false,
+      "version": "2.78",
+      "code": "718-7",
+      "display": "Hemoglobin [Mass/volume] in Blood"
+    }, {
+      "system": "http://loinc.org",
+      "inactive": false,
+      "version": "2.78",
+      "code": "75928-2",
+      "display": "Hemoglobin [Moles/volume] in Arterial blood"
+    }, {
+      "system": "http://loinc.org",
+      "inactive": false,
+      "version": "2.78",
+      "code": "93846-4",
+      "display": "Hemoglobin [Moles/volume] in Venous blood"
+    }, {
+      "system": "http://loinc.org",
+      "inactive": false,
+      "version": "2.78",
+      "code": "97550-8",
+      "display": "Hemoglobin [Mass/volume] in Central venous blood by calculation"
+    } ]
+  }
+}

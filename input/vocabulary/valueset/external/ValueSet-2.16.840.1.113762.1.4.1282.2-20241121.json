@@ -1,0 +1,116 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1282.2-20241121",
+  "meta": {
+    "versionId": "9",
+    "lastUpdated": "2024-11-21T01:07:41.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "Acumen OP Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-keyWord",
+    "valueString": "STEMI"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-04-16"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-11-21"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1282.2",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1282.2"
+  } ],
+  "version": "20241121",
+  "name": "ProcedureNotIndicatedContraindicated",
+  "title": "Procedure Not Indicated/Contraindicated",
+  "status": "active",
+  "date": "2024-11-21T01:07:41-05:00",
+  "publisher": "Acumen OP Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts of procedure not indicated/contraindicated),(Data Element Scope: This value set may use a model element related to Negation Rationale.),(Inclusion Criteria: Includes concepts that represent a negation rationale or reason for not performing procedure),(Exclusion Criteria: No exclusions.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "183932001",
+        "display": "Procedure contraindicated (situation)"
+      }, {
+        "code": "183964008",
+        "display": "Treatment not indicated (situation)"
+      }, {
+        "code": "407563006",
+        "display": "Treatment not tolerated (situation)"
+      }, {
+        "code": "410534003",
+        "display": "Not indicated (qualifier value)"
+      }, {
+        "code": "410536001",
+        "display": "Contraindicated (qualifier value)"
+      }, {
+        "code": "428119001",
+        "display": "Procedure not indicated (situation)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:f4cf5083-62d6-47ab-ba84-0861b1751e4d",
+    "timestamp": "2025-08-28T17:07:18-04:00",
+    "total": 6,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "183932001",
+      "display": "Procedure contraindicated (situation)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "183964008",
+      "display": "Treatment not indicated (situation)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "407563006",
+      "display": "Treatment not tolerated (situation)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "410534003",
+      "display": "Not indicated (qualifier value)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "410536001",
+      "display": "Contraindicated (qualifier value)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "428119001",
+      "display": "Procedure not indicated (situation)"
+    } ]
+  }
+}

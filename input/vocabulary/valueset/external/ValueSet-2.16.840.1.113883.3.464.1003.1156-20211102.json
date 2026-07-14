@@ -1,0 +1,149 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.464.1003.1156-20211102",
+  "meta": {
+    "versionId": "7",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "NCQA PHEMUR Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-02-03"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2021-11-02"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1156",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.464.1003.1156"
+  } ],
+  "version": "20211102",
+  "name": "SubstanceUseDisorderLongActingMedicationAdministration",
+  "title": "Substance Use Disorder Long Acting Medication Administration",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-11-02T01:01:44-04:00",
+  "publisher": "NCQA PHEMUR",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this Grouping value set is to represent concepts for long acting substance use disorder medication assisted treatment, usually administered as part of an opioid treatment program.),(Data Element Scope: This value set may use a model element related to Intervention.),(Inclusion Criteria: Includes interventions where a long acting substance use disorder treatment medication is administered (e.g., buprenorphine implant, buprenorphine injection or naltrexone injection).),(Exclusion Criteria: Excludes administration of short acting oral and sublingual substance use disorder treatment medication.)",
+  "compose": {
+    "include": [ {
+      "valueSet": [ "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1151" ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:3d2e4fda-59b2-4749-a847-3a00fbc29753",
+    "timestamp": "2025-08-28T16:57:49-04:00",
+    "total": 15,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G2069",
+      "display": "Medication assisted treatment, buprenorphine (injectable) administered on a monthly basis; bundle including dispensing and/or administration, substance use counseling, individual and group therapy, and toxicology testing if performed (provision of the services by a medicare-enrolled opioid treatment program)"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G2073",
+      "display": "Medication assisted treatment, naltrexone; weekly bundle including dispensing and/or administration, substance use counseling, individual and group therapy, and toxicology testing if performed (provision of the services by a medicare-enrolled opioid treatment program)"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "H0020",
+      "display": "Alcohol and/or drug services; methadone administration and/or service (provision of the drug by a licensed program)"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "H0033",
+      "display": "Oral medication administration, direct observation"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "J0571",
+      "display": "Buprenorphine, oral, 1 mg"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "J0572",
+      "display": "Buprenorphine/naloxone, oral, less than or equal to 3 mg buprenorphine"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "J0573",
+      "display": "Buprenorphine/naloxone, oral, greater than 3 mg, but less than or equal to 6 mg buprenorphine"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "J0574",
+      "display": "Buprenorphine/naloxone, oral, greater than 6 mg, but less than or equal to 10 mg buprenorphine"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "J0575",
+      "display": "Buprenorphine/naloxone, oral, greater than 10 mg buprenorphine"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "J0577",
+      "display": "Injection, buprenorphine extended-release (brixadi), less than or equal to 7 days of therapy"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "J0578",
+      "display": "Injection, buprenorphine extended release (brixadi), greater than 7 days and up to 28 days of therapy"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "J2315",
+      "display": "Injection, naltrexone, depot form, 1 mg"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "Q9991",
+      "display": "Injection, buprenorphine extended-release (sublocade), less than or equal to 100 mg"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "Q9992",
+      "display": "Injection, buprenorphine extended-release (sublocade), greater than 100 mg"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "S0109",
+      "display": "Methadone, oral, 5 mg"
+    } ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.464.1003.196.12.1481-20170504",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2024-01-23T15:30:48.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "NCQA PHEMUR Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-02-03"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2017-05-04"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.196.12.1481",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.464.1003.196.12.1481"
+  } ],
+  "version": "20170504",
+  "name": "PotentiallyHarmfulAntiinfectivesForOlderAdults",
+  "title": "Potentially Harmful Antiinfectives for Older Adults",
+  "status": "active",
+  "experimental": false,
+  "date": "2017-05-04T01:00:13-04:00",
+  "publisher": "NCQA PHEMUR",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for potentially harmful ant infectives for older adults as described in the 2023 American Geriatrics Society BEERS criteria.),(Data Element Scope: This value set may use a model element related to Medication.),(Inclusion Criteria: Includes concepts that represent generic, human use, prescribable nitrofurantoin and nitrofurantoin in combination with other medications.),(Exclusion Criteria: Excludes concepts that represent non-prescribable, branded drugs and excludes concepts that represent components or ingredients.)",
+  "compose": {
+    "include": [ {
+      "valueSet": [ "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.196.11.1482" ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:725a90b2-8997-47c5-a307-14ef5ad605a3",
+    "timestamp": "2025-08-28T17:04:52-04:00",
+    "total": 5,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "1648759",
+      "display": "nitrofurantoin, macrocrystals 100 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "311989",
+      "display": "nitrofurantoin 5 MG/ML Oral Suspension"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "311994",
+      "display": "nitrofurantoin, macrocrystals 25 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "311995",
+      "display": "nitrofurantoin, macrocrystals 50 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "422434",
+      "display": "nitrofurantoin 10 MG/ML Oral Suspension"
+    } ]
+  }
+}

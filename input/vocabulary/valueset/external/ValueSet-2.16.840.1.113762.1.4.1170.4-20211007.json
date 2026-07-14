@@ -1,0 +1,117 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1170.4-20211007",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2024-09-06T09:18:04.000-04:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "Acumen OP Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-keyWord",
+    "valueString": "STEMI"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-04-16"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2021-10-07"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1170.4",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1170.4"
+  } ],
+  "version": "20211007",
+  "name": "ThrombolyticMedications",
+  "title": "Thrombolytic medications",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-10-07T01:00:28-04:00",
+  "publisher": "Acumen OP Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for thrombolytic medications used for treatment of ST-segment elevation myocardial infaction (STEMI).),(Data Element Scope: This value set may use a model element related to Medication.),(Inclusion Criteria: Includes RXNORM codes that represent ingredients in thrombolytic medications for STEMI treatment.),(Exclusion Criteria: No exclusions)",
+  "compose": {
+    "include": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept": [ {
+        "code": "10106",
+        "display": "streptokinase"
+      }, {
+        "code": "11055",
+        "display": "urokinase"
+      }, {
+        "code": "259280",
+        "display": "tenecteplase"
+      }, {
+        "code": "40028",
+        "display": "anistreplase"
+      }, {
+        "code": "76895",
+        "display": "reteplase"
+      }, {
+        "code": "8410",
+        "display": "alteplase"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:c9cf4055-fe22-478d-a32b-ff298e34ddb2",
+    "timestamp": "2025-08-28T16:54:59-04:00",
+    "total": 6,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "10106",
+      "display": "streptokinase"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "11055",
+      "display": "urokinase"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "259280",
+      "display": "tenecteplase"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "40028",
+      "display": "anistreplase"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "76895",
+      "display": "reteplase"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "8410",
+      "display": "alteplase"
+    } ]
+  }
+}

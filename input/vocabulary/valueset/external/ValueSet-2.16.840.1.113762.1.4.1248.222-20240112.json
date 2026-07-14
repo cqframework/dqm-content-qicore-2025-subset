@@ -1,0 +1,104 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1248.222-20240112",
+  "meta": {
+    "versionId": "10",
+    "lastUpdated": "2024-02-22T15:12:53.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "Mathematica PSI Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-01-31"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-01-12"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.222",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1248.222"
+  } ],
+  "version": "20240112",
+  "name": "LeukocyteCountLabTest",
+  "title": "Leukocyte count lab test",
+  "status": "active",
+  "date": "2024-01-12T01:09:53-05:00",
+  "publisher": "Mathematica PSI Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for leukocyte count blood tests),(Data Element Scope: This value set may use a model element related to Laboratory Test),(Inclusion Criteria: Includes concepts that represent leukocyte count lab tests),(Exclusion Criteria: N/A)",
+  "compose": {
+    "include": [ {
+      "system": "http://loinc.org",
+      "concept": [ {
+        "code": "26464-8",
+        "display": "Leukocytes [#/volume] in Blood"
+      }, {
+        "code": "49498-9",
+        "display": "Leukocytes [#/volume] in Blood by Estimate"
+      }, {
+        "code": "51383-8",
+        "display": "Leukocytes other [#/volume] in Blood by Automated count"
+      }, {
+        "code": "6690-2",
+        "display": "Leukocytes [#/volume] in Blood by Automated count"
+      }, {
+        "code": "804-5",
+        "display": "Leukocytes [#/volume] in Blood by Manual count"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:aedd7c9f-8922-4a09-858c-8662452751f1",
+    "timestamp": "2025-08-28T17:06:50-04:00",
+    "total": 5,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://loinc.org",
+      "inactive": false,
+      "version": "2.78",
+      "code": "26464-8",
+      "display": "Leukocytes [#/volume] in Blood"
+    }, {
+      "system": "http://loinc.org",
+      "inactive": false,
+      "version": "2.78",
+      "code": "49498-9",
+      "display": "Leukocytes [#/volume] in Blood by Estimate"
+    }, {
+      "system": "http://loinc.org",
+      "inactive": false,
+      "version": "2.78",
+      "code": "51383-8",
+      "display": "Leukocytes other [#/volume] in Blood by Automated count"
+    }, {
+      "system": "http://loinc.org",
+      "inactive": false,
+      "version": "2.78",
+      "code": "6690-2",
+      "display": "Leukocytes [#/volume] in Blood by Automated count"
+    }, {
+      "system": "http://loinc.org",
+      "inactive": false,
+      "version": "2.78",
+      "code": "804-5",
+      "display": "Leukocytes [#/volume] in Blood by Manual count"
+    } ]
+  }
+}

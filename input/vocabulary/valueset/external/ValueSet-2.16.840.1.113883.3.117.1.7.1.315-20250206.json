@@ -1,0 +1,359 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.117.1.7.1.315-20250206",
+  "meta": {
+    "versionId": "43",
+    "lastUpdated": "2025-02-06T01:09:49.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "TJC EH Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-keyWord",
+    "valueString": "VTE-01,VTE-02"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-02-06"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2025-02-06"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.315",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.117.1.7.1.315"
+  } ],
+  "version": "20250206",
+  "name": "KneeReplacementSurgery",
+  "title": "Knee Replacement Surgery",
+  "status": "active",
+  "date": "2025-02-06T01:09:49-05:00",
+  "publisher": "TJC EH Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for the procedure of a total knee replacement.),(Data Element Scope: This value set may use a model element related to Procedure.),(Inclusion Criteria: Includes concepts that represent a procedure for total knee replacement.),(Exclusion Criteria: No exclusions.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "1201734006",
+        "display": "Total replacement of knee with impaction bone graft (procedure)"
+      }, {
+        "code": "1217702001",
+        "display": "Total replacement of knee joint using cone (procedure)"
+      }, {
+        "code": "1220622006",
+        "display": "Total replacement of knee joint using knee stem (procedure)"
+      }, {
+        "code": "1222566006",
+        "display": "Total replacement of knee joint with bone allograft (procedure)"
+      }, {
+        "code": "1222567002",
+        "display": "Total replacement of knee joint with bone autograft (procedure)"
+      }, {
+        "code": "1222568007",
+        "display": "Total replacement of knee joint using modular metal augmentation (procedure)"
+      }, {
+        "code": "1222569004",
+        "display": "Total replacement of knee joint using rotating hinge prosthesis (procedure)"
+      }, {
+        "code": "1222570003",
+        "display": "Total knee replacement using valgus-varus constrained prosthesis (procedure)"
+      }, {
+        "code": "1231396005",
+        "display": "Repair of joint of knee using robotic assistance (procedure)"
+      }, {
+        "code": "1251509000",
+        "display": "Repair of joint of right knee (procedure)"
+      }, {
+        "code": "1251510005",
+        "display": "Repair of joint of left knee (procedure)"
+      }, {
+        "code": "179345007",
+        "display": "Conversion to cemented total knee replacement (procedure)"
+      }, {
+        "code": "179352009",
+        "display": "Conversion to uncemented total knee replacement (procedure)"
+      }, {
+        "code": "179406003",
+        "display": "Conversion from cemented unicompartmental knee replacement (procedure)"
+      }, {
+        "code": "179411001",
+        "display": "Conversion from uncemented unicompartmental knee replacement (procedure)"
+      }, {
+        "code": "179416006",
+        "display": "Conversion from hybrid unicompartmental knee replacement (procedure)"
+      }, {
+        "code": "19063003",
+        "display": "Arthroplasty of knee (procedure)"
+      }, {
+        "code": "265170009",
+        "display": "Cemented prosthetic total arthroplasty of knee joint (procedure)"
+      }, {
+        "code": "265172001",
+        "display": "Uncemented total prosthetic arthroplasty of knee joint (procedure)"
+      }, {
+        "code": "27748003",
+        "display": "Arthroplasty of knee, condyle and plateau, lateral compartment (procedure)"
+      }, {
+        "code": "29712008",
+        "display": "Revision of prosthetic replacement of knee joint (procedure)"
+      }, {
+        "code": "307817008",
+        "display": "Cemented arthroplasty of knee joint (procedure)"
+      }, {
+        "code": "307819006",
+        "display": "Uncemented prosthetic arthroplasty of knee joint (procedure)"
+      }, {
+        "code": "443681002",
+        "display": "Total replacement of left knee joint (procedure)"
+      }, {
+        "code": "443682009",
+        "display": "Total replacement of right knee joint (procedure)"
+      }, {
+        "code": "444463001",
+        "display": "Replacement of bilateral knee joints (procedure)"
+      }, {
+        "code": "445091006",
+        "display": "Revision of hybrid knee replacement (procedure)"
+      }, {
+        "code": "53386008",
+        "display": "Arthroplasty of knee, tibial plateau (procedure)"
+      }, {
+        "code": "609588000",
+        "display": "Prosthetic total arthroplasty of knee joint (procedure)"
+      }, {
+        "code": "64295009",
+        "display": "Arthroplasty of knee, femoral condyles (procedure)"
+      }, {
+        "code": "713687000",
+        "display": "Total replacement of joint of knee with constrained condylar prosthesis (procedure)"
+      }, {
+        "code": "88056004",
+        "display": "Arthroplasty of knee with constrained prosthesis (procedure)"
+      }, {
+        "code": "90827004",
+        "display": "Arthroplasty of knee, condyle and plateau, medial compartment (procedure)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:3bf5ca01-7e16-418b-bab0-2e7a32d1f99e",
+    "timestamp": "2025-08-28T16:50:07-04:00",
+    "total": 33,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "1201734006",
+      "display": "Total replacement of knee with impaction bone graft (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "1217702001",
+      "display": "Total replacement of knee joint using cone (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "1220622006",
+      "display": "Total replacement of knee joint using knee stem (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "1222566006",
+      "display": "Total replacement of knee joint with bone allograft (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "1222567002",
+      "display": "Total replacement of knee joint with bone autograft (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "1222568007",
+      "display": "Total replacement of knee joint using modular metal augmentation (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "1222569004",
+      "display": "Total replacement of knee joint using rotating hinge prosthesis (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "1222570003",
+      "display": "Total knee replacement using valgus-varus constrained prosthesis (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "1231396005",
+      "display": "Repair of joint of knee using robotic assistance (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "1251509000",
+      "display": "Repair of joint of right knee (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "1251510005",
+      "display": "Repair of joint of left knee (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "179345007",
+      "display": "Conversion to cemented total knee replacement (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "179352009",
+      "display": "Conversion to uncemented total knee replacement (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "179406003",
+      "display": "Conversion from cemented unicompartmental knee replacement (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "179411001",
+      "display": "Conversion from uncemented unicompartmental knee replacement (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "179416006",
+      "display": "Conversion from hybrid unicompartmental knee replacement (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "19063003",
+      "display": "Arthroplasty of knee (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "265170009",
+      "display": "Cemented prosthetic total arthroplasty of knee joint (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "265172001",
+      "display": "Uncemented total prosthetic arthroplasty of knee joint (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "27748003",
+      "display": "Arthroplasty of knee, condyle and plateau, lateral compartment (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "29712008",
+      "display": "Revision of prosthetic replacement of knee joint (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "307817008",
+      "display": "Cemented arthroplasty of knee joint (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "307819006",
+      "display": "Uncemented prosthetic arthroplasty of knee joint (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "443681002",
+      "display": "Total replacement of left knee joint (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "443682009",
+      "display": "Total replacement of right knee joint (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "444463001",
+      "display": "Replacement of bilateral knee joints (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "445091006",
+      "display": "Revision of hybrid knee replacement (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "53386008",
+      "display": "Arthroplasty of knee, tibial plateau (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "609588000",
+      "display": "Prosthetic total arthroplasty of knee joint (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "64295009",
+      "display": "Arthroplasty of knee, femoral condyles (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "713687000",
+      "display": "Total replacement of joint of knee with constrained condylar prosthesis (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "88056004",
+      "display": "Arthroplasty of knee with constrained prosthesis (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "90827004",
+      "display": "Arthroplasty of knee, condyle and plateau, medial compartment (procedure)"
+    } ]
+  }
+}

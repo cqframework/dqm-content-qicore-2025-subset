@@ -1,0 +1,143 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1046.278-20250212",
+  "meta": {
+    "versionId": "17",
+    "lastUpdated": "2025-02-12T01:07:44.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "Acumen OP Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-keyWord",
+    "valueString": "ECATHOQR,ECATREHQR"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-04-16"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2025-02-12"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.278",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1046.278"
+  } ],
+  "version": "20250212",
+  "name": "EmergencyDepartmentTreatmentLocation",
+  "title": "Emergency Department Treatment Location",
+  "status": "active",
+  "date": "2025-02-12T01:07:44-05:00",
+  "publisher": "Acumen OP Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for ED treatment locations),(Data Element Scope: This value set may use the data element Encounter.),(Inclusion Criteria: Includes concepts that represent a location for treatment in the emergency department.),(Exclusion Criteria: No exclusions.)",
+  "compose": {
+    "include": [ {
+      "system": "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+      "concept": [ {
+        "code": "1025-6",
+        "display": "Trauma Critical Care"
+      }, {
+        "code": "1027-2",
+        "display": "Medical Critical Care"
+      }, {
+        "code": "1029-8",
+        "display": "Medical-Surgical Critical Care"
+      }, {
+        "code": "1160-1",
+        "display": "Urgent Care Center"
+      }, {
+        "code": "1162-7",
+        "display": "24-Hour Observation Area"
+      }, {
+        "code": "1209-6",
+        "display": "Treatment Room"
+      }, {
+        "code": "1210-4",
+        "display": "Adult Mixed Acuity Unit"
+      }, {
+        "code": "1212-0",
+        "display": "Mixed Age Mixed Acuity Unit"
+      }, {
+        "code": "1272-4",
+        "display": "Onsite Overflow Critical Care"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:623f7892-6cbb-45a7-a246-6f5f9268a18a",
+    "timestamp": "2025-08-28T17:02:55-04:00",
+    "total": 9,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+      "inactive": false,
+      "version": "2022",
+      "code": "1025-6",
+      "display": "Trauma Critical Care"
+    }, {
+      "system": "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+      "inactive": false,
+      "version": "2022",
+      "code": "1027-2",
+      "display": "Medical Critical Care"
+    }, {
+      "system": "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+      "inactive": false,
+      "version": "2022",
+      "code": "1029-8",
+      "display": "Medical-Surgical Critical Care"
+    }, {
+      "system": "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+      "inactive": false,
+      "version": "2022",
+      "code": "1160-1",
+      "display": "Urgent Care Center"
+    }, {
+      "system": "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+      "inactive": false,
+      "version": "2022",
+      "code": "1162-7",
+      "display": "24-Hour Observation Area"
+    }, {
+      "system": "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+      "inactive": false,
+      "version": "2022",
+      "code": "1209-6",
+      "display": "Treatment Room"
+    }, {
+      "system": "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+      "inactive": false,
+      "version": "2022",
+      "code": "1210-4",
+      "display": "Adult Mixed Acuity Unit"
+    }, {
+      "system": "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+      "inactive": false,
+      "version": "2022",
+      "code": "1212-0",
+      "display": "Mixed Age Mixed Acuity Unit"
+    }, {
+      "system": "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+      "inactive": false,
+      "version": "2022",
+      "code": "1272-4",
+      "display": "Onsite Overflow Critical Care"
+    } ]
+  }
+}

@@ -1,0 +1,1027 @@
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>REM curl -d "@bundles/measure/ColorectalCancerScreeningCQM/ColorectalCancerScreeningCQM-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>for / %a in (bundles\measure\*) do (for %f in (bundles\measure\%~na\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS0334FHIRPCCesareanBirth\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS0334FHIRPCCesareanBirth\CMS0334FHIRPCCesareanBirth-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  1 10.4M    0     0    1  160k      0   413k  0:00:25 --:--:--  0:00:25  414k 20 10.4M    0     0   20 2144k      0  1522k  0:00:07  0:00:01  0:00:06 1523k 53 10.4M    0     0   53 5680k      0  2387k  0:00:04  0:00:02  0:00:02 2388k 99 10.4M    0     0   99 10.3M      0  3148k  0:00:03  0:00:03 --:--:-- 3148k100 10.4M    0     0  100 10.4M      0  2423k  0:00:04  0:00:04 --:--:-- 2423k100 10.4M  100   388  100 10.4M     86  2381k  0:00:04  0:00:04 --:--:-- 2567k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.206\" and ValueSet.version \"20210220\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1029.206"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS1017FHIRHHFI\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS1017FHIRHHFI\CMS1017FHIRHHFI-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  6 12.7M    0     0    6  880k      0  1039k  0:00:12 --:--:--  0:00:12 1040k 27 12.7M    0     0   27 3632k      0  1962k  0:00:06  0:00:01  0:00:05 1963k 62 12.7M    0     0   62 8240k      0  2899k  0:00:04  0:00:02  0:00:02 2899k100 12.7M    0     0  100 12.7M      0  2764k  0:00:04  0:00:04 --:--:-- 2765k100 12.7M  100   388  100 12.7M     80  2724k  0:00:04  0:00:04 --:--:-- 2724k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.206\" and ValueSet.version \"20210220\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1029.206"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS1028FHIRPCSevereOBComps\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS1028FHIRPCSevereOBComps\CMS1028FHIRPCSevereOBComps-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  8 12.0M    0     0    8 1056k      0  1083k  0:00:11 --:--:--  0:00:11 1084k 32 12.0M    0     0   32 3984k      0  2010k  0:00:06  0:00:01  0:00:05 2011k 71 12.0M    0     0   71 8864k      0  2980k  0:00:04  0:00:02  0:00:02 2981k100 12.0M    0     0  100 12.0M      0  2645k  0:00:04  0:00:04 --:--:-- 2646k100 12.0M  100   394  100 12.0M     81  2543k  0:00:04  0:00:04 --:--:-- 2544k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292\" and ValueSet.version \"20210611\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.117.1.7.1.292"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS104FHIRSTKDCAntithrombotic\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS104FHIRSTKDCAntithrombotic\CMS104FHIRSTKDCAntithrombotic-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 14 8960k    0     0   14 1312k      0  1195k  0:00:07  0:00:01  0:00:06 1195k 48 8960k    0     0   48 4352k      0  2090k  0:00:04  0:00:02  0:00:02 2091k100 8960k  100   388  100 8960k    101  2342k  0:00:03  0:00:03 --:--:-- 2343k100 8960k  100   388  100 8960k    101  2342k  0:00:03  0:00:03 --:--:-- 2343k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.206\" and ValueSet.version \"20210220\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1029.206"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS1056FHIRCTClinical\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS1056FHIRCTClinical\CMS1056FHIRCTClinical-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0 8374k    0     0    0 81920      0   342k  0:00:24 --:--:--  0:00:24  343k 21 8374k    0     0   21 1824k      0  1491k  0:00:05  0:00:01  0:00:04 1492k 62 8374k    0     0   62 5264k      0  2384k  0:00:03  0:00:02  0:00:01 2385k100 8375k  100   394  100 8374k    117  2500k  0:00:03  0:00:03 --:--:-- 2500k100 8375k  100   394  100 8374k    117  2499k  0:00:03  0:00:03 --:--:-- 2500k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292\" and ValueSet.version \"20210611\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.117.1.7.1.292"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS1074FHIRCTIQR\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS1074FHIRCTIQR\CMS1074FHIRCTIQR-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  9 8412k    0     0    9  816k      0  1009k  0:00:08 --:--:--  0:00:08 1009k 38 8412k    0     0   38 3232k      0  1788k  0:00:04  0:00:01  0:00:03 1788k 91 8412k    0     0   91 7728k      0  2752k  0:00:03  0:00:02  0:00:01 2753k100 8412k  100   394  100 8412k    113  2412k  0:00:03  0:00:03 --:--:-- 2413k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292\" and ValueSet.version \"20210611\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.117.1.7.1.292"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS108FHIRVTEProphylaxis\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS108FHIRVTEProphylaxis\CMS108FHIRVTEProphylaxis-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0 13.9M    0     0    0  112k      0   390k  0:00:36 --:--:--  0:00:36  391k 13 13.9M    0     0   13 1952k      0  1521k  0:00:09  0:00:01  0:00:08 1522k 38 13.9M    0     0   38 5504k      0  2433k  0:00:05  0:00:02  0:00:03 2434k 75 13.9M    0     0   75 10.5M      0  3313k  0:00:04  0:00:03  0:00:01 3313k100 13.9M    0     0  100 13.9M      0  2884k  0:00:04  0:00:04 --:--:-- 2885k100 13.9M  100   394  100 13.9M     75  2715k  0:00:05  0:00:05 --:--:-- 2850k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292\" and ValueSet.version \"20210611\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.117.1.7.1.292"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS1154ScreeningPrediabetesFHIR\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS1154ScreeningPrediabetesFHIR\CMS1154ScreeningPrediabetesFHIR-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 16 6950k    0     0   16 1136k      0  1153k  0:00:06 --:--:--  0:00:06 1154k 58 6950k    0     0   58 4080k      0  2071k  0:00:03  0:00:01  0:00:02 2072k100 6950k  100   397  100 6950k    128  2245k  0:00:03  0:00:03 --:--:-- 2246k100 6950k  100   397  100 6950k    128  2244k  0:00:03  0:00:03 --:--:-- 2246k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.121\" and ValueSet.version \"20250228\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1021.121-20250228"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS1157FHIRHIVRetention\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS1157FHIRHIVRetention\CMS1157FHIRHIVRetention-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 15 6608k    0     0   15  992k      0  1197k  0:00:05 --:--:--  0:00:05 1198k 56 6608k    0     0   56 3760k      0  2059k  0:00:03  0:00:01  0:00:02 2060k100 6608k  100   408  100 6608k    140  2280k  0:00:02  0:00:02 --:--:-- 2280k100 6608k  100   408  100 6608k    140  2279k  0:00:02  0:00:02 --:--:-- 2280k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1025\" and ValueSet.version \"20170504\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.464.1003.101.12.1025"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS1173FHIRDiagnosticDelayVTE\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS1173FHIRDiagnosticDelayVTE\CMS1173FHIRDiagnosticDelayVTE-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  8 10.1M    0     0    8  912k      0  1044k  0:00:09 --:--:--  0:00:09 1045k 34 10.1M    0     0   34 3616k      0  1930k  0:00:05  0:00:01  0:00:04 1931k 79 10.1M    0     0   79 8272k      0  2875k  0:00:03  0:00:02  0:00:01 2876k100 10.1M  100   388  100 10.1M     93  2495k  0:00:04  0:00:04 --:--:-- 2496k100 10.1M  100   388  100 10.1M     93  2495k  0:00:04  0:00:04 --:--:-- 2496k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.206\" and ValueSet.version \"20210220\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1029.206"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS117FHIRChildImmunStatus\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS117FHIRChildImmunStatus\CMS117FHIRChildImmunStatus-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  7 10.0M    0     0    7  736k      0  1068k  0:00:09 --:--:--  0:00:09 1069k 30 10.0M    0     0   30 3152k      0  1895k  0:00:05  0:00:01  0:00:04 1896k 69 10.0M    0     0   69 7200k      0  2702k  0:00:03  0:00:02  0:00:01 2702k100 10.0M  100   394  100 10.0M     99  2614k  0:00:03  0:00:03 --:--:-- 2614k100 10.0M  100   394  100 10.0M     99  2613k  0:00:03  0:00:03 --:--:-- 2614k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1003\" and ValueSet.version \"20210820\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.464.1003.1003"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS1188FHIRHIVSTITesting\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS1188FHIRHIVSTITesting\CMS1188FHIRHIVSTITesting-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 10 6662k    0     0   10  704k      0  1045k  0:00:06 --:--:--  0:00:06 1046k 48 6662k    0     0   48 3200k      0  1904k  0:00:03  0:00:01  0:00:02 1904k100 6662k  100   408  100 6662k    139  2277k  0:00:02  0:00:02 --:--:-- 2277k100 6662k  100   408  100 6662k    139  2276k  0:00:02  0:00:02 --:--:-- 2277k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1025\" and ValueSet.version \"20170504\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.464.1003.101.12.1025"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS1206FHIRCTOQR\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS1206FHIRCTOQR\CMS1206FHIRCTOQR-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  8 8402k    0     0    8  752k      0  1058k  0:00:07 --:--:--  0:00:07 1059k 39 8402k    0     0   39 3296k      0  1937k  0:00:04  0:00:01  0:00:03 1937k 91 8402k    0     0   91 7664k      0  2839k  0:00:02  0:00:02 --:--:-- 2840k100 8402k  100   394  100 8402k    116  2484k  0:00:03  0:00:03 --:--:-- 2485k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292\" and ValueSet.version \"20210611\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.117.1.7.1.292"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS1218FHIRHHRF\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS1218FHIRHHRF\CMS1218FHIRHHRF-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0 14.4M    0     0    0 81920      0   285k  0:00:51 --:--:--  0:00:51  286k 12 14.4M    0     0   12 1808k      0  1436k  0:00:10  0:00:01  0:00:09 1437k 34 14.4M    0     0   34 5024k      0  2234k  0:00:06  0:00:02  0:00:04 2234k 70 14.4M    0     0   70 10.1M      0  3202k  0:00:04  0:00:03  0:00:01 3203k100 14.4M  100   388  100 14.4M     76  2907k  0:00:05  0:00:05 --:--:-- 2908k100 14.4M  100   388  100 14.4M     76  2907k  0:00:05  0:00:05 --:--:-- 3060k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.206\" and ValueSet.version \"20210220\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1029.206"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS122FHIRDiabetesAssessGT9Pct\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS122FHIRDiabetesAssessGT9Pct\CMS122FHIRDiabetesAssessGT9Pct-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 13 10.0M    0     0   13 1440k      0  1283k  0:00:08  0:00:01  0:00:07 1284k 45 10.0M    0     0   45 4672k      0  2196k  0:00:04  0:00:02  0:00:02 2196k 97 10.0M    0     0   97  9.8M      0  3226k  0:00:03  0:00:03 --:--:-- 3226k100 10.0M  100   408  100 10.0M    105  2676k  0:00:03  0:00:03 --:--:-- 2677k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016\" and ValueSet.version \"20240110\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS1244FHIRECATHOQR\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS1244FHIRECATHOQR\CMS1244FHIRECATHOQR-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0 9720k    0     0    0 81920      0   288k  0:00:33 --:--:--  0:00:33  289k 17 9720k    0     0   17 1712k      0  1395k  0:00:06  0:00:01  0:00:05 1396k 50 9720k    0     0   50 4928k      0  2238k  0:00:04  0:00:02  0:00:02 2238k100 9720k  100   388  100 9720k     98  2476k  0:00:03  0:00:03 --:--:-- 2477k100 9720k  100   388  100 9720k     98  2476k  0:00:03  0:00:03 --:--:-- 2476k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.206\" and ValueSet.version \"20210220\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1029.206"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS124FHIRCervicalCancerScreen\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS124FHIRCervicalCancerScreen\CMS124FHIRCervicalCancerScreen-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  1 7349k    0     0    1 81920      0   302k  0:00:24 --:--:--  0:00:24  303k 25 7349k    0     0   25 1840k      0  1467k  0:00:05  0:00:01  0:00:04 1468k 70 7349k    0     0   70 5184k      0  2319k  0:00:03  0:00:02  0:00:01 2320k100 7349k  100   408  100 7349k    130  2343k  0:00:03  0:00:03 --:--:-- 2344k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1025\" and ValueSet.version \"20170504\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.464.1003.101.12.1025"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS125FHIRBreastCancerScreen\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS125FHIRBreastCancerScreen\CMS125FHIRBreastCancerScreen-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 12 10.2M    0     0   12 1328k      0  1245k  0:00:08  0:00:01  0:00:07 1245k 41 10.2M    0     0   41 4400k      0  2142k  0:00:04  0:00:02  0:00:02 2143k 90 10.2M    0     0   90 9472k      0  3112k  0:00:03  0:00:03 --:--:-- 3112k100 10.2M  100   408  100 10.2M    104  2687k  0:00:03  0:00:03 --:--:-- 2687k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016\" and ValueSet.version \"20240110\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS1264FHIRECATREHQR\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS1264FHIRECATREHQR\CMS1264FHIRECATREHQR-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 13 9211k    0     0   13 1232k      0  1141k  0:00:08  0:00:01  0:00:07 1141k 42 9211k    0     0   42 3888k      0  1849k  0:00:04  0:00:02  0:00:02 1849k 96 9211k    0     0   96 8848k      0  2873k  0:00:03  0:00:03 --:--:-- 2874k100 9211k  100   388  100 9211k    103  2460k  0:00:03  0:00:03 --:--:-- 2461k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.206\" and ValueSet.version \"20210220\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1029.206"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS128FHIRAntidepressantMgmt\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS128FHIRAntidepressantMgmt\CMS128FHIRAntidepressantMgmt-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  1 10.6M    0     0    1  112k      0   372k  0:00:29 --:--:--  0:00:29  373k 18 10.6M    0     0   18 2048k      0  1596k  0:00:06  0:00:01  0:00:05 1597k 49 10.6M    0     0   49 5344k      0  2286k  0:00:04  0:00:02  0:00:02 2287k 97 10.6M    0     0   97 10.3M      0  3216k  0:00:03  0:00:03 --:--:-- 3217k100 10.6M  100   388  100 10.6M     95  2681k  0:00:04  0:00:04 --:--:-- 2683k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.206\" and ValueSet.version \"20210220\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1029.206"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS129FHIRProstCaBoneScanUse\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS129FHIRProstCaBoneScanUse\CMS129FHIRProstCaBoneScanUse-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0 7143k    0     0    0 16384      0  84938  0:01:26 --:--:--  0:01:26 85333 23 7143k    0     0   23 1648k      0  1385k  0:00:05  0:00:01  0:00:04 1386k 60 7143k    0     0   60 4352k      0  1986k  0:00:03  0:00:02  0:00:01 1987k100 7143k  100   397  100 7143k    123  2219k  0:00:03  0:00:03 --:--:-- 2219k100 7143k  100   397  100 7143k    123  2219k  0:00:03  0:00:03 --:--:-- 2219k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.121\" and ValueSet.version \"20250228\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1021.121-20250228"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS130FHIRColorectalCancerScrn\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS130FHIRColorectalCancerScrn\CMS130FHIRColorectalCancerScrn-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  6 10.2M    0     0    6  688k      0   724k  0:00:14 --:--:--  0:00:14  724k 37 10.2M    0     0   37 3936k      0  2053k  0:00:05  0:00:01  0:00:04 2054k 74 10.2M    0     0   74 7792k      0  2670k  0:00:03  0:00:02  0:00:01 2671k100 10.2M  100   408  100 10.2M     95  2472k  0:00:04  0:00:04 --:--:-- 2474k100 10.2M  100   408  100 10.2M     95  2472k  0:00:04  0:00:04 --:--:-- 2473k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.108.12.1020\" and ValueSet.version \"20171219\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.464.1003.108.12.1020"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS131FHIRDiabetesEyeExam\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS131FHIRDiabetesEyeExam\CMS131FHIRDiabetesEyeExam-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  5 10.1M    0     0    5  560k      0   898k  0:00:11 --:--:--  0:00:11  900k 28 10.1M    0     0   28 2928k      0  1806k  0:00:05  0:00:01  0:00:04 1807k 68 10.1M    0     0   68 7120k      0  2719k  0:00:03  0:00:02  0:00:01 2720k100 10.1M  100   408  100 10.1M     99  2532k  0:00:04  0:00:04 --:--:-- 2533k100 10.1M  100   408  100 10.1M     99  2532k  0:00:04  0:00:04 --:--:-- 2533k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016\" and ValueSet.version \"20240110\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS133FHIRCataracts2040BCVA90Days\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS133FHIRCataracts2040BCVA90Days\CMS133FHIRCataracts2040BCVA90Days-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  3 9646k    0     0    3  368k      0   800k  0:00:12 --:--:--  0:00:12  801k 25 9646k    0     0   25 2480k      0  1693k  0:00:05  0:00:01  0:00:04 1693k 62 9646k    0     0   62 6016k      0  2465k  0:00:03  0:00:02  0:00:01 2465k100 9647k  100   397  100 9646k     99  2405k  0:00:04  0:00:04 --:--:-- 2407k100 9647k  100   397  100 9646k     99  2405k  0:00:04  0:00:04 --:--:-- 2407k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.121\" and ValueSet.version \"20250228\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1021.121-20250228"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS135FHIRACEIorARBorARNIforHF\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS135FHIRACEIorARBorARNIforHF\CMS135FHIRACEIorARBorARNIforHF-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  1 8064k    0     0    1  160k      0   405k  0:00:19 --:--:--  0:00:19  406k 25 8064k    0     0   25 2032k      0  1462k  0:00:05  0:00:01  0:00:04 1462k 69 8064k    0     0   69 5568k      0  2335k  0:00:03  0:00:02  0:00:01 2336k100 8065k  100   408  100 8064k    116  2293k  0:00:03  0:00:03 --:--:-- 2293k100 8065k  100   408  100 8064k    116  2293k  0:00:03  0:00:03 --:--:-- 2293k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016\" and ValueSet.version \"20240110\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS136FHIRChildADHDMedFollowUp\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS136FHIRChildADHDMedFollowUp\CMS136FHIRChildADHDMedFollowUp-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  7 12.3M    0     0    7  928k      0  1112k  0:00:11 --:--:--  0:00:11 1112k 28 12.3M    0     0   28 3616k      0  1987k  0:00:06  0:00:01  0:00:05 1987k 64 12.3M    0     0   64 8224k      0  2929k  0:00:04  0:00:02  0:00:02 2929k100 12.3M  100   388  100 12.3M     86  2817k  0:00:04  0:00:04 --:--:-- 2818k100 12.3M  100   388  100 12.3M     86  2817k  0:00:04  0:00:04 --:--:-- 2818k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.206\" and ValueSet.version \"20210220\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1029.206"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS137FHIRSUDTxInitEngagement\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS137FHIRSUDTxInitEngagement\CMS137FHIRSUDTxInitEngagement-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0 10.2M    0     0    0 81920      0   305k  0:00:34 --:--:--  0:00:34  306k 17 10.2M    0     0   17 1824k      0  1458k  0:00:07  0:00:01  0:00:06 1459k 50 10.2M    0     0   50 5312k      0  2361k  0:00:04  0:00:02  0:00:02 2361k100 10.2M  100   388  100 10.2M     99  2687k  0:00:03  0:00:03 --:--:-- 2688k100 10.2M  100   388  100 10.2M     99  2687k  0:00:03  0:00:03 --:--:-- 2687k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.206\" and ValueSet.version \"20210220\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1029.206"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS138FHIRTobaccoScrnCessation\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS138FHIRTobaccoScrnCessation\CMS138FHIRTobaccoScrnCessation-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  1 9649k    0     0    1  144k      0   486k  0:00:19 --:--:--  0:00:19  488k 20 9649k    0     0   20 1952k      0  1510k  0:00:06  0:00:01  0:00:05 1512k 57 9649k    0     0   57 5520k      0  2407k  0:00:04  0:00:02  0:00:02 2408k100 9649k  100   408  100 9649k    108  2574k  0:00:03  0:00:03 --:--:-- 2574k100 9649k  100   408  100 9649k    108  2573k  0:00:03  0:00:03 --:--:-- 2574k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016\" and ValueSet.version \"20240110\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS139FHIRFallRiskScreening\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS139FHIRFallRiskScreening\CMS139FHIRFallRiskScreening-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  6 6942k    0     0    6  432k      0   859k  0:00:08 --:--:--  0:00:08  862k 37 6942k    0     0   37 2592k      0  1729k  0:00:04  0:00:01  0:00:03 1731k 90 6942k    0     0   90 6288k      0  2516k  0:00:02  0:00:02 --:--:-- 2518k100 6942k  100   408  100 6942k    133  2264k  0:00:03  0:00:03 --:--:-- 2266k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1025\" and ValueSet.version \"20170504\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.464.1003.101.12.1025"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS142FHIRCommWithDrManagingDiab\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS142FHIRCommWithDrManagingDiab\CMS142FHIRCommWithDrManagingDiab-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  4 6635k    0     0    4  288k      0   735k  0:00:09 --:--:--  0:00:09  736k 35 6635k    0     0   35 2336k      0  1666k  0:00:03  0:00:01  0:00:02 1667k 90 6635k    0     0   90 6016k      0  2514k  0:00:02  0:00:02 --:--:-- 2515k100 6635k  100   397  100 6635k    134  2249k  0:00:02  0:00:02 --:--:-- 2250k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.121\" and ValueSet.version \"20250228\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1021.121-20250228"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS143FHIRPOAGOpticNerveEval\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS143FHIRPOAGOpticNerveEval\CMS143FHIRPOAGOpticNerveEval-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  3 6373k    0     0    3  240k      0   605k  0:00:10 --:--:--  0:00:10  606k 34 6373k    0     0   34 2208k      0  1581k  0:00:04  0:00:01  0:00:03 1581k 93 6373k    0     0   93 5936k      0  2475k  0:00:02  0:00:02 --:--:-- 2475k100 6374k  100   397  100 6373k    135  2179k  0:00:02  0:00:02 --:--:-- 2179k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.121\" and ValueSet.version \"20250228\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1021.121-20250228"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS144FHIRHFBetaBlockerForLVSD\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS144FHIRHFBetaBlockerForLVSD\CMS144FHIRHFBetaBlockerForLVSD-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  4 8274k    0     0    4  336k      0   805k  0:00:10 --:--:--  0:00:10  805k 29 8274k    0     0   29 2480k      0  1736k  0:00:04  0:00:01  0:00:03 1736k 77 8274k    0     0   77 6400k      0  2644k  0:00:03  0:00:02  0:00:01 2644k100 8275k  100   408  100 8274k    121  2460k  0:00:03  0:00:03 --:--:-- 2461k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016\" and ValueSet.version \"20240110\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS145FHIRCADBBlockerTPMIorLVSD\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS145FHIRCADBBlockerTPMIorLVSD\CMS145FHIRCADBBlockerTPMIorLVSD-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 13 9475k    0     0   13 1248k      0  1224k  0:00:07  0:00:01  0:00:06 1224k 44 9475k    0     0   44 4224k      0  2104k  0:00:04  0:00:02  0:00:02 2104k 97 9475k    0     0   97 9200k      0  3060k  0:00:03  0:00:03 --:--:-- 3061k100 9476k  100   408  100 9475k    111  2585k  0:00:03  0:00:03 --:--:-- 2586k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016\" and ValueSet.version \"20240110\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS146FHIRApproTestPharyngitis\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS146FHIRApproTestPharyngitis\CMS146FHIRApproTestPharyngitis-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  1 9794k    0     0    1  112k      0   384k  0:00:25 --:--:--  0:00:25  384k 21 9794k    0     0   21 2064k      0  1599k  0:00:06  0:00:01  0:00:05 1600k 57 9794k    0     0   57 5632k      0  2459k  0:00:03  0:00:02  0:00:01 2460k100 9794k  100   408  100 9794k    109  2627k  0:00:03  0:00:03 --:--:-- 2627k100 9794k  100   408  100 9794k    109  2627k  0:00:03  0:00:03 --:--:-- 2627k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016\" and ValueSet.version \"20240110\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS149FHIRDementiaCognitiveAssess\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS149FHIRDementiaCognitiveAssess\CMS149FHIRDementiaCognitiveAssess-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  7 6485k    0     0    7  480k      0   893k  0:00:07 --:--:--  0:00:07  893k 41 6485k    0     0   41 2720k      0  1780k  0:00:03  0:00:01  0:00:02 1781k 99 6485k    0     0   99 6464k      0  2565k  0:00:02  0:00:02 --:--:-- 2566k100 6486k  100   408  100 6485k    137  2191k  0:00:02  0:00:02 --:--:-- 2192k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016\" and ValueSet.version \"20240110\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS153FHIRChlamydiaScreening\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS153FHIRChlamydiaScreening\CMS153FHIRChlamydiaScreening-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  4 10.1M    0     0    4  496k      0   958k  0:00:10 --:--:--  0:00:10  959k 25 10.1M    0     0   25 2688k      0  1783k  0:00:05  0:00:01  0:00:04 1783k 64 10.1M    0     0   64 6720k      0  2677k  0:00:03  0:00:02  0:00:01 2678k100 10.1M  100   408  100 10.1M    106  2704k  0:00:03  0:00:03 --:--:-- 2705k100 10.1M  100   408  100 10.1M    106  2704k  0:00:03  0:00:03 --:--:-- 2704k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016\" and ValueSet.version \"20240110\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS154FHIRAppropriateTxforURI\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS154FHIRAppropriateTxforURI\CMS154FHIRAppropriateTxforURI-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  5 9756k    0     0    5  512k      0   806k  0:00:12 --:--:--  0:00:12  807k 29 9756k    0     0   29 2832k      0  1739k  0:00:05  0:00:01  0:00:04 1739k 70 9756k    0     0   70 6912k      0  2630k  0:00:03  0:00:02  0:00:01 2631k100 9757k  100   408  100 9756k    107  2573k  0:00:03  0:00:03 --:--:-- 2574k100 9757k  100   408  100 9756k    107  2573k  0:00:03  0:00:03 --:--:-- 2573k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016\" and ValueSet.version \"20240110\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS155FHIRWgtAssessCounseling\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS155FHIRWgtAssessCounseling\CMS155FHIRWgtAssessCounseling-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 12 7667k    0     0   12  928k      0  1138k  0:00:06 --:--:--  0:00:06 1140k 44 7667k    0     0   44 3376k      0  1882k  0:00:04  0:00:01  0:00:03 1882k100 7668k  100   408  100 7667k    127  2401k  0:00:03  0:00:03 --:--:-- 2402k100 7668k  100   408  100 7667k    127  2401k  0:00:03  0:00:03 --:--:-- 2402k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016\" and ValueSet.version \"20240110\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS156FHIRHighRiskMedsElderly\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS156FHIRHighRiskMedsElderly\CMS156FHIRHighRiskMedsElderly-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  3 12.5M    0     0    3  496k      0   925k  0:00:13 --:--:--  0:00:13  925k 22 12.5M    0     0   22 2880k      0  1840k  0:00:06  0:00:01  0:00:05 1841k 51 12.5M    0     0   51 6656k      0  2627k  0:00:04  0:00:02  0:00:02 2627k 92 12.5M    0     0   92 11.5M      0  3348k  0:00:03  0:00:03 --:--:-- 3349k100 12.5M  100   394  100 12.5M     86  2800k  0:00:04  0:00:04 --:--:-- 2801k100 12.5M  100   394  100 12.5M     86  2800k  0:00:04  0:00:04 --:--:-- 3049k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1003\" and ValueSet.version \"20210820\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.464.1003.1003"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS157FHIRPainIntensityQuantified\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS157FHIRPainIntensityQuantified\CMS157FHIRPainIntensityQuantified-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 11 8868k    0     0   11 1024k      0  1136k  0:00:07 --:--:--  0:00:07 1137k 40 8868k    0     0   40 3616k      0  1873k  0:00:04  0:00:01  0:00:03 1874k 68 8868k    0     0   68 6080k      0  2091k  0:00:04  0:00:02  0:00:02 2092k 92 8868k    0     0   92 8176k      0  2094k  0:00:04  0:00:03  0:00:01 2094k100 8868k  100   388  100 8868k     80  1843k  0:00:04  0:00:04 --:--:-- 1843k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.206\" and ValueSet.version \"20210220\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1029.206"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS159FHIRDepRemissionat12Months\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS159FHIRDepRemissionat12Months\CMS159FHIRDepRemissionat12Months-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 16 7684k    0     0   16 1296k      0  1238k  0:00:06  0:00:01  0:00:05 1239k 56 7684k    0     0   56 4352k      0  2123k  0:00:03  0:00:02  0:00:01 2125k100 7684k  100   408  100 7684k    127  2404k  0:00:03  0:00:03 --:--:-- 2405k100 7684k  100   408  100 7684k    127  2404k  0:00:03  0:00:03 --:--:-- 2405k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.198.12.1135\" and ValueSet.version \"20210224\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.464.1003.198.12.1135"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS165FHIRControllingHighBP\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS165FHIRControllingHighBP\CMS165FHIRControllingHighBP-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  9 10.3M    0     0    9  992k      0  1197k  0:00:08 --:--:--  0:00:08 1198k 35 10.3M    0     0   35 3728k      0  2078k  0:00:05  0:00:01  0:00:04 2079k 79 10.3M    0     0   79 8384k      0  2999k  0:00:03  0:00:02  0:00:01 3000k100 10.3M  100   408  100 10.3M    105  2732k  0:00:03  0:00:03 --:--:-- 2732k100 10.3M  100   408  100 10.3M    105  2732k  0:00:03  0:00:03 --:--:-- 2732k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016\" and ValueSet.version \"20240110\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS177FHIRChildMDDSuicideAssmt\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS177FHIRChildMDDSuicideAssmt\CMS177FHIRChildMDDSuicideAssmt-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 10 8217k    0     0   10  864k      0   984k  0:00:08 --:--:--  0:00:08  985k 38 8217k    0     0   38 3168k      0  1692k  0:00:04  0:00:01  0:00:03 1693k 94 8217k    0     0   94 7728k      0  2688k  0:00:03  0:00:02  0:00:01 2688k100 8217k  100   388  100 8217k    110  2348k  0:00:03  0:00:03 --:--:-- 2349k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.206\" and ValueSet.version \"20210220\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1029.206"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS190FHIRVTEProphylaxisICU\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS190FHIRVTEProphylaxisICU\CMS190FHIRVTEProphylaxisICU-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  1 13.6M    0     0    1  160k      0   500k  0:00:27 --:--:--  0:00:27  501k 15 13.6M    0     0   15 2192k      0  1632k  0:00:08  0:00:01  0:00:07 1633k 41 13.6M    0     0   41 5824k      0  2513k  0:00:05  0:00:02  0:00:03 2514k 80 13.6M    0     0   80 10.9M      0  3373k  0:00:04  0:00:03  0:00:01 3373k100 13.6M  100   394  100 13.6M     80  2868k  0:00:04  0:00:04 --:--:-- 2868k100 13.6M  100   394  100 13.6M     80  2868k  0:00:04  0:00:04 --:--:-- 3035k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292\" and ValueSet.version \"20210611\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.117.1.7.1.292"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS22FHIRPCSBPScreeningFollowUp\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS22FHIRPCSBPScreeningFollowUp\CMS22FHIRPCSBPScreeningFollowUp-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  3 8493k    0     0    3  288k      0   695k  0:00:12 --:--:--  0:00:12  695k 26 8493k    0     0   26 2272k      0  1628k  0:00:05  0:00:01  0:00:04 1629k 71 8493k    0     0   71 6096k      0  2546k  0:00:03  0:00:02  0:00:01 2547k100 8494k  100   397  100 8493k    113  2435k  0:00:03  0:00:03 --:--:-- 2435k100 8494k  100   397  100 8493k    113  2435k  0:00:03  0:00:03 --:--:-- 2435k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.121\" and ValueSet.version \"20250228\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1021.121-20250228"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS2FHIRPCSDepScreenAndFollowUp\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS2FHIRPCSDepScreenAndFollowUp\CMS2FHIRPCSDepScreenAndFollowUp-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 10 9463k    0     0   10 1008k      0  1151k  0:00:08 --:--:--  0:00:08 1152k 39 9463k    0     0   39 3776k      0  2015k  0:00:04  0:00:01  0:00:03 2016k 90 9463k    0     0   90 8576k      0  2987k  0:00:03  0:00:02  0:00:01 2988k100 9463k  100   397  100 9463k    108  2591k  0:00:03  0:00:03 --:--:-- 2593k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.121\" and ValueSet.version \"20250228\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1021.121-20250228"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS314FHIRHIVViralSuppression\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS314FHIRHIVViralSuppression\CMS314FHIRHIVViralSuppression-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 22 6601k    0     0   22 1504k      0  1307k  0:00:05  0:00:01  0:00:04 1307k 73 6601k    0     0   73 4832k      0  2218k  0:00:02  0:00:02 --:--:-- 2218k100 6601k  100   408  100 6601k    138  2237k  0:00:02  0:00:02 --:--:-- 2238k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1025\" and ValueSet.version \"20170504\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.464.1003.101.12.1025"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS347FHIRStatinPreventionTxCVD\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS347FHIRStatinPreventionTxCVD\CMS347FHIRStatinPreventionTxCVD-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 12 12.2M    0     0   12 1552k      0  1350k  0:00:09  0:00:01  0:00:08 1350k 38 12.2M    0     0   38 4784k      0  2234k  0:00:05  0:00:02  0:00:03 2235k 81 12.2M    0     0   81 10.0M      0  3275k  0:00:03  0:00:03 --:--:-- 3275k100 12.2M  100   388  100 12.2M     84  2737k  0:00:04  0:00:04 --:--:-- 2738k100 12.2M  100   388  100 12.2M     84  2737k  0:00:04  0:00:04 --:--:-- 2832k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1584\" and ValueSet.version \"20210825\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.526.3.1584"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS349FHIRHIVScreening\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS349FHIRHIVScreening\CMS349FHIRHIVScreening-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  7 6371k    0     0    7  480k      0   962k  0:00:06 --:--:--  0:00:06  963k 42 6371k    0     0   42 2736k      0  1809k  0:00:03  0:00:01  0:00:02 1810k100 6371k  100   408  100 6371k    143  2240k  0:00:02  0:00:02 --:--:-- 2241k100 6371k  100   408  100 6371k    143  2239k  0:00:02  0:00:02 --:--:-- 2240k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1025\" and ValueSet.version \"20170504\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.464.1003.101.12.1025"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS506FHIRSafeUseofOpioids\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS506FHIRSafeUseofOpioids\CMS506FHIRSafeUseofOpioids-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  6 8805k    0     0    6  576k      0   954k  0:00:09 --:--:--  0:00:09  955k 33 8805k    0     0   33 2976k      0  1832k  0:00:04  0:00:01  0:00:03 1833k 81 8805k    0     0   81 7136k      0  2740k  0:00:03  0:00:02  0:00:01 2741k100 8806k  100   388  100 8805k    111  2522k  0:00:03  0:00:03 --:--:-- 2523k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.206\" and ValueSet.version \"20210220\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1029.206"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS50FHIRReceiptofSpecialistReport\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS50FHIRReceiptofSpecialistReport\CMS50FHIRReceiptofSpecialistReport-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 17 6971k    0     0   17 1248k      0  1151k  0:00:06  0:00:01  0:00:05 1152k 58 6971k    0     0   58 4048k      0  1956k  0:00:03  0:00:02  0:00:01 1956k100 6971k  100   408  100 6971k    130  2233k  0:00:03  0:00:03 --:--:-- 2233k100 6971k  100   408  100 6971k    130  2233k  0:00:03  0:00:03 --:--:-- 2233k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1025\" and ValueSet.version \"20170504\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.464.1003.101.12.1025"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS56FHIRFuncStatHipReplacement\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS56FHIRFuncStatHipReplacement\CMS56FHIRFuncStatHipReplacement-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 11 9621k    0     0   11 1088k      0  1176k  0:00:08 --:--:--  0:00:08 1177k 40 9621k    0     0   40 3904k      0  2030k  0:00:04  0:00:01  0:00:03 2031k 89 9621k    0     0   89 8656k      0  2989k  0:00:03  0:00:02  0:00:01 2989k100 9622k  100   397  100 9621k    105  2552k  0:00:03  0:00:03 --:--:-- 2554k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.121\" and ValueSet.version \"20250228\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1021.121-20250228"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS645FHIRBoneDensityPCADTherapy\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS645FHIRBoneDensityPCADTherapy\CMS645FHIRBoneDensityPCADTherapy-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 20 6924k    0     0   20 1392k      0  1279k  0:00:05  0:00:01  0:00:04 1280k 66 6924k    0     0   66 4592k      0  2203k  0:00:03  0:00:02  0:00:01 2204k100 6924k  100   397  100 6924k    131  2299k  0:00:03  0:00:03 --:--:-- 2300k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.121\" and ValueSet.version \"20250228\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1021.121-20250228"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS646FHIRIntravesicalBCGTherapy\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS646FHIRIntravesicalBCGTherapy\CMS646FHIRIntravesicalBCGTherapy-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 14 8692k    0     0   14 1280k      0  1234k  0:00:07  0:00:01  0:00:06 1235k 46 8692k    0     0   46 4080k      0  2015k  0:00:04  0:00:02  0:00:02 2015k100 8692k  100   397  100 8692k    113  2481k  0:00:03  0:00:03 --:--:-- 2482k100 8692k  100   397  100 8692k    113  2481k  0:00:03  0:00:03 --:--:-- 2482k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.121\" and ValueSet.version \"20250228\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1021.121-20250228"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS68FHIRDocumentationCurrentMeds\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS68FHIRDocumentationCurrentMeds\CMS68FHIRDocumentationCurrentMeds-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  6 6192k    0     0    6  416k      0   867k  0:00:07 --:--:--  0:00:07  868k 42 6192k    0     0   42 2608k      0  1738k  0:00:03  0:00:01  0:00:02 1739k100 6193k  100   397  100 6192k    141  2200k  0:00:02  0:00:02 --:--:-- 2201k100 6193k  100   397  100 6192k    141  2200k  0:00:02  0:00:02 --:--:-- 2201k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.121\" and ValueSet.version \"20250228\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1021.121-20250228"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS69FHIRPCSBMIScreenAndFollowUp\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS69FHIRPCSBMIScreenAndFollowUp\CMS69FHIRPCSBMIScreenAndFollowUp-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  7 8682k    0     0    7  608k      0   977k  0:00:08 --:--:--  0:00:08  977k 34 8682k    0     0   34 2976k      0  1821k  0:00:04  0:00:01  0:00:03 1822k 82 8682k    0     0   82 7152k      0  2730k  0:00:03  0:00:02  0:00:01 2730k100 8682k  100   388  100 8682k    111  2503k  0:00:03  0:00:03 --:--:-- 2504k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.1.1751\" and ValueSet.version \"20210220\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.600.1.1751"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS71FHIRSTKAnticoagAFFlutter\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS71FHIRSTKAnticoagAFFlutter\CMS71FHIRSTKAnticoagAFFlutter-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 14 9435k    0     0   14 1392k      0  1266k  0:00:07  0:00:01  0:00:06 1266k 45 9435k    0     0   45 4256k      0  2026k  0:00:04  0:00:02  0:00:02 2027k100 9436k  100   388  100 9435k    100  2434k  0:00:03  0:00:03 --:--:-- 2434k100 9436k  100   388  100 9435k    100  2434k  0:00:03  0:00:03 --:--:-- 2434k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.206\" and ValueSet.version \"20210220\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1029.206"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS72FHIRSTKAntithromboticDay2\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS72FHIRSTKAntithromboticDay2\CMS72FHIRSTKAntithromboticDay2-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  9.9M    0     0    0 81920      0   319k  0:00:31 --:--:--  0:00:31  321k 16  9.9M    0     0   16 1664k      0  1402k  0:00:07  0:00:01  0:00:06 1403k 48  9.9M    0     0   48 4992k      0  2305k  0:00:04  0:00:02  0:00:02 2305k100  9.9M  100   388  100  9.9M     98  2598k  0:00:03  0:00:03 --:--:-- 2598k100  9.9M  100   388  100  9.9M     98  2598k  0:00:03  0:00:03 --:--:-- 2598k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.206\" and ValueSet.version \"20210220\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1029.206"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS74FHIRDentalCariesPrevention\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS74FHIRDentalCariesPrevention\CMS74FHIRDentalCariesPrevention-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  1 6954k    0     0    1 81920      0   298k  0:00:23 --:--:--  0:00:23  298k 23 6954k    0     0   23 1600k      0  1343k  0:00:05  0:00:01  0:00:04 1344k 71 6954k    0     0   71 4960k      0  2267k  0:00:03  0:00:02  0:00:01 2267k100 6954k  100   386  100 6954k    124  2251k  0:00:03  0:00:03 --:--:-- 2252k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307\" and ValueSet.version \"20200307\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.666.5.307"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS75FHIRChildrenDentalDecay\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS75FHIRChildrenDentalDecay\CMS75FHIRChildrenDentalDecay-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 16 6748k    0     0   16 1136k      0  1074k  0:00:06  0:00:01  0:00:05 1075k 62 6748k    0     0   62 4224k      0  2029k  0:00:03  0:00:02  0:00:01 2030k100 6749k  100   386  100 6748k    129  2263k  0:00:02  0:00:02 --:--:-- 2263k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307\" and ValueSet.version \"20200307\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.666.5.307"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS771FHIRUrinarySymptomScoreBPH\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS771FHIRUrinarySymptomScoreBPH\CMS771FHIRUrinarySymptomScoreBPH-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 18 6819k    0     0   18 1264k      0  1206k  0:00:05  0:00:01  0:00:04 1207k 60 6819k    0     0   60 4160k      0  2042k  0:00:03  0:00:02  0:00:01 2043k100 6820k  100   397  100 6819k    132  2268k  0:00:03  0:00:03 --:--:-- 2270k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.121\" and ValueSet.version \"20250228\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1021.121-20250228"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS816FHIRHHHypo\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS816FHIRHHHypo\CMS816FHIRHHHypo-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 14 8077k    0     0   14 1152k      0  1198k  0:00:06 --:--:--  0:00:06 1200k 49 8077k    0     0   49 3984k      0  2032k  0:00:03  0:00:01  0:00:02 2033k100 8077k  100   394  100 8077k    119  2442k  0:00:03  0:00:03 --:--:-- 2444k100 8077k  100   394  100 8077k    119  2442k  0:00:03  0:00:03 --:--:-- 2444k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292\" and ValueSet.version \"20210611\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.117.1.7.1.292"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS819FHIRHHORAE\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS819FHIRHHORAE\CMS819FHIRHHORAE-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  7 8073k    0     0    7  592k      0   970k  0:00:08 --:--:--  0:00:08  972k 34 8073k    0     0   34 2784k      0  1713k  0:00:04  0:00:01  0:00:03 1714k 84 8073k    0     0   84 6848k      0  2625k  0:00:03  0:00:02  0:00:01 2626k100 8073k  100   388  100 8073k    115  2393k  0:00:03  0:00:03 --:--:-- 2394k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.206\" and ValueSet.version \"20210220\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1029.206"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS826FHIRHHPI\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS826FHIRHHPI\CMS826FHIRHHPI-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  1 7993k    0     0    1 81920      0   313k  0:00:25 --:--:--  0:00:25  313k 19 7993k    0     0   19 1536k      0  1293k  0:00:06  0:00:01  0:00:05 1294k 60 7993k    0     0   60 4800k      0  2192k  0:00:03  0:00:02  0:00:01 2192k100 7993k  100   388  100 7993k    112  2317k  0:00:03  0:00:03 --:--:-- 2318k100 7993k  100   388  100 7993k    112  2317k  0:00:03  0:00:03 --:--:-- 2318k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.206\" and ValueSet.version \"20210220\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1029.206"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS832FHIRHHAKI\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS832FHIRHHAKI\CMS832FHIRHHAKI-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  7 10.4M    0     0    7  752k      0  1043k  0:00:10 --:--:--  0:00:10 1044k 30 10.4M    0     0   30 3232k      0  1918k  0:00:05  0:00:01  0:00:04 1919k 70 10.4M    0     0   70 7504k      0  2794k  0:00:03  0:00:02  0:00:01 2794k100 10.4M  100   388  100 10.4M     96  2657k  0:00:04  0:00:04 --:--:-- 2659k100 10.4M  100   388  100 10.4M     96  2657k  0:00:04  0:00:04 --:--:-- 2659k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.206\" and ValueSet.version \"20210220\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1029.206"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS871FHIRHHHyper\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS871FHIRHHHyper\CMS871FHIRHHHyper-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  5 9185k    0     0    5  480k      0   758k  0:00:12 --:--:--  0:00:12  759k 29 9185k    0     0   29 2752k      0  1680k  0:00:05  0:00:01  0:00:04 1681k 73 9185k    0     0   73 6768k      0  2582k  0:00:03  0:00:02  0:00:01 2583k100 9185k  100   386  100 9185k    105  2509k  0:00:03  0:00:03 --:--:-- 2509k100 9185k  100   386  100 9185k    105  2509k  0:00:03  0:00:03 --:--:-- 2509k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.34\" and ValueSet.version \"20230203\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1248.34"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS90FHIRFSAforHeartFailure\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS90FHIRFSAforHeartFailure\CMS90FHIRFSAforHeartFailure-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 12 8716k    0     0   12 1072k      0  1181k  0:00:07 --:--:--  0:00:07 1181k 43 8716k    0     0   43 3808k      0  1993k  0:00:04  0:00:01  0:00:03 1994k 98 8716k    0     0   98 8576k      0  2947k  0:00:02  0:00:02 --:--:-- 2948k100 8716k  100   386  100 8716k    108  2443k  0:00:03  0:00:03 --:--:-- 2444k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307\" and ValueSet.version \"20200307\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.666.5.307"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS951FHIRKidneyHealthEval\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS951FHIRKidneyHealthEval\CMS951FHIRKidneyHealthEval-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  1 7777k    0     0    1  112k      0   380k  0:00:20 --:--:--  0:00:20  382k 26 7777k    0     0   26 2064k      0  1567k  0:00:04  0:00:01  0:00:03 1568k 72 7777k    0     0   72 5632k      0  2451k  0:00:03  0:00:02  0:00:01 2451k100 7777k    0     0  100 7777k      0  2047k  0:00:03  0:00:03 --:--:-- 2048k100 7777k  100   408  100 7777k    105  2009k  0:00:03  0:00:03 --:--:-- 2010k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016\" and ValueSet.version \"20240110\", already have one with resource ID: ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS986FHIRMalnutritionScore\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS986FHIRMalnutritionScore\CMS986FHIRMalnutritionScore-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  2 9313k    0     0    2  240k      0   633k  0:00:14 --:--:--  0:00:14  634k 23 9313k    0     0   23 2208k      0  1590k  0:00:05  0:00:01  0:00:04 1590k 63 9313k    0     0   63 5936k      0  2497k  0:00:03  0:00:02  0:00:01 2498k100 9314k  100   388  100 9313k    107  2581k  0:00:03  0:00:03 --:--:-- 2581k100 9314k  100   388  100 9313k    107  2581k  0:00:03  0:00:03 --:--:-- 2581k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.206\" and ValueSet.version \"20210220\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1029.206"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMS996FHIRAptTxforSTEMI\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMS996FHIRAptTxforSTEMI\CMS996FHIRAptTxforSTEMI-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  6 11.2M    0     0    6  784k      0  1091k  0:00:10 --:--:--  0:00:10 1091k 28 11.2M    0     0   28 3312k      0  1905k  0:00:06  0:00:01  0:00:05 1905k 66 11.2M    0     0   66 7680k      0  2827k  0:00:04  0:00:02  0:00:02 2828k100 11.2M  100   388  100 11.2M     92  2748k  0:00:04  0:00:04 --:--:-- 2749k100 11.2M  100   388  100 11.2M     92  2748k  0:00:04  0:00:04 --:--:-- 2749k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.206\" and ValueSet.version \"20210220\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1029.206"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMSFHIR529HybridHospitalWideReadmission\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMSFHIR529HybridHospitalWideReadmission\CMSFHIR529HybridHospitalWideReadmission-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  2 9179k    0     0    2  240k      0   499k  0:00:18 --:--:--  0:00:18  500k 22 9179k    0     0   22 2080k      0  1414k  0:00:06  0:00:01  0:00:05 1415k 63 9179k    0     0   63 5840k      0  2365k  0:00:03  0:00:02  0:00:01 2366k100 9179k  100   388  100 9179k    105  2484k  0:00:03  0:00:03 --:--:-- 2484k100 9179k  100   388  100 9179k    104  2484k  0:00:03  0:00:03 --:--:-- 2484k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.206\" and ValueSet.version \"20210220\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1029.206"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\CMSFHIR844HybridHospitalWideMortality\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\CMSFHIR844HybridHospitalWideMortality\CMSFHIR844HybridHospitalWideMortality-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  8 9008k    0     0    8  752k      0  1045k  0:00:08 --:--:--  0:00:08 1045k 36 9008k    0     0   36 3328k      0  1934k  0:00:04  0:00:01  0:00:03 1934k 86 9008k    0     0   86 7776k      0  2856k  0:00:03  0:00:02  0:00:01 2856k100 9009k  100   388  100 9008k    108  2530k  0:00:03  0:00:03 --:--:-- 2532k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.206\" and ValueSet.version \"20210220\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1029.206"
+  } ]
+}
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(for %f in (bundles\measure\NHSNGlycemicControlHypoglycemiaInitialPopulation\*.json) do (curl -d "@%f" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) ) 
+
+C:\Users\Bryn\Documents\Src\CQF\dqm-content-qicore-2025>(curl -d "@bundles\measure\NHSNGlycemicControlHypoglycemiaInitialPopulation\NHSNGlycemicControlHypoglycemiaInitialPopulation-bundle.json" -H "Content-Type: application/json" -X POST https://cloud.alphora.com/sandbox/r4/cqm/fhir ) 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 13 9933k    0     0   13 1312k      0  1175k  0:00:08  0:00:01  0:00:07 1176k 44 9933k    0     0   44 4384k      0  2066k  0:00:04  0:00:02  0:00:02 2066k 95 9933k    0     0   95 9488k      0  3061k  0:00:03  0:00:03 --:--:-- 3062k100 9934k  100   388  100 9933k    100  2567k  0:00:03  0:00:03 --:--:-- 2568k
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "HAPI-0902: Can not create multiple ValueSet resources with ValueSet.url \"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1029.206\" and ValueSet.version \"20210220\", already have one with resource ID: ValueSet/2.16.840.1.113762.1.4.1029.206"
+  } ]
+}

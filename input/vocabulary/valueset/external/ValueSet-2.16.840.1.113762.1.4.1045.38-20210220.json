@@ -1,0 +1,135 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1045.38-20210220",
+  "meta": {
+    "versionId": "27",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "TJC EH Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-keyWord",
+    "valueString": "VTE-01,VTE-02"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-02-03"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2021-02-20"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1045.38",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1045.38"
+  } ],
+  "version": "20210220",
+  "name": "GeneralOrNeuraxialAnesthesia",
+  "title": "General Or Neuraxial Anesthesia",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-02-20T01:02:00-05:00",
+  "publisher": "TJC EH Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts of procedures to identify patients who have a surgical procedure where a general and/or neuraxial anesthesia is used.),(Data Element Scope: This value set may use a model element related to Procedure.),(Inclusion Criteria: Includes concepts that represent a procedure for general and/or neuraxial anesthesia.),(Exclusion Criteria: No exclusions.)",
+  "compose": {
+    "include": [ {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "concept": [ {
+        "code": "3E030FZ",
+        "display": "Introduction of Intracirculatory Anesthetic into Peripheral Vein, Open Approach"
+      }, {
+        "code": "3E033FZ",
+        "display": "Introduction of Intracirculatory Anesthetic into Peripheral Vein, Percutaneous Approach"
+      }, {
+        "code": "3E040FZ",
+        "display": "Introduction of Intracirculatory Anesthetic into Central Vein, Open Approach"
+      }, {
+        "code": "3E043FZ",
+        "display": "Introduction of Intracirculatory Anesthetic into Central Vein, Percutaneous Approach"
+      }, {
+        "code": "3E050FZ",
+        "display": "Introduction of Intracirculatory Anesthetic into Peripheral Artery, Open Approach"
+      }, {
+        "code": "3E053FZ",
+        "display": "Introduction of Intracirculatory Anesthetic into Peripheral Artery, Percutaneous Approach"
+      }, {
+        "code": "3E060FZ",
+        "display": "Introduction of Intracirculatory Anesthetic into Central Artery, Open Approach"
+      }, {
+        "code": "3E063FZ",
+        "display": "Introduction of Intracirculatory Anesthetic into Central Artery, Percutaneous Approach"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:44869822-c484-408f-ba3b-158727ddbdd2",
+    "timestamp": "2025-08-28T16:52:20-04:00",
+    "total": 8,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "3E030FZ",
+      "display": "Introduction of Intracirculatory Anesthetic into Peripheral Vein, Open Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "3E033FZ",
+      "display": "Introduction of Intracirculatory Anesthetic into Peripheral Vein, Percutaneous Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "3E040FZ",
+      "display": "Introduction of Intracirculatory Anesthetic into Central Vein, Open Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "3E043FZ",
+      "display": "Introduction of Intracirculatory Anesthetic into Central Vein, Percutaneous Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "3E050FZ",
+      "display": "Introduction of Intracirculatory Anesthetic into Peripheral Artery, Open Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "3E053FZ",
+      "display": "Introduction of Intracirculatory Anesthetic into Peripheral Artery, Percutaneous Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "3E060FZ",
+      "display": "Introduction of Intracirculatory Anesthetic into Central Artery, Open Approach"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+      "inactive": false,
+      "version": "2025",
+      "code": "3E063FZ",
+      "display": "Introduction of Intracirculatory Anesthetic into Central Artery, Percutaneous Approach"
+    } ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1095.91-20241211",
+  "meta": {
+    "versionId": "14",
+    "lastUpdated": "2024-12-11T01:13:08.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "AND Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-01-24"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-12-11"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1095.91",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1095.91"
+  } ],
+  "version": "20241211",
+  "name": "DietitianReferral",
+  "title": "Dietitian Referral",
+  "status": "active",
+  "date": "2024-12-11T01:13:08-05:00",
+  "publisher": "AND Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: This set of values indicates that a dietitian referral was ordered.),(Data Element Scope: Ordered dietitian referral.),(Inclusion Criteria: Dietitian or dietetics services referral codes.),(Exclusion Criteria: Referral orders for all other disciplines.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "103699006",
+        "display": "Referral to dietitian (procedure)"
+      }, {
+        "code": "306165000",
+        "display": "Referral to hospital-based dietetics service (procedure)"
+      }, {
+        "code": "306354000",
+        "display": "Referral to hospital-based dietitian (procedure)"
+      }, {
+        "code": "408285001",
+        "display": "Referral to pediatric dietitian (procedure)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:c89aa9cc-07db-40dd-b9d2-677c5f9914cf",
+    "timestamp": "2025-08-28T16:57:23-04:00",
+    "total": 4,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "103699006",
+      "display": "Referral to dietitian (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "306165000",
+      "display": "Referral to hospital-based dietetics service (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "306354000",
+      "display": "Referral to hospital-based dietitian (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "408285001",
+      "display": "Referral to pediatric dietitian (procedure)"
+    } ]
+  }
+}

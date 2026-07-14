@@ -1,0 +1,80 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1046.286-20240726",
+  "meta": {
+    "versionId": "7",
+    "lastUpdated": "2025-02-20T16:05:33.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "Acumen OP Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-keyWord",
+    "valueString": "ECATREHQR"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-04-16"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-07-26"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.286",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1046.286"
+  } ],
+  "version": "20240726",
+  "name": "DecisionToTransfer",
+  "title": "Decision to Transfer",
+  "status": "active",
+  "date": "2024-07-26T01:07:22-04:00",
+  "publisher": "Acumen OP Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: This value set contains concepts that represent procedures used to identify transfer from emergency department (ED) locations.),(Data Element Scope: The intent of this data element is to identify patients transferred from emergency department (ED) locations.),(Inclusion Criteria: Includes only relevant concepts associated with SNOMED CT codes that identify the environment hierarchy to define an emergency department.),(Exclusion Criteria: No exclusions.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "19712007",
+        "display": "Patient transfer, to another health care facility (procedure)"
+      }, {
+        "code": "448551000124100",
+        "display": "Patient transfer to another hospital (procedure)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:1d52cbdc-919f-4047-b604-3c1b5d19da33",
+    "timestamp": "2025-08-28T17:03:09-04:00",
+    "total": 2,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "19712007",
+      "display": "Patient transfer, to another health care facility (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "448551000124100",
+      "display": "Patient transfer to another hospital (procedure)"
+    } ]
+  }
+}

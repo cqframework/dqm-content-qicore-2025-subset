@@ -1,0 +1,87 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1248.94-20240109",
+  "meta": {
+    "versionId": "11",
+    "lastUpdated": "2024-02-22T14:54:20.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "Mathematica PSI Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-01-31"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-01-09"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.94",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1248.94"
+  } ],
+  "version": "20240109",
+  "name": "OxygenPartialPressureInArterialBlood",
+  "title": "Oxygen Partial Pressure in Arterial Blood",
+  "status": "active",
+  "date": "2024-01-09T01:09:01-05:00",
+  "publisher": "Mathematica PSI Steward",
+  "description": "LOINC",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for oxygen partial pressure in arterial blood),(Data Element Scope: This value set may use a model element related to Laboratory Test),(Inclusion Criteria: Includes concepts that represent tests for partial pressure of oxygen in arterial blood),(Exclusion Criteria: Excludes concepts that represent tests for oxygen saturation or total content, or tests for oxygen in arterial cord blood)",
+  "compose": {
+    "include": [ {
+      "system": "http://loinc.org",
+      "concept": [ {
+        "code": "19214-6",
+        "display": "Oxygen [Partial pressure] saturation adjusted to 0.5 in Arterial blood"
+      }, {
+        "code": "19255-9",
+        "display": "Oxygen [Partial pressure] adjusted to patient's actual temperature in Arterial blood"
+      }, {
+        "code": "2703-7",
+        "display": "Oxygen [Partial pressure] in Arterial blood"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:235c8a3c-98e0-498f-83f5-8f45ffd9924e",
+    "timestamp": "2025-08-28T17:05:48-04:00",
+    "total": 3,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://loinc.org",
+      "inactive": false,
+      "version": "2.78",
+      "code": "19214-6",
+      "display": "Oxygen [Partial pressure] saturation adjusted to 0.5 in Arterial blood"
+    }, {
+      "system": "http://loinc.org",
+      "inactive": false,
+      "version": "2.78",
+      "code": "19255-9",
+      "display": "Oxygen [Partial pressure] adjusted to patient's actual temperature in Arterial blood"
+    }, {
+      "system": "http://loinc.org",
+      "inactive": false,
+      "version": "2.78",
+      "code": "2703-7",
+      "display": "Oxygen [Partial pressure] in Arterial blood"
+    } ]
+  }
+}

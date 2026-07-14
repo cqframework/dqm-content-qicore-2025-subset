@@ -1,0 +1,243 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1110.60-20210220",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "TJC EH Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-keyWord",
+    "valueString": "STK-02,STK-03,STK-05,VTE-01,VTE-02"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-04-07"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2021-02-20"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1110.60",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1110.60"
+  } ],
+  "version": "20210220",
+  "name": "IschemicStrokeOther",
+  "title": "Ischemic Stroke Other",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-02-20T01:03:49-05:00",
+  "publisher": "TJC EH Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for diagnoses of ischemic strokes.),(Data Element Scope: This value set may use a model element related to Diagnosis.),(Inclusion Criteria: Includes concepts that represent a diagnosis of ischemic stroke.),(Exclusion Criteria: No exclusions.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "111297002",
+        "display": "Nonparalytic stroke (disorder)"
+      }, {
+        "code": "116288000",
+        "display": "Paralytic stroke (disorder)"
+      }, {
+        "code": "195212005",
+        "display": "Brainstem stroke syndrome (disorder)"
+      }, {
+        "code": "195213000",
+        "display": "Cerebellar stroke syndrome (disorder)"
+      }, {
+        "code": "195216008",
+        "display": "Left sided cerebral hemisphere cerebrovascular accident (disorder)"
+      }, {
+        "code": "195217004",
+        "display": "Right sided cerebral hemisphere cerebrovascular accident (disorder)"
+      }, {
+        "code": "230690007",
+        "display": "Cerebrovascular accident (disorder)"
+      }, {
+        "code": "230691006",
+        "display": "Cerebrovascular accident due to occlusion of cerebral artery (disorder)"
+      }, {
+        "code": "230692004",
+        "display": "Infarction - precerebral (disorder)"
+      }, {
+        "code": "230693009",
+        "display": "Anterior cerebral circulation infarction (disorder)"
+      }, {
+        "code": "230694003",
+        "display": "Total anterior cerebral circulation infarction (disorder)"
+      }, {
+        "code": "230695002",
+        "display": "Partial anterior cerebral circulation infarction (disorder)"
+      }, {
+        "code": "230696001",
+        "display": "Posterior cerebral circulation infarction (disorder)"
+      }, {
+        "code": "230698000",
+        "display": "Lacunar infarction (disorder)"
+      }, {
+        "code": "230699008",
+        "display": "Pure motor lacunar infarction (disorder)"
+      }, {
+        "code": "230700009",
+        "display": "Pure sensory lacunar infarction (disorder)"
+      }, {
+        "code": "230701008",
+        "display": "Pure sensorimotor lacunar infarction (disorder)"
+      }, {
+        "code": "307363008",
+        "display": "Multiple lacunar infarcts (disorder)"
+      }, {
+        "code": "422504002",
+        "display": "Ischemic stroke (disorder)"
+      }, {
+        "code": "426107000",
+        "display": "Acute lacunar infarction (disorder)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:bf47335d-0c24-4c59-8066-a3589f0cdd60",
+    "timestamp": "2025-08-28T17:06:11-04:00",
+    "total": 20,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "111297002",
+      "display": "Nonparalytic stroke (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "116288000",
+      "display": "Paralytic stroke (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "195212005",
+      "display": "Brainstem stroke syndrome (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "195213000",
+      "display": "Cerebellar stroke syndrome (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "195216008",
+      "display": "Left sided cerebral hemisphere cerebrovascular accident (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "195217004",
+      "display": "Right sided cerebral hemisphere cerebrovascular accident (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "230690007",
+      "display": "Cerebrovascular accident (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "230691006",
+      "display": "Cerebrovascular accident due to occlusion of cerebral artery (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "230692004",
+      "display": "Infarction - precerebral (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "230693009",
+      "display": "Anterior cerebral circulation infarction (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "230694003",
+      "display": "Total anterior cerebral circulation infarction (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "230695002",
+      "display": "Partial anterior cerebral circulation infarction (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "230696001",
+      "display": "Posterior cerebral circulation infarction (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "230698000",
+      "display": "Lacunar infarction (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "230699008",
+      "display": "Pure motor hemiparesis due to and following lacunar infarction (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "230700009",
+      "display": "Pure sensory stroke due to and following lacunar infarction (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "230701008",
+      "display": "Pure sensorimotor motor hemiparesis due to and following lacunar infarction (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "307363008",
+      "display": "Multiple lacunar infarcts (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "422504002",
+      "display": "Ischemic stroke (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "426107000",
+      "display": "Acute lacunar infarction (disorder)"
+    } ]
+  }
+}

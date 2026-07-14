@@ -1,0 +1,116 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1170.5-20250211",
+  "meta": {
+    "versionId": "12",
+    "lastUpdated": "2025-02-11T01:03:34.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "Acumen OP Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-keyWord",
+    "valueString": "STEMI"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-04-16"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2025-02-11"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1170.5",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1170.5"
+  } ],
+  "version": "20250211",
+  "name": "AllergyToThrombolytics",
+  "title": "Allergy to thrombolytics",
+  "status": "active",
+  "date": "2025-02-11T01:03:34-05:00",
+  "publisher": "Acumen OP Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for allergies to thrombolytic medications used for treatment of ST-segment elevation myocardial infaction (STEMI).),(Data Element Scope: This value set may use a model element related to Finding.),(Inclusion Criteria: Includes SNOMED-CT codes that represent allergies to thrombolytic medications for STEMI treatment.),(Exclusion Criteria: No Exclusions.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "1300135006",
+        "display": "Allergy to reteplase (finding)"
+      }, {
+        "code": "1300136007",
+        "display": "Allergy to tenecteplase (finding)"
+      }, {
+        "code": "295108008",
+        "display": "Allergy to streptokinase (finding)"
+      }, {
+        "code": "295109000",
+        "display": "Allergy to urokinase (finding)"
+      }, {
+        "code": "295110005",
+        "display": "Allergy to alteplase (finding)"
+      }, {
+        "code": "295111009",
+        "display": "Allergy to anistreplase (finding)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:156290bf-3bc6-4713-b1f7-fabd6b7be28c",
+    "timestamp": "2025-08-28T16:51:12-04:00",
+    "total": 6,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "1300135006",
+      "display": "Allergy to reteplase (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "1300136007",
+      "display": "Allergy to tenecteplase (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "295108008",
+      "display": "Allergy to streptokinase (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "295109000",
+      "display": "Allergy to urokinase (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "295110005",
+      "display": "Allergy to alteplase (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "295111009",
+      "display": "Allergy to anistreplase (finding)"
+    } ]
+  }
+}

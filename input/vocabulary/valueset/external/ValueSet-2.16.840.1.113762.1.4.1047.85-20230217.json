@@ -1,0 +1,131 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1047.85-20230217",
+  "meta": {
+    "versionId": "22",
+    "lastUpdated": "2024-08-09T13:45:14.000-04:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "American Institutes for Research Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-05-12"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2023-02-17"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1047.85",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1047.85"
+  } ],
+  "version": "20230217",
+  "name": "FamilialHypercholesterolemia",
+  "title": "Familial Hypercholesterolemia",
+  "status": "active",
+  "date": "2023-02-17T01:03:27-05:00",
+  "publisher": "American Institutes for Research Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for familial hypercholesterolemia.),(Data Element Scope: This value set may use a model element related to Diagnosis.),(Inclusion Criteria: Includes concepts that represent a diagnosis of familial hypercholesterolemia.),(Exclusion Criteria: No exclusions.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "238077000",
+        "display": "Polygenic hypercholesterolemia (disorder)"
+      }, {
+        "code": "238078005",
+        "display": "Familial hypercholesterolemia - homozygous (disorder)"
+      }, {
+        "code": "238079002",
+        "display": "Familial hypercholesterolemia - heterozygous (disorder)"
+      }, {
+        "code": "398036000",
+        "display": "Familial hypercholesterolemia (disorder)"
+      }, {
+        "code": "398796005",
+        "display": "Familial type 3 hyperlipoproteinemia (disorder)"
+      }, {
+        "code": "403829002",
+        "display": "Familial hypercholesterolemia due to heterozygous low density lipoprotein receptor mutation (disorder)"
+      }, {
+        "code": "403830007",
+        "display": "Familial hypercholesterolemia due to homozygous low density lipoprotein receptor mutation (disorder)"
+      }, {
+        "code": "403831006",
+        "display": "Familial hypercholesterolemia due to genetic defect of apolipoprotein B (disorder)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:018d4a6a-bb0a-4c49-81ca-5816db891c90",
+    "timestamp": "2025-08-28T16:48:18-04:00",
+    "total": 8,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "238077000",
+      "display": "Polygenic hypercholesterolemia (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "238078005",
+      "display": "Familial hypercholesterolemia - homozygous (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "238079002",
+      "display": "Familial hypercholesterolemia - heterozygous (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "398036000",
+      "display": "Familial hypercholesterolemia (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "398796005",
+      "display": "Familial type 3 hyperlipoproteinemia (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "403829002",
+      "display": "Familial hypercholesterolemia due to heterozygous low density lipoprotein receptor mutation (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "403830007",
+      "display": "Familial hypercholesterolemia due to homozygous low density lipoprotein receptor mutation (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "403831006",
+      "display": "Familial hypercholesterolemia due to genetic defect of apolipoprotein B (disorder)"
+    } ]
+  }
+}

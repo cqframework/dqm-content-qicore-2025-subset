@@ -1,0 +1,76 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1111.177-20250211",
+  "meta": {
+    "versionId": "14",
+    "lastUpdated": "2025-02-11T01:03:34.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "Mathematica EP"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-02-11"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2025-02-11"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.177",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1111.177"
+  } ],
+  "version": "20250211",
+  "name": "OpioidMedicationAssistedTreatmentMAT",
+  "title": "Opioid Medication Assisted Treatment (MAT)",
+  "status": "active",
+  "date": "2025-02-11T01:03:34-05:00",
+  "publisher": "Mathematica",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to group concepts that indicate an opioid medication assisted treatment  (MAT).),(Data Element Scope: This value set may use a model element related to intervention.),(Inclusion Criteria: Includes concepts that represent interventions for opioid use disorder treatment.),(Exclusion Criteria: No exclusions.)",
+  "compose": {
+    "include": [ {
+      "valueSet": [ "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.225" ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:54a1332b-2bec-4b2b-b242-a562102ad872",
+    "timestamp": "2025-08-28T16:50:30-04:00",
+    "total": 3,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "310653000",
+      "display": "Drug addiction therapy using methadone (regime/therapy)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "792901003",
+      "display": "Drug addiction therapy using buprenorphine (regime/therapy)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "792902005",
+      "display": "Drug addiction therapy using buprenorphine and naloxone (regime/therapy)"
+    } ]
+  }
+}

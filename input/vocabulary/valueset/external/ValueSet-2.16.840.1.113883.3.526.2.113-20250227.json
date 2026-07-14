@@ -1,0 +1,284 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.526.2.113-20250227",
+  "meta": {
+    "versionId": "44",
+    "lastUpdated": "2025-02-27T01:08:38.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "American Institutes for Research Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-02-27"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2025-02-27"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.113",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.526.2.113"
+  } ],
+  "version": "20250227",
+  "name": "ProstateCancerTreatment",
+  "title": "Prostate Cancer Treatment",
+  "status": "active",
+  "date": "2025-02-27T01:08:38-05:00",
+  "publisher": "American Institutes for Research Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts of procedures for prostate cancer treatments.),(Data Element Scope: This value set may use a model element related to Procedure.),(Inclusion Criteria: Includes concepts that represent a procedure for interstitial prostate brachytherapy, external beam radiotherapy to the prostate, and radical prostatectomy.),(Exclusion Criteria: No exclusions.)",
+  "compose": {
+    "include": [ {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "concept": [ {
+        "code": "55810",
+        "display": "Prostatectomy, perineal radical"
+      }, {
+        "code": "55812",
+        "display": "Prostatectomy, perineal radical; with lymph node biopsy(s) (limited pelvic lymphadenectomy)"
+      }, {
+        "code": "55815",
+        "display": "Prostatectomy, perineal radical; with bilateral pelvic lymphadenectomy, including external iliac, hypogastric and obturator nodes"
+      }, {
+        "code": "55840",
+        "display": "Prostatectomy, retropubic radical, with or without nerve sparing"
+      }, {
+        "code": "55842",
+        "display": "Prostatectomy, retropubic radical, with or without nerve sparing; with lymph node biopsy(s) (limited pelvic lymphadenectomy)"
+      }, {
+        "code": "55845",
+        "display": "Prostatectomy, retropubic radical, with or without nerve sparing; with bilateral pelvic lymphadenectomy, including external iliac, hypogastric, and obturator nodes"
+      }, {
+        "code": "55866",
+        "display": "Laparoscopy, surgical prostatectomy, retropubic radical, including nerve sparing, includes robotic assistance, when performed"
+      }, {
+        "code": "55875",
+        "display": "Transperineal placement of needles or catheters into prostate for interstitial radioelement application, with or without cystoscopy"
+      }, {
+        "code": "55880",
+        "display": "Ablation of malignant prostate tissue, transrectal, with high intensity-focused ultrasound (HIFU), including ultrasound guidance"
+      }, {
+        "code": "77373",
+        "display": "Stereotactic body radiation therapy, treatment delivery, per fraction to 1 or more lesions, including image guidance, entire course not to exceed 5 fractions"
+      }, {
+        "code": "77385",
+        "display": "Intensity modulated radiation treatment delivery (IMRT), includes guidance and tracking, when performed; simple"
+      }, {
+        "code": "77386",
+        "display": "Intensity modulated radiation treatment delivery (IMRT), includes guidance and tracking, when performed; complex"
+      }, {
+        "code": "77401",
+        "display": "Radiation treatment delivery, superficial and/or ortho voltage, per day"
+      }, {
+        "code": "77402",
+        "display": "Radiation treatment delivery, >=1 MeV; simple"
+      }, {
+        "code": "77407",
+        "display": "Radiation treatment delivery, >=1 MeV; intermediate"
+      }, {
+        "code": "77412",
+        "display": "Radiation treatment delivery, >=1 MeV; complex"
+      }, {
+        "code": "77423",
+        "display": "High energy neutron radiation treatment delivery, 1 or more isocenter(s) with coplanar or non-coplanar geometry with blocking and/or wedge, and/or compensator(s)"
+      }, {
+        "code": "77427",
+        "display": "Radiation treatment management, 5 treatments"
+      }, {
+        "code": "77435",
+        "display": "Stereotactic body radiation therapy, treatment management, per treatment course, to 1 or more lesions, including image guidance, entire course not to exceed 5 fractions"
+      }, {
+        "code": "77520",
+        "display": "Proton treatment delivery; simple, without compensation"
+      }, {
+        "code": "77522",
+        "display": "Proton treatment delivery; simple, with compensation"
+      }, {
+        "code": "77523",
+        "display": "Proton treatment delivery; intermediate"
+      }, {
+        "code": "77525",
+        "display": "Proton treatment delivery; complex"
+      }, {
+        "code": "77772",
+        "display": "Remote afterloading high dose rate radionuclide interstitial or intracavitary brachytherapy, includes basic dosimetry, when performed; over 12 channels"
+      }, {
+        "code": "77778",
+        "display": "Interstitial radiation source application, complex, includes supervision, handling, loading of radiation source, when performed"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:4b26c096-e4f2-4774-9c7f-ff5f38e6e0e0",
+    "timestamp": "2025-08-28T17:00:24-04:00",
+    "total": 25,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "55810",
+      "display": "Prostatectomy, perineal radical"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "55812",
+      "display": "Prostatectomy, perineal radical; with lymph node biopsy(s) (limited pelvic lymphadenectomy)"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "55815",
+      "display": "Prostatectomy, perineal radical; with bilateral pelvic lymphadenectomy, including external iliac, hypogastric and obturator nodes"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "55840",
+      "display": "Prostatectomy, retropubic radical, with or without nerve sparing"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "55842",
+      "display": "Prostatectomy, retropubic radical, with or without nerve sparing; with lymph node biopsy(s) (limited pelvic lymphadenectomy)"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "55845",
+      "display": "Prostatectomy, retropubic radical, with or without nerve sparing; with bilateral pelvic lymphadenectomy, including external iliac, hypogastric, and obturator nodes"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "55866",
+      "display": "Laparoscopy, surgical prostatectomy, retropubic radical, including nerve sparing, includes robotic assistance, when performed"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "55875",
+      "display": "Transperineal placement of needles or catheters into prostate for interstitial radioelement application, with or without cystoscopy"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "55880",
+      "display": "Ablation of malignant prostate tissue, transrectal, with high intensity-focused ultrasound (HIFU), including ultrasound guidance"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77373",
+      "display": "Stereotactic body radiation therapy, treatment delivery, per fraction to 1 or more lesions, including image guidance, entire course not to exceed 5 fractions"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77385",
+      "display": "Intensity modulated radiation treatment delivery (IMRT), includes guidance and tracking, when performed; simple"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77386",
+      "display": "Intensity modulated radiation treatment delivery (IMRT), includes guidance and tracking, when performed; complex"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77401",
+      "display": "Radiation treatment delivery, superficial and/or ortho voltage, per day"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77402",
+      "display": "Radiation treatment delivery, >=1 MeV; simple"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77407",
+      "display": "Radiation treatment delivery, >=1 MeV; intermediate"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77412",
+      "display": "Radiation treatment delivery, >=1 MeV; complex"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77423",
+      "display": "High energy neutron radiation treatment delivery, 1 or more isocenter(s) with coplanar or non-coplanar geometry with blocking and/or wedge, and/or compensator(s)"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77427",
+      "display": "Radiation treatment management, 5 treatments"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77435",
+      "display": "Stereotactic body radiation therapy, treatment management, per treatment course, to 1 or more lesions, including image guidance, entire course not to exceed 5 fractions"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77520",
+      "display": "Proton treatment delivery; simple, without compensation"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77522",
+      "display": "Proton treatment delivery; simple, with compensation"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77523",
+      "display": "Proton treatment delivery; intermediate"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77525",
+      "display": "Proton treatment delivery; complex"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77772",
+      "display": "Remote afterloading high dose rate radionuclide interstitial or intracavitary brachytherapy, includes basic dosimetry, when performed; over 12 channels"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "inactive": false,
+      "version": "2025",
+      "code": "77778",
+      "display": "Interstitial radiation source application, complex, includes supervision, handling, loading of radiation source, when performed"
+    } ]
+  }
+}

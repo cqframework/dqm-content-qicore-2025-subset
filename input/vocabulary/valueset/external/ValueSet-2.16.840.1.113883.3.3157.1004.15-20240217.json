@@ -1,0 +1,78 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.3157.1004.15-20240217",
+  "meta": {
+    "versionId": "35",
+    "lastUpdated": "2024-02-17T01:10:27.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "Mathematica EP"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-04-03"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-02-17"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3157.1004.15",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.3157.1004.15"
+  } ],
+  "version": "20240217",
+  "name": "OpiumCombinations",
+  "title": "Opium Combinations",
+  "status": "active",
+  "date": "2024-02-17T01:10:27-05:00",
+  "publisher": "Mathematica",
+  "description": "This value set includes semantic clinical drugs (SCD) and generic pack (GPCK) RxNorm codes.",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for medications that are Schedules II and III opium combination medications.),(Data Element Scope: This value set may use a model element related to Medication.),(Inclusion Criteria: Includes concepts that identify a medication for opium with multiple ingredient .),(Exclusion Criteria: Excludes concepts that represents opium tincture because of its morphine content. Excludes concepts that represent schedule I, unscheduled, nonprescribable, non-human, and inactive opium combination medications.)",
+  "compose": {
+    "include": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept": [ {
+        "code": "312104",
+        "display": "belladonna alkaloids 16.2 MG / opium 30 MG Rectal Suppository"
+      }, {
+        "code": "312107",
+        "display": "belladonna alkaloids 16.2 MG / opium 60 MG Rectal Suppository"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:f0cb0733-a23c-43f1-93c3-a2e4b83fa3a8",
+    "timestamp": "2025-08-28T17:01:50-04:00",
+    "total": 2,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "312104",
+      "display": "belladonna alkaloids 16.2 MG / opium 30 MG Rectal Suppository"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "inactive": false,
+      "version": "01062025",
+      "code": "312107",
+      "display": "belladonna alkaloids 16.2 MG / opium 60 MG Rectal Suppository"
+    } ]
+  }
+}

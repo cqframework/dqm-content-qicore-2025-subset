@@ -1,0 +1,186 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.464.1003.106.11.1036-20210220",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "NCQA PHEMUR Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-02-03"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2021-02-20"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.106.11.1036",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.464.1003.106.11.1036"
+  } ],
+  "version": "20210220",
+  "name": "SubstanceUseDisorderTreatment",
+  "title": "Substance Use Disorder Treatment",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-02-20T01:02:00-05:00",
+  "publisher": "NCQA PHEMUR",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for encounters for substance use disorder treatment.),(Data Element Scope: This value set may use a model element related to Intervention.),(Inclusion Criteria: Includes concepts that represent an encounter for substance use disorder treatment.),(Exclusion Criteria: No exclusions.)",
+  "compose": {
+    "include": [ {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "concept": [ {
+        "code": "G2067",
+        "display": "Medication assisted treatment, methadone; weekly bundle including dispensing and/or administration, substance use counseling, individual and group therapy, and toxicology testing, if performed (provision of the services by a medicare-enrolled opioid treatment program)"
+      }, {
+        "code": "G2068",
+        "display": "Medication assisted treatment, buprenorphine (oral); weekly bundle including dispensing and/or administration, substance use counseling, individual and group therapy, and toxicology testing if performed (provision of the services by a medicare-enrolled opioid treatment program)"
+      }, {
+        "code": "G2069",
+        "display": "Medication assisted treatment, buprenorphine (injectable); weekly bundle including dispensing and/or administration, substance use counseling, individual and group therapy, and toxicology testing if performed (provision of the services by a medicare-enrolled opioid treatment program)"
+      }, {
+        "code": "G2070",
+        "display": "Medication assisted treatment, buprenorphine (implant insertion); weekly bundle including dispensing and/or administration, substance use counseling, individual and group therapy, and toxicology testing if performed (provision of the services by a medicare-enrolled opioid treatment program)"
+      }, {
+        "code": "G2071",
+        "display": "Medication assisted treatment, buprenorphine (implant removal); weekly bundle including dispensing and/or administration, substance use counseling, individual and group therapy, and toxicology testing if performed (provision of the services by a medicare-enrolled opioid treatment program)"
+      }, {
+        "code": "G2072",
+        "display": "Medication assisted treatment, buprenorphine (implant insertion and removal); weekly bundle including dispensing and/or administration, substance use counseling, individual and group therapy, and toxicology testing if performed (provision of the services by a medicare-enrolled opioid treatment program)"
+      }, {
+        "code": "G2073",
+        "display": "Medication assisted treatment, naltrexone; weekly bundle including dispensing and/or administration, substance use counseling, individual and group therapy, and toxicology testing if performed (provision of the services by a medicare-enrolled opioid treatment program)"
+      }, {
+        "code": "G2074",
+        "display": "Medication assisted treatment, weekly bundle not including the drug, including substance use counseling, individual and group therapy, and toxicology testing if performed (provision of the services by a medicare-enrolled opioid treatment program)"
+      }, {
+        "code": "G2075",
+        "display": "Medication assisted treatment, medication not otherwise specified; weekly bundle including dispensing and/or administration, substance use counseling, individual and group therapy, and toxicology testing, if performed (provision of the services by a medicare-enrolled opioid treatment program)"
+      }, {
+        "code": "G2076",
+        "display": "Intake activities, including initial medical examination that is a complete, fully documented physical evaluation and initial assessment by a program physician or a primary care physician, or an authorized healthcare professional under the supervision of a program physician qualified personnel that includes preparation of a treatment plan that includes the patient's short-term goals and the tasks the patient must perform to complete the short-term goals; the patient's requirements for education, vocational rehabilitation, and employment; and the medical, psycho- social, economic, legal, or other supportive services that a patient needs, conducted by qualified personnel (provision of the services by a medicare-enrolled opioid treatment program); list separately in addition to code for primary procedure"
+      }, {
+        "code": "G2077",
+        "display": "Periodic assessment; assessing periodically by qualified personnel to determine the most appropriate combination of services and treatment (provision of the services by a medicare-enrolled opioid treatment program); list separately in addition to code for primary procedure"
+      }, {
+        "code": "G2080",
+        "display": "Each additional 30 minutes of counseling in a week of medication assisted treatment, (provision of the services by a medicare-enrolled opioid treatment program); list separately in addition to code for primary procedure"
+      }, {
+        "code": "G2086",
+        "display": "Office-based treatment for opioid use disorder, including development of the treatment plan, care coordination, individual therapy and group therapy and counseling; at least 70 minutes in the first calendar month"
+      }, {
+        "code": "G2087",
+        "display": "Office-based treatment for opioid use disorder, including care coordination, individual therapy and group therapy and counseling; at least 60 minutes in a subsequent calendar month"
+      }, {
+        "code": "H0020",
+        "display": "Alcohol and/or drug services; methadone administration and/or service (provision of the drug by a licensed program)"
+      }, {
+        "code": "H0033",
+        "display": "Oral medication administration, direct observation"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:2879702c-9aee-42cb-899d-6a5e5e58f15e",
+    "timestamp": "2025-08-28T16:50:41-04:00",
+    "total": 13,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G2067",
+      "display": "Medication assisted treatment, methadone; weekly bundle including dispensing and/or administration, substance use counseling, individual and group therapy, and toxicology testing, if performed (provision of the services by a medicare-enrolled opioid treatment program)"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G2068",
+      "display": "Medication assisted treatment, buprenorphine (oral); weekly bundle including dispensing and/or administration, substance use counseling, individual and group therapy, and toxicology testing if performed (provision of the services by a medicare-enrolled opioid treatment program)"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G2069",
+      "display": "Medication assisted treatment, buprenorphine (injectable) administered on a monthly basis; bundle including dispensing and/or administration, substance use counseling, individual and group therapy, and toxicology testing if performed (provision of the services by a medicare-enrolled opioid treatment program)"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G2073",
+      "display": "Medication assisted treatment, naltrexone; weekly bundle including dispensing and/or administration, substance use counseling, individual and group therapy, and toxicology testing if performed (provision of the services by a medicare-enrolled opioid treatment program)"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G2074",
+      "display": "Medication assisted treatment, weekly bundle not including the drug, including substance use counseling, individual and group therapy, and toxicology testing if performed (provision of the services by a medicare-enrolled opioid treatment program)"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G2075",
+      "display": "Medication assisted treatment, medication not otherwise specified; weekly bundle including dispensing and/or administration, substance use counseling, individual and group therapy, and toxicology testing, if performed (provision of the services by a medicare-enrolled opioid treatment program)"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G2076",
+      "display": "Intake activities, including initial medical examination that is conducted by an appropriately licensed practitioner and preparation of a care plan, which may be informed by administration of a standardized, evidence-based social determinants of health risk assessment to identify unmet health-related social needs, and that includes the patient's goals and mutually agreed-upon actions for the patient to meet those goals, including harm reduction interventions; the patient's needs and goals in the areas of education, vocational training, and employment; and the medical and psychiatric, psychosocial, economic, legal, housing, and other recovery support services that a patient needs and wishes to pursue, conducted by an appropriately licensed/credentialed personnel (provision of the services by a medicare-enrolled opioid treatment program); list separately in addition to each primary code"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G2077",
+      "display": "Periodic assessment; assessing periodically by an otp practitioner and includes a review of moud dosing, treatment response, other substance use disorder treatment needs, responses and patient-identified goals, and other relevant physical and psychiatric treatment needs and goals; assessment may be informed by administration of a standardized, evidence-based social determinants of health risk assessment to identify unmet health-related social needs, or the need and interest for harm reduction interventions and recovery support services (provision of the services by a medicare-enrolled opioid treatment program); list separately in addition to each primary code"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G2080",
+      "display": "Each additional 30 minutes of counseling in a week of medication assisted treatment, (provision of the services by a medicare-enrolled opioid treatment program); list separately in addition to code for primary procedure"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G2086",
+      "display": "Office-based treatment for opioid use disorder, including development of the treatment plan, care coordination, individual therapy and group therapy and counseling; at least 70 minutes in the first calendar month"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G2087",
+      "display": "Office-based treatment for opioid use disorder, including care coordination, individual therapy and group therapy and counseling; at least 60 minutes in a subsequent calendar month"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "H0020",
+      "display": "Alcohol and/or drug services; methadone administration and/or service (provision of the drug by a licensed program)"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "H0033",
+      "display": "Oral medication administration, direct observation"
+    } ]
+  }
+}

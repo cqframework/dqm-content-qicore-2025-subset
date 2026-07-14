@@ -1,0 +1,72 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1110.21-20210220",
+  "meta": {
+    "versionId": "18",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "TJC EH Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-keyWord",
+    "valueString": "STK-05"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-03-31"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2021-02-20"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1110.21",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1110.21"
+  } ],
+  "version": "20210220",
+  "name": "IntravenousOrIntraarterialThrombolyticTPATherapyPriorToArrival",
+  "title": "Intravenous or Intraarterial Thrombolytic tPA Therapy Prior to Arrival",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-02-20T01:02:00-05:00",
+  "publisher": "TJC EH Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for procedures of intravenous or intra-arterial thrombolytic (t-PA) therapy.),(Data Element Scope: This value set may use a model element related to Procedure.),(Inclusion Criteria: Includes concepts that identify a procedure for intravenous or intra-arterial thrombolytic (t-PA) therapy.),(Exclusion Criteria: No exclusions.)",
+  "compose": {
+    "include": [ {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "concept": [ {
+        "code": "Z92.82",
+        "display": "Status post administration of tPA (rtPA) in a different facility within the last 24 hours prior to admission to current facility"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:d63e8044-d2be-4e50-82fb-caef03e3e4ae",
+    "timestamp": "2025-08-28T16:53:37-04:00",
+    "total": 1,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "inactive": false,
+      "version": "2025",
+      "code": "Z92.82",
+      "display": "Status post administration of tPA (rtPA) in a different facility within the last 24 hours prior to admission to current facility"
+    } ]
+  }
+}

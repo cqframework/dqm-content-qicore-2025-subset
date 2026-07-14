@@ -1,0 +1,482 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.526.2.213-20250207",
+  "meta": {
+    "versionId": "48",
+    "lastUpdated": "2025-02-07T01:09:20.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "American Institutes for Research Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-02-07"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2025-02-07"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.213",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.526.2.213"
+  } ],
+  "version": "20250207",
+  "name": "ProstateCancerTreatment",
+  "title": "Prostate Cancer Treatment",
+  "status": "active",
+  "date": "2025-02-07T01:09:20-05:00",
+  "publisher": "American Institutes for Research Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts of procedures for prostate cancer treatments.),(Data Element Scope: This value set may use a model element related to Procedure.),(Inclusion Criteria: Includes concepts that represent a procedure for interstitial prostate brachytherapy, external beam radiotherapy to the prostate, and radical prostatectomy.),(Exclusion Criteria: No exclusions.)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "113120007",
+        "display": "Interstitial brachytherapy (procedure)"
+      }, {
+        "code": "169359004",
+        "display": "Internal radiotherapy - permanent seeds (procedure)"
+      }, {
+        "code": "176261008",
+        "display": "Radical prostatectomy without pelvic node excision (procedure)"
+      }, {
+        "code": "176262001",
+        "display": "Radical prostatectomy with pelvic node sampling (procedure)"
+      }, {
+        "code": "176263006",
+        "display": "Radical prostatectomy with pelvic lymphadenectomy (procedure)"
+      }, {
+        "code": "228677009",
+        "display": "Cesium 137 brachytherapy (procedure)"
+      }, {
+        "code": "228681009",
+        "display": "Cobalt 60 brachytherapy (procedure)"
+      }, {
+        "code": "228682002",
+        "display": "Cobalt 60 brachytherapy manual loading (procedure)"
+      }, {
+        "code": "228684001",
+        "display": "Iridium 192 brachytherapy (procedure)"
+      }, {
+        "code": "228688003",
+        "display": "Californium 252 brachytherapy (procedure)"
+      }, {
+        "code": "228689006",
+        "display": "Gold 198 brachytherapy (procedure)"
+      }, {
+        "code": "228690002",
+        "display": "Iodine 125 brachytherapy (procedure)"
+      }, {
+        "code": "228691003",
+        "display": "Phosphorus 32 brachytherapy (procedure)"
+      }, {
+        "code": "228692005",
+        "display": "Radon 222 brachytherapy (procedure)"
+      }, {
+        "code": "228693000",
+        "display": "Ruthenium 106 brachytherapy (procedure)"
+      }, {
+        "code": "228694006",
+        "display": "Strontium 90 brachytherapy (procedure)"
+      }, {
+        "code": "228695007",
+        "display": "Tantalum 182 brachytherapy (procedure)"
+      }, {
+        "code": "228696008",
+        "display": "Yttrium 90 brachytherapy (procedure)"
+      }, {
+        "code": "228697004",
+        "display": "Yttrium 90 therapy (procedure)"
+      }, {
+        "code": "228698009",
+        "display": "Iodine 131 therapy (procedure)"
+      }, {
+        "code": "228699001",
+        "display": "Phosphorus 32 therapy (procedure)"
+      }, {
+        "code": "228701001",
+        "display": "Strontium 89 therapy (procedure)"
+      }, {
+        "code": "228702008",
+        "display": "Gold 198 therapy (procedure)"
+      }, {
+        "code": "24242005",
+        "display": "Cobalt-60 therapy (procedure)"
+      }, {
+        "code": "26294005",
+        "display": "Radical prostatectomy (procedure)"
+      }, {
+        "code": "271291003",
+        "display": "Temporary implant radiotherapy (procedure)"
+      }, {
+        "code": "28579000",
+        "display": "Radical retropubic prostatectomy with lymph node biopsy (procedure)"
+      }, {
+        "code": "312243002",
+        "display": "Cesium 137 brachytherapy remote afterloading (procedure)"
+      }, {
+        "code": "312244008",
+        "display": "Cobalt 60 brachytherapy remote afterloading (procedure)"
+      }, {
+        "code": "36253005",
+        "display": "Suprapubic prostatectomy (procedure)"
+      }, {
+        "code": "37851009",
+        "display": "Radical perineal prostatectomy with bilateral pelvic lymphadenectomy (procedure)"
+      }, {
+        "code": "38915000",
+        "display": "Radionuclide therapy for gland ablation (procedure)"
+      }, {
+        "code": "394902000",
+        "display": "High dose brachytherapy (procedure)"
+      }, {
+        "code": "394918006",
+        "display": "Iodine seed radiotherapy (procedure)"
+      }, {
+        "code": "399180008",
+        "display": "Interstitial radioactive colloid therapy (procedure)"
+      }, {
+        "code": "41371003",
+        "display": "Perineal prostatectomy (procedure)"
+      }, {
+        "code": "41416003",
+        "display": "Radical retropubic prostatectomy with bilateral pelvic lymphadenectomy (procedure)"
+      }, {
+        "code": "440093006",
+        "display": "Insertion of radioactive implant into interstitial tissue using ultrasound guidance (procedure)"
+      }, {
+        "code": "440094000",
+        "display": "Insertion of radioactive implant into interstitial tissue of prostate with transperineal insertion of catheter (procedure)"
+      }, {
+        "code": "62867004",
+        "display": "External beam radiation therapy with radioactive cesium (procedure)"
+      }, {
+        "code": "65551008",
+        "display": "Radical retropubic prostatectomy (procedure)"
+      }, {
+        "code": "67598001",
+        "display": "Retropubic prostatectomy (procedure)"
+      }, {
+        "code": "72388004",
+        "display": "Radical perineal prostatectomy with lymph node biopsy (procedure)"
+      }, {
+        "code": "77613002",
+        "display": "External beam radiation therapy with iodine-125 (procedure)"
+      }, {
+        "code": "84755001",
+        "display": "Radiation therapy treatment management (procedure)"
+      }, {
+        "code": "8782006",
+        "display": "Radical perineal prostatectomy (procedure)"
+      }, {
+        "code": "90470006",
+        "display": "Prostatectomy (procedure)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:267d4dbc-15d3-4687-9ad0-0def6972f380",
+    "timestamp": "2025-08-28T17:07:21-04:00",
+    "total": 47,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "113120007",
+      "display": "Interstitial brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "169359004",
+      "display": "Internal radiotherapy - permanent seeds (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "176261008",
+      "display": "Radical prostatectomy without pelvic node excision (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "176262001",
+      "display": "Radical prostatectomy with pelvic node sampling (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "176263006",
+      "display": "Radical prostatectomy with pelvic lymphadenectomy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228677009",
+      "display": "Cesium 137 brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228681009",
+      "display": "Cobalt 60 brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228682002",
+      "display": "Cobalt 60 brachytherapy manual loading (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228684001",
+      "display": "Iridium 192 brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228688003",
+      "display": "Californium 252 brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228689006",
+      "display": "Gold 198 brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228690002",
+      "display": "Iodine 125 brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228691003",
+      "display": "Phosphorus 32 brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228692005",
+      "display": "Radon 222 brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228693000",
+      "display": "Ruthenium 106 brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228694006",
+      "display": "Strontium 90 brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228695007",
+      "display": "Tantalum 182 brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228696008",
+      "display": "Yttrium 90 brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228697004",
+      "display": "Yttrium 90 therapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228698009",
+      "display": "Iodine 131 therapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228699001",
+      "display": "Phosphorus 32 therapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228701001",
+      "display": "Strontium 89 therapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "228702008",
+      "display": "Gold 198 therapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "24242005",
+      "display": "Cobalt-60 therapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "26294005",
+      "display": "Radical prostatectomy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "271291003",
+      "display": "Temporary implant radiotherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "28579000",
+      "display": "Radical retropubic prostatectomy with lymph node biopsy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "312243002",
+      "display": "Cesium 137 brachytherapy remote afterloading (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "312244008",
+      "display": "Cobalt 60 brachytherapy remote afterloading (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "36253005",
+      "display": "Suprapubic prostatectomy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "37851009",
+      "display": "Radical perineal prostatectomy with bilateral pelvic lymphadenectomy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "38915000",
+      "display": "Radionuclide therapy for gland ablation (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "394902000",
+      "display": "High dose brachytherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "394918006",
+      "display": "Iodine seed radiotherapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "399180008",
+      "display": "Interstitial radioactive colloid therapy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "41371003",
+      "display": "Perineal prostatectomy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "41416003",
+      "display": "Radical retropubic prostatectomy with bilateral pelvic lymphadenectomy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "440093006",
+      "display": "Insertion of radioactive implant into interstitial tissue using ultrasound guidance (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "440094000",
+      "display": "Insertion of radioactive implant into interstitial tissue of prostate with transperineal insertion of catheter (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "62867004",
+      "display": "External beam radiation therapy with radioactive cesium (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "65551008",
+      "display": "Radical retropubic prostatectomy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "67598001",
+      "display": "Retropubic prostatectomy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "72388004",
+      "display": "Radical perineal prostatectomy with lymph node biopsy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "77613002",
+      "display": "External beam radiation therapy with iodine-125 (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "84755001",
+      "display": "Radiation therapy treatment management (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "8782006",
+      "display": "Radical perineal prostatectomy (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "90470006",
+      "display": "Prostatectomy (procedure)"
+    } ]
+  }
+}

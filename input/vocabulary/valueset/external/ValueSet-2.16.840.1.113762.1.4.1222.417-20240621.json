@@ -1,0 +1,76 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1222.417-20240621",
+  "meta": {
+    "versionId": "11",
+    "lastUpdated": "2025-06-10T13:26:43.000-04:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "American Institutes for Research Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-06-10"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-06-21"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.417",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1222.417"
+  } ],
+  "version": "20240621",
+  "name": "PrediabetesBorderlineDiabetes",
+  "title": "Prediabetes (Borderline Diabetes)",
+  "status": "active",
+  "date": "2024-06-21T01:25:03-04:00",
+  "publisher": "American Institutes for Research Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: This set of values addresses terms representing Prediabetes (Borderline Diabetes).),(Data Element Scope: The intent of this set of values is to identify patients who have a/an documented diagnosis of prediabetes.),(Inclusion Criteria: Includes SNOMEDCT codes for Prediabetes (Borderline Diabetes).),(Exclusion Criteria: Terms not representative of observable encoded terms that may have values indicating Prediabetes (Borderline Diabetes).)",
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20250301",
+      "filter": [ {
+        "property": "concept",
+        "op": "is-a",
+        "value": "714628002"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:2203f325-49eb-4587-9a8a-7022d64bf02e",
+    "timestamp": "2025-08-28T17:04:09-04:00",
+    "total": 2,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "16896421000119107",
+      "display": "Prediabetes in mother during pregnancy (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "inactive": false,
+      "version": "http://snomed.info/sct/731000124108/version/20240901",
+      "code": "714628002",
+      "display": "Prediabetes (finding)"
+    } ]
+  }
+}

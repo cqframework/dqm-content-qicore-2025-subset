@@ -1,0 +1,131 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.464.1003.1152-20240206",
+  "meta": {
+    "versionId": "12",
+    "lastUpdated": "2024-02-06T01:09:28.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "NCQA PHEMUR Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2025-03-10"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-02-06"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1152",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.464.1003.1152"
+  } ],
+  "version": "20240206",
+  "name": "SubstanceUseDisorderShortActingMedicationAdministration",
+  "title": "Substance Use Disorder Short Acting Medication Administration",
+  "status": "active",
+  "date": "2024-02-06T01:09:28-05:00",
+  "publisher": "NCQA PHEMUR",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this Grouping value set is to represent concepts for short acting substance use disorder medication assisted treatment, usually administered as part of an opioid treatment program.),(Data Element Scope: This value set may use a model element related to Intervention.),(Inclusion Criteria: Includes interventions where a short acting substance use disorder treatment medication is administered (oral and sublingual naltrexone, buprenorphine and buprenorphine).),(Exclusion Criteria: Excludes administration of long acting substance use disorder treatment medications (implants, injections).)",
+  "compose": {
+    "include": [ {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "concept": [ {
+        "code": "G2067",
+        "display": "Medication assisted treatment, methadone; weekly bundle including dispensing and/or administration, substance use counseling, individual and group therapy, and toxicology testing, if performed (provision of the services by a medicare-enrolled opioid treatment program)"
+      }, {
+        "code": "G2068",
+        "display": "Medication assisted treatment, buprenorphine (oral); weekly bundle including dispensing and/or administration, substance use counseling, individual and group therapy, and toxicology testing if performed (provision of the services by a medicare-enrolled opioid treatment program)"
+      }, {
+        "code": "G2078",
+        "display": "Take-home supply of methadone; up to 7 additional day supply (provision of the services by a medicare-enrolled opioid treatment program); list separately in addition to code for primary procedure"
+      }, {
+        "code": "G2079",
+        "display": "Take-home supply of buprenorphine (oral); up to 7 additional day supply (provision of the services by a medicare-enrolled opioid treatment program); list separately in addition to code for primary procedure"
+      }, {
+        "code": "H0006",
+        "display": "Alcohol and/or drug services; case management"
+      }, {
+        "code": "H0020",
+        "display": "Alcohol and/or drug services; methadone administration and/or service (provision of the drug by a licensed program)"
+      }, {
+        "code": "H0028",
+        "display": "Alcohol and/or drug prevention problem identification and referral service (e.g., student assistance and employee assistance programs), does not include assessment"
+      }, {
+        "code": "H0033",
+        "display": "Oral medication administration, direct observation"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:8ef9f0c9-fe24-4ee7-b74c-21c10ff079ed",
+    "timestamp": "2025-08-28T16:53:00-04:00",
+    "total": 8,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G2067",
+      "display": "Medication assisted treatment, methadone; weekly bundle including dispensing and/or administration, substance use counseling, individual and group therapy, and toxicology testing, if performed (provision of the services by a medicare-enrolled opioid treatment program)"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G2068",
+      "display": "Medication assisted treatment, buprenorphine (oral); weekly bundle including dispensing and/or administration, substance use counseling, individual and group therapy, and toxicology testing if performed (provision of the services by a medicare-enrolled opioid treatment program)"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G2078",
+      "display": "Take-home supply of methadone; up to 7 additional day supply (provision of the services by a medicare-enrolled opioid treatment program); list separately in addition to code for primary procedure"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "G2079",
+      "display": "Take-home supply of buprenorphine (oral); up to 7 additional day supply (provision of the services by a medicare-enrolled opioid treatment program); list separately in addition to code for primary procedure"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "H0006",
+      "display": "Alcohol and/or drug services; case management"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "H0020",
+      "display": "Alcohol and/or drug services; methadone administration and/or service (provision of the drug by a licensed program)"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "H0028",
+      "display": "Alcohol and/or drug prevention problem identification and referral service (e.g., student assistance and employee assistance programs), does not include assessment"
+    }, {
+      "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "inactive": false,
+      "version": "2025",
+      "code": "H0033",
+      "display": "Oral medication administration, direct observation"
+    } ]
+  }
+}

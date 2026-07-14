@@ -1,0 +1,141 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.464.1003.110.11.1073-20190315",
+  "meta": {
+    "versionId": "40",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "NCQA PHEMUR Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2024-06-03"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2019-03-15"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.110.11.1073",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.3.464.1003.110.11.1073"
+  } ],
+  "version": "20190315",
+  "name": "HepatitisB",
+  "title": "Hepatitis B",
+  "status": "retired",
+  "experimental": false,
+  "date": "2019-03-15T01:00:14-04:00",
+  "publisher": "NCQA PHEMUR",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for a diagnosis of Hepatitis B infection.),(Data Element Scope: This value set may use a model element related to Diagnosis.),(Inclusion Criteria: Includes concepts that represent a diagnosis of Hepatitis B.),(Exclusion Criteria: No exclusions.)",
+  "compose": {
+    "include": [ {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "concept": [ {
+        "code": "B16.0",
+        "display": "Acute hepatitis B with delta-agent with hepatic coma"
+      }, {
+        "code": "B16.1",
+        "display": "Acute hepatitis B with delta-agent without hepatic coma"
+      }, {
+        "code": "B16.2",
+        "display": "Acute hepatitis B without delta-agent with hepatic coma"
+      }, {
+        "code": "B16.9",
+        "display": "Acute hepatitis B without delta-agent and without hepatic coma"
+      }, {
+        "code": "B17.0",
+        "display": "Acute delta-(super) infection of hepatitis B carrier"
+      }, {
+        "code": "B18.0",
+        "display": "Chronic viral hepatitis B with delta-agent"
+      }, {
+        "code": "B18.1",
+        "display": "Chronic viral hepatitis B without delta-agent"
+      }, {
+        "code": "B19.10",
+        "display": "Unspecified viral hepatitis B without hepatic coma"
+      }, {
+        "code": "B19.11",
+        "display": "Unspecified viral hepatitis B with hepatic coma"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "identifier": "urn:uuid:5faa9bcb-2db2-40c7-a58f-6a41cab6e42d",
+    "timestamp": "2025-08-28T17:07:46-04:00",
+    "total": 9,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "inactive": false,
+      "version": "2025",
+      "code": "B16.0",
+      "display": "Acute hepatitis B with delta-agent with hepatic coma"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "inactive": false,
+      "version": "2025",
+      "code": "B16.1",
+      "display": "Acute hepatitis B with delta-agent without hepatic coma"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "inactive": false,
+      "version": "2025",
+      "code": "B16.2",
+      "display": "Acute hepatitis B without delta-agent with hepatic coma"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "inactive": false,
+      "version": "2025",
+      "code": "B16.9",
+      "display": "Acute hepatitis B without delta-agent and without hepatic coma"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "inactive": false,
+      "version": "2025",
+      "code": "B17.0",
+      "display": "Acute delta-(super) infection of hepatitis B carrier"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "inactive": false,
+      "version": "2025",
+      "code": "B18.0",
+      "display": "Chronic viral hepatitis B with delta-agent"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "inactive": false,
+      "version": "2025",
+      "code": "B18.1",
+      "display": "Chronic viral hepatitis B without delta-agent"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "inactive": false,
+      "version": "2025",
+      "code": "B19.10",
+      "display": "Unspecified viral hepatitis B without hepatic coma"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "inactive": false,
+      "version": "2025",
+      "code": "B19.11",
+      "display": "Unspecified viral hepatitis B with hepatic coma"
+    } ]
+  }
+}
